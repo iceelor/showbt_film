@@ -1,0 +1,3811 @@
+#chrome_focusCarousel {
+	height: 100%;
+	overflow: hidden;
+	background: #292929;
+	position: relative
+}
+
+#chrome_focusCarousel .absolutel {
+	position: absolute;
+	top: 140px;
+	left: 20px
+}
+
+#chrome_focusCarousel .absolutem {
+	position: absolute;
+	bottom: 12px;
+	left: 36px
+}
+
+#chrome_focusCarousel .absoluter {
+	position: absolute;
+	top: 140px;
+	right: 20px
+}
+
+#chrome_focusCarousel #focusCarouselBody {
+	margin: 0;
+	height: 100%
+}
+
+#chrome_focusCarousel .tang-carousel-container {
+	position: relative;
+	width: 708px;
+	height: 328px;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 6px
+}
+
+#chrome_focusCarousel .tang-carousel-container .tang-carousel-element {
+	width: 100%;
+	height: 100%;
+	position: relative
+}
+
+#chrome_focusCarousel .tang-carousel-container .tang-carousel-element .tang-carousel-item
+	{
+	float: left;
+	display: inline;
+	width: 708px;
+	height: 100%;
+	position: relative
+}
+
+#chrome_focusCarousel .tang-carousel-item .focus-area-thumb {
+	float: left;
+	margin-right: 0;
+	position: static;
+	height: 100%;
+	overflow: hidden
+}
+
+#chrome_focusCarousel .tang-carousel-item .focus-area-thumb-detail {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100
+}
+
+#chrome_focusCarousel .tang-carousel-item .focus-area-thumb-detail dl {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 0 20px 15px;
+	color: #FFF;
+	z-index: 10;
+	filter: alpha(opacity = 100)
+}
+
+#chrome_focusCarousel .tang-carousel-item .focus-area-thumb-detail-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #000;
+	opacity: .8;
+	filter: alpha(opacity = 80);
+	width: 100%;
+	height: 100%
+}
+
+#chrome_focusCarousel .tang-carousel-item .focus-area-thumb-detail .fatd-play a
+	{
+	filter: alpha(opacity = 100)
+}
+
+#chrome_focusCarousel .tang-carousel-item .focus-area-thumb-last {
+	margin-right: 0
+}
+
+#chrome_focusCarousel .focus-area-thumb .rating {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100
+}
+
+#chrome_focusCarousel .focus-area-thumb-infotip {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 43px;
+	overflow: hidden
+}
+
+#chrome_focusCarousel .focus-area-thumb-infotip-body {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	color: #FFF;
+	filter: alpha(opacity = 100)
+}
+
+#chrome_focusCarousel .focus-area-thumb-infotip-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .8;
+	filter: alpha(opacity = 80);
+	z-index: 1
+}
+
+#chrome_focusCarousel .focus-area-thumb-infotip dt {
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-top: 7px;
+	margin-bottom: 0;
+	font-weight: bold
+}
+
+#chrome_focusCarousel .focus-area-thumb-infotip dt,#chrome_focusCarousel .focus-area-thumb-infotip dd
+	{
+	text-indent: 17px
+}
+
+#chrome_focusCarousel .focus-area-thumb-infotip dd {
+	line-height: 15px;
+	height: 15px;
+	overflow: hidden
+}
+
+#chrome_focusCarousel .focus-area-thumb-bottom-bd {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 92px;
+	overflow: hidden;
+	opacity: .6;
+	filter: alpha(opacity = 60);
+	background-color: #000
+}
+
+#chrome_focusCarousel .focus-hidden {
+	position: absolute;
+	bottom: 56px;
+	left: 36px;
+	height: 30px;
+	width: 640px;
+	overflow: hidden
+}
+
+#chrome_focusCarousel .focus-hidden .focus-title {
+	line-height: 30px;
+	font-family: 'Î¢ÈíÑÅºÚ', 'ËÎÌå', Arial;
+	font-size: 18px;
+	color: #FFF
+}
+
+#chrome_focusCarousel .focus-area-thumb-maxwide .focus-area-thumb-anchor img
+	{
+	cursor: pointer;
+	width: 708px
+}
+
+#chrome_focusCarousel .focus-area-thumb-maxwide .focus-area-thumb-type {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 66px;
+	height: 66px;
+	background: transparent
+		url('http://list.video.baidu.com/browse/index_focus.png') -120px
+		-500px no-repeat;
+	_background: 0
+}
+
+#chrome_focusCarousel .focus-area-thumb-maxwide .focus-area-thumb-type-movie
+	{
+	background-position: -120px -100px;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://list.video.baidu.com/browse/type_movie.png',
+		sizingMethod='crop')
+}
+
+#chrome_focusCarousel .focus-area-thumb-maxwide .focus-area-thumb-type-tvplay
+	{
+	background-position: -120px -200px;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://list.video.baidu.com/browse/type_tvplay.png',
+		sizingMethod='crop')
+}
+
+#chrome_focusCarousel .focus-area-thumb-maxwide .focus-area-thumb-type-tamasha
+	{
+	background-position: -120px -400px;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://list.video.baidu.com/browse/type_tamasha.png',
+		sizingMethod='crop')
+}
+
+#chrome_focusCarousel .focus-area-thumb-maxwide .focus-area-thumb-type-cartoon
+	{
+	background-position: -120px -300px;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://list.video.baidu.com/browse/type_cartoon.png',
+		sizingMethod='crop')
+}
+
+#chrome_focusCarousel .focus-area-thumb-maxwide .focus-area-thumb-type-info
+	{
+	background-position: -120px -0px;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://list.video.baidu.com/browse/type_info.png',
+		sizingMethod='crop')
+}
+
+#chrome_focusCarousel .focus-area-thumb-xwide .focus-area-thumb-anchor {
+	height: 212px
+}
+
+#chrome_focusCarousel .focus-area-thumb-xwide .focus-area-thumb-anchor img,#chrome_focusCarousel .focus-area-thumb-xwide .focus-area-thumb-detail
+	{
+	width: 837px;
+	height: 212px
+}
+
+#chrome_focusCarousel .focus-area-thumb-xwide .focus-area-thumb-detail .fatd-intro
+	{
+	width: 337px;
+	height: 36px
+}
+
+#chrome_focusCarousel .focus-area-thumb-xwide .focus-area-thumb-infotip
+	{
+	width: 837px
+}
+
+#chrome_focusCarousel .tang-carousel-item .focus-area-thumb-xwide {
+	margin-right: 0
+}
+
+#chrome_focusCarousel .tang-carousel-item .focus-area-thumb-xwide .focus-area-thumb-detail dl
+	{
+	margin-left: 61px
+}
+
+#chrome_focusCarousel .tang-carousel-item .focus-area-thumb-xwide .fatd-play a
+	{
+	left: 61px
+}
+
+#chrome_focusCarousel .focus-area-thumb-xwide .focus-area-thumb-detail .fatd-title
+	{
+	width: 560px
+}
+
+#chrome_focusCarousel .focus-area-thumb-wide .focus-area-thumb-anchor img,#chrome_focusCarousel .focus-area-thumb-wide .focus-area-thumb-detail
+	{
+	width: 324px;
+	height: 212px
+}
+
+#chrome_focusCarousel .focus-area-thumb-wide .focus-area-thumb-detail .fatd-intro
+	{
+	width: 185px;
+	height: 36px
+}
+
+#chrome_focusCarousel .focus-area-thumb-wide .focus-area-thumb-detail .fatd-title
+	{
+	width: 268px
+}
+
+#chrome_focusCarousel .focus-area-thumb-normal .focus-area-thumb-anchor img,#chrome_focusCarousel .focus-area-thumb-normal .focus-area-thumb-detail
+	{
+	width: 153px;
+	height: 212px
+}
+
+#chrome_focusCarousel .focus-area-thumb-normal .focus-area-thumb-detail .fatd-intro
+	{
+	width: 126px;
+	height: 36px
+}
+
+#chrome_focusCarousel .focus-area-thumb-normal .focus-area-thumb-detail .fatd-title
+	{
+	width: 108px
+}
+
+#chrome_focusCarousel .fatd-update {
+	color: #999
+}
+
+#chrome_focusCarousel .fatd-update em {
+	color: #FFF;
+	font-weight: normal;
+	font-style: normal
+}
+
+#chrome_focusCarousel .focus-area-type {
+	*zoom: 1
+}
+
+#chrome_focusCarousel .focus-area-type:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+#chrome_focusCarousel .tang-carousel-control {
+	clear: both;
+	text-align: center
+}
+
+#chrome_focusCarousel .tang-carousel-dotted {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	padding-top: 5px
+}
+
+#chrome_focusCarousel .tang-carousel-dotted li {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	width: 74px;
+	height: 41px;
+	background: #a3a3a3;
+	margin-right: 2px;
+	position: relative
+}
+
+#chrome_focusCarousel .tang-carousel-dotted li a {
+	display: block
+}
+
+#chrome_focusCarousel .tang-carousel-dotted li a:hover {
+	background: #FFF
+}
+
+#chrome_focusCarousel .tang-carousel-dotted li img {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	width: 70px;
+	height: 37px;
+	margin-top: 2px
+}
+
+#chrome_focusCarousel .tang-carousel-dotted li.item-selected .jiantou {
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: url('http://list.video.baidu.com/browse/index_focus.png') 0
+		-200px no-repeat;
+	top: -5px;
+	left: 35px;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://list.video.baidu.com/browse/jiantou.png',
+		sizingMethod='crop')
+}
+
+#chrome_focusCarousel .tang-carousel-dotted li.item-selected {
+	background: #fff
+}
+
+#chrome_focusCarousel .tang-carousel-btn {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	width: 42px;
+	height: 42px;
+	position: absolute;
+	top: 140px
+}
+
+#chrome_focusCarousel .tang-carousel-btn .tang-carousel-btn-title {
+	position: absolute;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	z-index: 200;
+	width: 42px;
+	height: 42px;
+	top: 0;
+	left: 0;
+	text-indent: -9999px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/chrome_focuscarousel/focus-arrow_f3987fc1.png)
+		0 0 no-repeat scroll;
+	filter: alpha(opacity =   35);
+	-khtml-opacity: .35;
+	-moz-opacity: .35;
+	opacity: .35
+}
+
+#chrome_focusCarousel .tang-carousel-btn .tang-carousel-btn-bg {
+	position: relative;
+	display: block;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #fff;
+	background: #000;
+	filter: alpha(opacity =   35);
+	-khtml-opacity: .35;
+	-moz-opacity: .35;
+	opacity: .35;
+	top: 0;
+	left: 0
+}
+
+#chrome_focusCarousel .tang-carousel-btn.tang-carousel-btn-prev {
+	left: 20px
+}
+
+#chrome_focusCarousel .tang-carousel-btn.tang-carousel-btn-prev .tang-carousel-btn-title
+	{
+	background-position: 12px 10px
+}
+
+#chrome_focusCarousel .tang-carousel-btn.tang-carousel-btn-next {
+	right: 20px
+}
+
+#chrome_focusCarousel .tang-carousel-btn.tang-carousel-btn-next .tang-carousel-btn-title
+	{
+	background-position: -28px 10px
+}
+
+#chrome_focusCarousel .tang-carousel-btn:hover .tang-carousel-btn-bg {
+	filter: alpha(opacity =   65);
+	-khtml-opacity: .65;
+	-moz-opacity: .65;
+	opacity: .65
+}
+
+#chrome_focusCarousel .tang-carousel-btn:hover .tang-carousel-btn-title
+	{
+	filter: alpha(opacity =   100);
+	-khtml-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1
+}
+
+.focuslist {
+	padding-top: 9px
+}
+
+.focuslist li {
+	height: 29px;
+	overflow: hidden;
+	font-family: \5b8b\4f53, Arial, sans-serif;
+	line-height: 29px;
+	font-size: 13px;
+	white-space: nowrap
+}
+
+.focuslist li .source-logo {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	vertical-align: middle
+}
+
+.focuslist li .source-site {
+	margin-right: 5px;
+	color: #666
+}
+
+.focuslist li a,.focuslist li a:link {
+	color: #000
+}
+
+.focuslist li a:hover {
+	color: #F00
+}
+
+.pa-first-screen {
+	padding: 20px 22px 20px 24px;
+	*zoom: 1
+}
+
+.pa-first-screen:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.pa-first-screen-focus {
+	float: left;
+	margin: 0 23px 0 0;
+	width: 249px;
+	overflow: hidden
+}
+
+.pa-first-screen-focus .focus-img {
+	display: block;
+	width: 249px;
+	height: 163px;
+	position: relative;
+	margin-bottom: 17px
+}
+
+.pa-first-screen-focus .focus-img .v-play-icon {
+	top: 65px;
+	left: 108px;
+	background: url(http://video.baidu.com/img/play_icon.png) no-repeat 0 0
+		transparent;
+	height: 32px;
+	width: 32px;
+	visibility: hidden;
+	_visibility: visible;
+	_background-image: none
+}
+
+.pa-first-screen-focus .focus-img:hover .v-play-icon {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	visibility: visible;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.baidu.com/img/play_icon.png')
+}
+
+.pa-first-screen-focus .focus-img:hover {
+	text-decoration: none
+}
+
+.pa-first-screen-focus .focus-img img {
+	width: 100%;
+	height: 100%
+}
+
+.pa-first-screen-focus .focus-img span.title-text,.pa-first-screen-focus .focus-img span.title-bg
+	{
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	bottom: 0;
+	left: 0;
+	line-height: 20px;
+	height: 30px;
+	width: 219px;
+	padding: 0 15px;
+	overflow: hidden;
+	color: #FFF;
+	text-align: center;
+	vertical-align: middle
+}
+
+.pa-first-screen-focus .focus-img span.title-text-wrapper {
+	display: block;
+	height: 100%;
+	overflow: hidden
+}
+
+.pa-first-screen-focus .focus-img span em {
+	font-style: normal;
+	font-weight: bold
+}
+
+.pa-first-screen-focus .focus-img span.title-bg {
+	background-color: #2f2f2f;
+	opacity: .8;
+	filter: alpha(opacity = 80);
+	z-index: 1
+}
+
+.pa-first-screen-focus .focus-img span.title-text {
+	z-index: 10
+}
+
+.pa-first-screen-focus .focus-img .v-hot,.pa-first-screen-focus .focus-img .v-new
+	{
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 45px;
+	height: 46px
+}
+
+.pa-first-screen-focus .focus-img .v-hot {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/picarea_firstscreen/video_hot_dace48d8.png)
+		0 0 no-repeat scroll;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/browse_static/widget/index/picarea_firstscreen/video_hot_dace48d8.png')
+}
+
+.pa-first-screen-focus .focus-img .v-new {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/picarea_firstscreen/video_new_847704d0.png)
+		0 0 no-repeat scroll;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/browse_static/widget/index/picarea_firstscreen/video_new_847704d0.png')
+}
+
+.pa-first-screen-focus .focus-img span em {
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-right: 6px
+}
+
+.pa-first-screen-focus .focus-ext {
+	line-height: 18px;
+	padding-bottom: 18px;
+	overflow: hidden;
+	border-bottom: 1px dotted #e6e6e6;
+	color: #666
+}
+
+.pa-first-screen-focus .focus-ext strong {
+	color: #333
+}
+
+.pa-first-screen-focus h3 {
+	margin: 12px 0 6px;
+	font-weight: bold;
+	font-size: 14px
+}
+
+.pa-first-screen-more {
+	*zoom: 1
+}
+
+.pa-first-screen-more:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.pa-first-screen-more li {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	width: 110px
+}
+
+.pa-first-screen-categories {
+	*zoom: 1
+}
+
+.pa-first-screen-categories:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.pa-first-screen-categories li {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	margin-right: 10px
+}
+
+.pa-first-screen-list {
+	float: left;
+	margin: 0;
+	width: 388px
+}
+
+.pa-first-screen-list ul {
+	*zoom: 1
+}
+
+.pa-first-screen-list ul:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.pa-first-screen .video-item .v-title {
+	font-size: 14px;
+	line-height: 20px;
+	height: 20px;
+	margin-top: 5px
+}
+
+.pa-first-screen .video-item .v-desc .v-s-intro {
+	color: #666
+}
+
+.pa-normal {
+	padding: 20px 22px;
+	*zoom: 1
+}
+
+.pa-normal:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.pa-normal .pa-normal-list {
+	width: 100%
+}
+
+.pa-normal .video-item .v-title {
+	font-size: 14px;
+	line-height: 20px;
+	height: 20px;
+	margin-top: 5px
+}
+
+.pa-normal .video-item .v-desc .v-s-intro {
+	color: #666
+}
+
+#focusCarouselNew {
+	position: relative;
+	height: 100%;
+	overflow: hidden
+}
+
+#focusCarouselBody {
+	margin: 0;
+	height: 100%
+}
+
+#focusCarouselNew .tang-carousel-container {
+	position: relative;
+	width: 360px;
+	height: 230px;
+	float: left;
+	overflow: hidden
+}
+
+#focusCarouselNew .tang-carousel-btn {
+	position: absolute;
+	top: 70px;
+	width: 32px;
+	height: 44px;
+	background: #000
+		url(http://video.hao123.com/browse_static/widget/index/focuscarousel/focuscarousel_e3ee2649.png)
+		0 -70px no-repeat;
+	text-decoration: none;
+	outline: 0;
+	opacity: .7;
+	filter: alpha(opacity = 70);
+	_background-image:
+		url(http://video.hao123.com/browse_static/widget/index/focuscarousel/focuscarousel_04e2300a.gif)
+}
+
+#focusCarouselNew .tang-carousel-btn:hover {
+	text-decoration: none;
+	opacity: 1;
+	filter: alpha(opacity = 100)
+}
+
+#focusCarouselNew .tang-carousel-btn-prev {
+	left: 0
+}
+
+#focusCarouselNew .tang-carousel-btn-next {
+	right: 0;
+	background-position: 0 -120px
+}
+
+#focusCarouselNew .focus-play {
+	visibility: hidden;
+	position: absolute;
+	top: 58px;
+	left: 141px;
+	width: 70px;
+	height: 70px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/focuscarousel/focuscarousel_e3ee2649.png)
+		0 0 no-repeat;
+	_display: none
+}
+
+#focusCarouselNew .tang-carousel-dotted {
+	position: absolute;
+	bottom: 8px;
+	right: 9px
+}
+
+#focusCarouselNew .tang-carousel-dotted li {
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-right: 3px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/focuscarousel/focuscarousel_e3ee2649.png)
+		0 -170px no-repeat;
+	cursor: pointer;
+	_display: inline;
+	_background-image:
+		url(http://video.hao123.com/browse_static/widget/index/focuscarousel/focuscarousel_04e2300a.gif)
+}
+
+#focusCarouselNew .tang-carousel-dotted li.item-selected {
+	background-position: 0 -187px
+}
+
+#focusCarouselNew .tang-carousel-container .tang-carousel-element {
+	width: 100%;
+	height: 100%;
+	position: relative
+}
+
+#focusCarouselNew .tang-carousel-container .tang-carousel-element .tang-carousel-item
+	{
+	float: left;
+	display: inline;
+	width: 361px;
+	height: 100%;
+	position: relative
+}
+
+#focusCarouselNew .tang-carousel-container .tang-carousel-element .tang-carousel-item .focus-area-thumb
+	{
+	float: left;
+	margin-right: 0;
+	position: static;
+	height: 100%;
+	overflow: hidden
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	cursor: pointer
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link img {
+	width: 360px;
+	height: 230px;
+	vertical-align: top
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link .focus-area-thumb-mask
+	{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	overflow: hidden;
+	background-color: #000;
+	cursor: pointer;
+	opacity: .7;
+	filter: alpha(opacity = 70)
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link .focus-title
+	{
+	position: absolute;
+	bottom: 6px;
+	left: 10px;
+	color: #c5c5c5;
+	font-family: \5b8b\4f53, Arial;
+	line-height: 17px
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link .focus-title .s-title
+	{
+	display: block;
+	color: #FFF;
+	font-family: \5b8b\4f53, Arial;
+	font-size: 13px
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link .focus-title .s-title-sub
+	{
+	display: block;
+	font-size: 12px
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link .v-hot,#focusCarouselNew .tang-carousel-container .focus-area-thumb-link .v-new
+	{
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 45px;
+	height: 46px
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link .v-hot
+	{
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/focuscarousel/video_hot_dace48d8.png)
+		0 0 no-repeat scroll;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/browse_static/widget/index/focuscarousel/video_hot_dace48d8.png')
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link .v-new
+	{
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/focuscarousel/video_new_847704d0.png)
+		0 0 no-repeat scroll;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/browse_static/widget/index/focuscarousel/video_new_847704d0.png')
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link:hover,#focusCarouselNew .tang-carousel-container .focus-area-thumb-link:active
+	{
+	text-decoration: none
+}
+
+#focusCarouselNew .tang-carousel-container .focus-area-thumb-link:hover .focus-play,#focusCarouselNew .tang-carousel-container .focus-area-thumb-link:active .focus-play
+	{
+	visibility: visible
+}
+
+#more-hot {
+	border: 1px solid #dbdbdb;
+	border-top: 0 none;
+	padding: 10px 12px;
+	*zoom: 1
+}
+
+#more-hot .tang-carousel {
+	background: #f4f4f4
+}
+
+#more-hot .tang-carousel-container {
+	position: relative;
+	float: left;
+	width: 560px;
+	height: 140px;
+	overflow: hidden
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element {
+	height: 140px
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item
+	{
+	float: left;
+	display: inline;
+	width: 120px;
+	height: 120px;
+	padding: 10px
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item-selected
+	{
+	background: skyblue
+}
+
+#more-hot .tang-carousel-btn {
+	float: left;
+	margin-top: 45px;
+	width: 42px;
+	height: 42px;
+	background: url(carousel-btn.png) no-repeat
+}
+
+#more-hot a.tang-carousel-btn-prev:link,#more-hot a.tang-carousel-btn-prev:visited
+	{
+	background-position: 0 0
+}
+
+#more-hot a.tang-carousel-btn-next:link,#more-hot a.tang-carousel-btn-next:visited
+	{
+	background-position: -42px 0
+}
+
+#more-hot a.tang-carousel-btn-prev:hover {
+	background-position: 0 -42px;
+	background-color: #0084ff
+}
+
+#more-hot a.tang-carousel-btn-next:hover {
+	background-position: -42px -42px;
+	background-color: #0084ff
+}
+
+#more-hot a.tang-carousel-btn-prev-disabled:link,#more-hot a.tang-carousel-btn-prev-disabled:visited,#more-hot a.tang-carousel-btn-prev-disabled:hover,#more-hot a.tang-carousel-btn-prev-disabled:active
+	{
+	background-position: 0 -84px
+}
+
+#more-hot a.tang-carousel-btn-next-disabled:link,#more-hot a.tang-carousel-btn-next-disabled:visited,#more-hot a.tang-carousel-btn-next-disabled:hover,#more-hot a.tang-carousel-btn-next-disabled:active
+	{
+	background-position: -42px -84px
+}
+
+#more-hot:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+#more-hot a:hover,#more-hot a:active {
+	outline: 0
+}
+
+#more-hot h3 {
+	position: relative;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #333;
+	padding: 5px 11px 1px 11px;
+	cursor: default;
+	_zoom: 1
+}
+
+#more-hot h3 .dotted-container {
+	list-style: none;
+	position: absolute;
+	right: 55px;
+	top: 5px;
+	*zoom: 1
+}
+
+#more-hot h3 .dotted-container:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+#more-hot h3 .dotted-container li {
+	list-style: none;
+	cursor: pointer;
+	margin: 0 5px;
+	float: left;
+	width: 10px;
+	height: 9px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/morehot/more_hot_dot_295c2b2e.gif)
+		no-repeat
+}
+
+#more-hot h3 .dotted-container .item-selected {
+	background-position: -10px 0;
+	cursor: default
+}
+
+#more-hot h3 .tang-carousel-btn {
+	position: absolute;
+	top: 1px;
+	text-indent: -9999px;
+	height: 19px;
+	overflow: hidden;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/morehot/more_hot_btn_c8475038.gif)
+		no-repeat transparent;
+	margin-top: 0
+}
+
+#more-hot h3 .tang-carousel-btn-prev,#more-hot h3 .tang-carousel-btn-prev-disabled
+	{
+	width: 20px;
+	right: 30px
+}
+
+#more-hot h3 .tang-carousel-btn-next,#more-hot h3 .tang-carousel-btn-next-disabled
+	{
+	width: 19px;
+	right: 11px
+}
+
+#more-hot h3 a.tang-carousel-btn-prev:link,#more-hot h3 a.tang-carousel-btn-prev:visited
+	{
+	background-position: 0 -18px
+}
+
+#more-hot h3 a.tang-carousel-btn-next:link,#more-hot h3 a.tang-carousel-btn-next:visited
+	{
+	background-position: -20px -18px
+}
+
+#more-hot h3 a.tang-carousel-btn-prev:hover {
+	background-position: 0 0;
+	background-color: #edf1f6
+}
+
+#more-hot h3 a.tang-carousel-btn-next:hover {
+	background-position: -20px 0;
+	background-color: #edf1f6
+}
+
+#more-hot h3 a.tang-carousel-btn-prev-disabled:link,#more-hot h3 a.tang-carousel-btn-prev-disabled:visited,#more-hot h3 a.tang-carousel-btn-prev-disabled:hover,#more-hot h3 a.tang-carousel-btn-prev-disabled:active
+	{
+	background-position: 0 -14px;
+	cursor: default
+}
+
+#more-hot h3 a.tang-carousel-btn-next-disabled:link,#more-hot h3 a.tang-carousel-btn-next-disabled:visited,#more-hot h3 a.tang-carousel-btn-next-disabled:hover,#more-hot h3 a.tang-carousel-btn-next-disabled:active
+	{
+	background-position: -16px -14px;
+	cursor: default
+}
+
+#more-hot .tang-carousel {
+	background: 0
+}
+
+#more-hot .tang-carousel-container {
+	width: 680px;
+	overflow: hidden;
+	margin-left: 1px
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element {
+	*zoom: 1
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item
+	{
+	float: left;
+	width: 150px;
+	height: 120px;
+	padding: 10px
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item dt
+	{
+	position: relative;
+	height: 84px;
+	width: 150px
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .playicon
+	{
+	position: absolute;
+	left: 59px;
+	top: 26px;
+	background: url(http://video.baidu.com/img/play_icon.png) no-repeat 0 0
+		transparent;
+	height: 32px;
+	width: 32px;
+	visibility: hidden;
+	_visibility: visible;
+	_background-image: none
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .duration
+	{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	height: 15px;
+	line-height: 15px;
+	padding: 0 3px;
+	font-family: arial;
+	text-decoration: none;
+	background: url(http://video.baidu.com/img/duration.png) no-repeat 0 0
+		transparent;
+	_background-image: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.baidu.com/img/duration.png',
+		sizingMethod=  scale)
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item dt a:hover .playicon
+	{
+	cursor: pointer;
+	visibility: visible;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.baidu.com/img/play_icon.png')
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item dd
+	{
+	width: 150px;
+	height: 41px;
+	overflow: hidden
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item .title
+	{
+	position: relative
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item .title a
+	{
+	position: relative;
+	top: 3px
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item .title img
+	{
+	width: 16px;
+	height: 16px;
+	margin-right: 2px;
+	display: inline;
+	position: relative;
+	top: 6px
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item .brief
+	{
+	color: #999;
+	cursor: default
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item img
+	{
+	width: 150px;
+	height: 84px;
+	display: block
+}
+
+#more-hot .tang-carousel-container .tang-carousel-element .tang-carousel-item-selected
+	{
+	background: 0
+}
+
+.pa-landscape {
+	padding: 20px 0;
+	*zoom: 1
+}
+
+.pa-landscape:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.pa-landscape .pa-landscape-list {
+	width: 100%
+}
+
+.pa-landscape .pa-landscape-list .video-item .v-title {
+	white-space: normal;
+	position: relative;
+	margin-top: 0;
+	height: 41px
+}
+
+.pa-landscape .pa-landscape-list .video-item .v-title a {
+	position: relative;
+	top: 3px;
+	font-weight: normal
+}
+
+.pa-landscape .pa-landscape-list .video-item .v-title a:hover {
+	color: #F00
+}
+
+.pa-landscape .pa-landscape-list .video-item .v-title img {
+	width: 16px;
+	height: 16px;
+	margin-right: 2px;
+	display: inline;
+	position: relative;
+	top: 6px
+}
+
+.pa-landscape .video-item .v-desc {
+	text-align: left
+}
+
+.tabtoplistall .tang-title {
+	font-size: 12px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: #333;
+	margin-bottom: 4px;
+	*zoom: 1;
+	overflow: visible
+}
+
+.tabtoplistall .tang-title:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.tabtoplistall .tang-title .tang-title-item {
+	position: relative;
+	float: left;
+	width: 51px;
+	background: #dadada;
+	border-left: solid 1px #fbfbfb
+}
+
+.tabtoplistall .tang-title .tang-title-item a {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	outline: 0;
+	color: #333
+}
+
+.tabtoplistall .tang-title .tang-title-item a span {
+	display: block;
+	line-height: 22px;
+	height: 24px;
+	padding-left: 13px;
+	padding-right: 10px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/tabtoplistall/tab-title-item_57d5f2e8.gif)
+		no-repeat right -112px;
+	cursor: pointer
+}
+
+.tabtoplistall .tang-title .tang-title-item-selected {
+	background: #0059a2;
+	color: #fff
+}
+
+.tabtoplistall .tang-title .tang-title-item-selected a,.tabtoplistall .tang-title .tang-title-item-selected a:hover
+	{
+	cursor: pointer;
+	color: #fff
+}
+
+.tabtoplistall .tang-title .tang-title-item-selected a span,.tabtoplistall .tang-title .tang-title-item-selected a:hover span
+	{
+	cursor: pointer
+}
+
+.tabtoplistall .tang-title .tang-title-item-selected a:hover {
+	text-decoration: none
+}
+
+.tabtoplistall .tang-title .tang-title-item-selected .jiantou {
+	width: 0;
+	height: 0;
+	border: dashed 5px transparent;
+	border-top: solid 5px #0059a2;
+	position: absolute;
+	bottom: -10px;
+	left: 20px;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden
+}
+
+.tabtoplistall .tang-title .first {
+	border-left: none
+}
+
+.tabtoplistall .tang-title .first,.tabtoplistall .tang-title .tang-title-item-selected
+	{
+	background-image: none
+}
+
+.tabtoplistall .tang-title .tang-title-item-next {
+	background-image: none
+}
+
+.tabtoplistall .tang-body .tang-body-item {
+	display: none
+}
+
+.tabtoplistall .tang-body .tang-body-item-selected {
+	display: block
+}
+
+#favoriteTips {
+	text-align: center;
+	background-color: #f8fafc;
+	border-top: 1px solid #b5d5fd;
+	border-bottom: 1px solid #b5d5fd;
+	padding: 9px 0;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: none
+}
+
+#favoriteTips p {
+	margin: 0;
+	padding: 0;
+	font-family: "ËÎÌå", "Arial", "sans-serif";
+	font-size: 12px;
+	line-height: 16px;
+	height: 16px;
+	color: #666
+}
+
+#favoriteTips em {
+	font-style: normal;
+	cursor: pointer;
+	text-decoration: underline
+}
+
+#favoriteTips strong,#favoriteTips em {
+	color: #1f5cb5
+}
+
+#favoriteTips a {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/favoriteTips/shut_cb9686f5.gif)
+		no-repeat 0 0;
+	margin-left: 22px;
+	text-indent: -9999px;
+	outline: 0
+}
+
+#favoriteTips a:hover {
+	background-position: 0 -25px
+}
+
+#guessMode {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend/line_bf9f56fe.png)
+		left top no-repeat
+}
+
+#guessMode .con-sec {
+	padding-bottom: 0x
+}
+
+#guessMode .mode-hd {
+	height: 59px;
+	margin-bottom: 8px;
+	font-family: \5FAE\8F6F\96C5\9ED1
+}
+
+#guessMode .mode-hd .mode-ft {
+	float: right;
+	width: 64px
+}
+
+#guessMode .mode-hd .mode-ft .control-toggle {
+	display: block;
+	padding-right: 20px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend/icons_c440cb4b.png)
+		100% 0 no-repeat;
+	color: #245fb3;
+	margin-top: 20px;
+	height: 20px;
+	margin-left: 20px;
+	line-height: 17px;
+	overflow: hidden;
+	cursor: pointer
+}
+
+#guessMode .mode-hd .mode-ft .control-toggle:hover {
+	text-decoration: none
+}
+
+#guessMode .mode-hd .title-and-tip-wrap {
+	overflow: hidden
+}
+
+#guessMode .mode-hd .title-and-tip-wrap h3 {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend/icons_2_a99f8316.png)
+		0 -6px no-repeat;
+	color: #312e2c;
+	float: left;
+	font: 20px "Microsoft yahei";
+	margin-top: 14px;
+	padding-left: 18px
+}
+
+#guessMode .mode-hd .tip_wrap {
+	color: #666;
+	font: 14px "Microsoft yahei";
+	height: 42px;
+	float: left;
+	margin-left: 28px
+}
+
+#guessMode .mode-hd .tip_wrap .slogan,#guessMode .mode-hd .tip_wrap .slogan-close
+	{
+	float: left;
+	display: block;
+	margin: 18px 0 0 15px
+}
+
+#guessMode .mode-hd .tip_wrap .slogan-close {
+	display: none
+}
+
+#guessMode .mode-hd .tip_wrap .control-update {
+	color: #015e8f;
+	margin: 18px 0 0 15px;
+	outline: 0;
+	padding-left: 19px;
+	display: block;
+	float: left;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend/icons_c440cb4b.png)
+		0 -60px no-repeat
+}
+
+#guessMode .mode-hd .tip_wrap .control-update:hover {
+	background-position: 0 -90px;
+	text-decoration: underline
+}
+
+#guessMode .mode-bd {
+	width: 960px;
+	padding-left: 24px;
+	overflow: hidden
+}
+
+#guessMode .videos li {
+	float: left;
+	width: 127px;
+	height: 165px;
+	margin-right: 36px
+}
+
+#guessMode .videos li.row-last {
+	margin-right: 0
+}
+
+#guessMode .videos a.poster {
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 126px;
+	cursor: pointer
+}
+
+#guessMode .videos a.poster img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top
+}
+
+#guessMode .videos a.poster .v-play-mask {
+	display: none
+}
+
+#guessMode .videos a.poster .v-play-icon {
+	display: none
+}
+
+#guessMode .videos a.poster .v-duration {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend/duration_2e8bc47a.png)
+		repeat-x scroll 0 0 transparent;
+	_background-image: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/browse_static/widget/index/bdrecommend/duration_2e8bc47a.png",
+		sizingMethod="scale");
+	bottom: 0;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	line-height: 15px;
+	padding: 0 3px;
+	position: absolute;
+	right: 0;
+	z-index: 10
+}
+
+#guessMode .videos a.poster:hover {
+	zoom: 1
+}
+
+#guessMode .videos a.poster:hover .v-play-mask {
+	background: none repeat scroll 0 0 #000;
+	display: block;
+	height: 100%;
+	left: 0;
+	opacity: .5;
+	_height: 100px;
+	_width: 126px;
+	filter: alpha(opacity : 50);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 80
+}
+
+#guessMode .videos a.poster:hover .v-play-icon {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend/play_icons_23ba34fb.png)
+		no-repeat scroll 50% 50% transparent;
+	display: block;
+	height: 54px;
+	width: 54px;
+	position: absolute;
+	top: 27px;
+	left: 37px;
+	_height: 44px;
+	_width: 44px;
+	_background-image: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/browse_static/widget/index/bdrecommend/play_icons_23ba34fb.png",
+		sizingMethod="scale");
+	z-index: 100
+}
+
+#guessMode .videos .v-desc {
+	line-height: 18px;
+	text-align: left;
+	text-align: center
+}
+
+#guessMode .videos .v-desc .v-title {
+	margin-top: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	height: 41px;
+	margin-top: 0;
+	position: relative;
+	white-space: normal;
+	text-align: left
+}
+
+#guessMode .videos .v-desc .v-title a {
+	font-weight: normal;
+	position: relative;
+	top: 3px;
+	color: #333
+}
+
+#guessMode .videos .v-desc .v-title a:hover {
+	color: #03618f;
+	text-decoration: none
+}
+
+#guessMode .videos .v-desc .v-title img {
+	display: inline;
+	height: 16px;
+	margin-right: 2px;
+	position: relative;
+	top: 6px;
+	width: 16px
+}
+
+#guessMode.loading {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend/loading_45ab9fd8.gif)
+		50% 50% no-repeat
+}
+
+#guessModeInner.close {
+	position: relative;
+	height: 59px;
+	overflow: hidden
+}
+
+#guessModeInner.close .mode-hd {
+	margin-bottom: 0
+}
+
+#guessModeInner.close .mode-hd .slogan,#guessModeInner.close .mode-hd .link-more
+	{
+	display: none
+}
+
+#guessModeInner.close .mode-hd .slogan-close {
+	display: block
+}
+
+#guessModeInner.close .mode-hd .control-update {
+	display: none
+}
+
+#guessModeInner.close .mode-bd {
+	display: none
+}
+
+#guessModeInner.close .mode-ft .control-toggle {
+	display: block;
+	padding-right: 20px;
+	background-position: 100% -34px;
+	color: #245fb3;
+	margin-top: 20px;
+	height: 20px;
+	margin-left: 20px;
+	overflow: hidden;
+	line-height: 17px;
+	cursor: pointer
+}
+
+.info-first-screen {
+	padding: 20px 23px;
+	*zoom: 1
+}
+
+.info-first-screen:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.info-first-screen-focus {
+	float: left;
+	margin: 0 20px 0 0;
+	width: 320px;
+	overflow: hidden
+}
+
+.info-first-screen-focus .focus-img {
+	display: block;
+	width: 320px;
+	height: 200px;
+	position: relative;
+	margin-bottom: 17px
+}
+
+.info-first-screen-focus .focus-img .v-play-icon {
+	top: 84px;
+	left: 144px;
+	background: url(http://video.baidu.com/img/play_icon.png) no-repeat 0 0
+		transparent;
+	height: 32px;
+	width: 32px;
+	visibility: hidden;
+	_visibility: visible;
+	_background-image: none
+}
+
+.info-first-screen-focus .focus-img:hover .v-play-icon {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	visibility: visible;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.baidu.com/img/play_icon.png')
+}
+
+.info-first-screen-focus .focus-img:hover {
+	text-decoration: none
+}
+
+.info-first-screen-focus .focus-img img {
+	width: 100%;
+	height: 100%
+}
+
+.info-first-screen-focus .focus-img span.title-text,.info-first-screen-focus .focus-img span.title-bg
+	{
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	bottom: 0;
+	left: 0;
+	line-height: 20px;
+	height: 30px;
+	width: 320px;
+	color: #FFF;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap
+}
+
+.info-first-screen-focus .focus-img span em {
+	font-style: normal;
+	font-weight: bold
+}
+
+.info-first-screen-focus .focus-img span.title-bg {
+	background-color: #2f2f2f;
+	opacity: .8;
+	filter: alpha(opacity = 80);
+	z-index: 1
+}
+
+.info-first-screen-focus .focus-img span.title-text {
+	z-index: 10
+}
+
+.info-first-screen-focus .focus-img span em {
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 14px
+}
+
+.info-first-screen-more {
+	*zoom: 1
+}
+
+.info-first-screen-more:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.info-first-screen-more li {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	width: 100%;
+	overflow: hidden;
+	position: relative
+}
+
+.info-first-screen-more li a:hover {
+	color: #F00
+}
+
+.info-first-screen-more li img {
+	position: relative;
+	top: 3px;
+	margin-right: 4px
+}
+
+.info-first-screen-more li em {
+	font-style: normal;
+	color: #666;
+	margin-right: 6px
+}
+
+.info-first-screen-list {
+	float: left;
+	margin: 0;
+	width: 320px
+}
+
+.info-first-screen-list ul {
+	*zoom: 1
+}
+
+.info-first-screen-list ul:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.info-first-screen-list .video-item .v-desc {
+	text-align: left
+}
+
+.info-first-screen-list .video-item .v-title {
+	white-space: normal;
+	position: relative;
+	margin-top: 0;
+	height: 41px
+}
+
+.info-first-screen-list .video-item .v-title a {
+	position: relative;
+	top: 3px;
+	color: #666;
+	font-weight: normal
+}
+
+.info-first-screen-list .video-item .v-title a:hover {
+	color: #F00
+}
+
+.info-first-screen-list .video-item .v-title img {
+	width: 16px;
+	height: 16px;
+	margin-right: 2px;
+	display: inline;
+	position: relative;
+	top: 6px
+}
+
+.clearfix:after {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	display: block;
+	visibility: hidden;
+	content: "."
+}
+
+.special {
+	margin: 10px 3px 0
+}
+
+.special .special-body {
+	padding-right: 10px !important
+}
+
+.special .special-title {
+	font: 16px/1 Î¢ÈíÑÅºÚ;
+	color: #312e2c;
+	height: 20px;
+	line-height: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 10px
+}
+
+.special .special-block {
+	margin-bottom: 15px;
+	padding-left: 90px
+}
+
+.special .special-block img {
+	vertical-align: middle
+}
+
+.special .special-block .leader {
+	float: left;
+	margin-right: 10px;
+	margin-left: -90px
+}
+
+.special .special-block ul {
+	float: left;
+	width: 135px;
+	display: inline-block;
+	overflow: hidden
+}
+
+.special .special-block li {
+	white-space: nowrap
+}
+
+.special .special-block li a,.special .special-block li a:visited {
+	line-height: 20px;
+	color: #333
+}
+
+.special .special-block li a:hover {
+	color: red
+}
+
+#hotVideo {
+	position: relative;
+	height: 264px;
+	width: 708px;
+	overflow: hidden
+}
+
+#hotVideo .tang-content {
+	width: 708px;
+	height: 264px;
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0px, 707px, 264px, 0)
+}
+
+#hotVideo .tang-title,#hotVideo .tang-title-bg {
+	z-index: 11;
+	position: absolute;
+	background: 0;
+	right: 0;
+	top: 0;
+	height: 264px
+}
+
+#hotVideo .tang-title-bg {
+	z-index: 10
+}
+
+#hotVideo .tang-title-item,#hotVideo .tang-title-bg-item {
+	float: none;
+	height: 51px;
+	border-style: solid;
+	border-width: 1px 0;
+	width: 210px;
+	overflow: hidden;
+	cursor: pointer;
+	border-top-color: #2a4257;
+	border-bottom-color: #0d293d;
+	margin: 0
+}
+
+#hotVideo .tang-title-bg-item {
+	border-top-color: #41576b;
+	border-bottom-color: #011320;
+	background-color: #072b45;
+	filter: alpha(opacity = 97);
+	opacity: .97
+}
+
+#hotVideo .tang-title-item-first,#hotVideo .tang-title-bg-item-first {
+	border-width: 0 0 1px
+}
+
+#hotVideo .tang-title-item a {
+	font-size: 14px;
+	color: #dbebf4;
+	display: block;
+	line-height: 51px;
+	height: 51px;
+	white-space: nowrap;
+	background: url(http://video.baidu.com/img/arrow_left.png) no-repeat
+		scroll -999px -999px;
+	margin-left: 20px;
+	text-shadow: #112232 1px 1px;
+	filter: shadow(Color = #000000, Strength = 1, Direction = 135);
+	text-decoration: none
+}
+
+#hotVideo .tang-title-bg .tang-body-item {
+	display: block
+}
+
+#hotVideo .tang-title-bg .tang-body-item-selected {
+	background-color: #466f88;
+	filter: alpha(opacity = 97);
+	opacity: .97
+}
+
+#hotVideo .tang-title-item-selected a {
+	color: #FFF;
+	font-weight: nomal
+}
+
+#hotVideo .hot-video-img {
+	width: 498px;
+	height: 264px
+}
+
+#hotVideo .tang-wrapper {
+	position: absolute
+}
+
+#hotVideo .tang-img-container {
+	height: 264px;
+	overflow: hidden
+}
+
+#hotVideo .tang-img-container .tang-img-item {
+	position: absolute;
+	display: block
+}
+
+#hotVideo .tang-img-container .tang-img-item a:hover {
+	text-decoration: none
+}
+
+#hotVideo .tang-img-item .update,#hotVideo .tang-img-item .update-bg {
+	display: block;
+	width: 498px;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 2;
+	color: #FFF;
+	bottom: 4px;
+	bottom: 2px\9;
+	left: 0;
+	text-indent: 20px;
+	cursor: pointer
+}
+
+#hotVideo .tang-img-item .update-bg {
+	background-color: #000;
+	opacity: .6;
+	filter: alpha(opacity = 60);
+	z-index: 1
+}
+
+#hotVideo .tang-img-item .update span {
+	font-size: 19px;
+	font-family: 'Î¢ÈíÑÅºÚ', 'ËÎÌå', Arial;
+	color: #fff
+}
+
+#hotVideo .tang-img-item .update i {
+	font-family: 'ËÎÌå', Arial;
+	font-style: normal;
+	color: #999;
+	font-size: 12px
+}
+
+#hotVideo .tang-arrow {
+	height: 50px;
+	width: 15px;
+	position: absolute;
+	right: 210px;
+	top: -999px;
+	background: transparent url(http://video.baidu.com/img/arrow_left.png) 0
+		0 no-repeat scroll;
+	_background-image: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.baidu.com/img/arrow_left.png',
+		sizingMethod=  scale);
+	z-index: 10
+}
+
+.movie-q {
+	position: absolute;
+	z-index: 200;
+	bottom: 0;
+	left: 0
+}
+
+.movie-q #showtimesearch {
+	*zoom: 1
+}
+
+.movie-q #showtimesearch:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.movie-q #showtimesearch select {
+	display: none
+}
+
+.movie-q .q-title {
+	width: 220px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+	overflow: hidden
+}
+
+.movie-q .q-title .q-tip {
+	margin-left: 11px;
+	float: left
+}
+
+.movie-q .q-title .q-site {
+	margin-right: 11px;
+	float: right;
+	color: #c6c6c6
+}
+
+.movie-q p {
+	float: left
+}
+
+.movie-q p.c_a5 {
+	display: none
+}
+
+.movie-q .m-city {
+	font-size: 0
+}
+
+.movie-q .m-city input {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/filmnews/filmnews_1bbd9c15.png)
+		0 0 no-repeat scroll;
+	cursor: pointer;
+	line-height: 25px;
+	font-size: 12px;
+	width: 53px;
+	height: 25px;
+	padding-left: 5px;
+	padding-right: 15px;
+	display: inline;
+	border: 0;
+	float: left
+}
+
+.movie-q .m-movie {
+	height: 28px;
+	line-height: 28px;
+	font-size: 0;
+	display: none
+}
+
+.movie-q .movie-list {
+	font-size: 12px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	width: 105px;
+	height: 28px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/filmnews/filmnews_1bbd9c15.png)
+		0 -29px no-repeat scroll
+}
+
+.movie-q .m-title {
+	padding-left: 5px;
+	margin-top: -1px;
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	width: 90px;
+	overflow: hidden
+}
+
+.movie-q .m-list {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	z-index: 202;
+	line-height: 1.5em;
+	text-indent: 0;
+	background: #f9fbfb;
+	border: 1px solid #dbdbdb;
+	border-top: 0;
+	color: #c6c6c6;
+	font-size: 12px;
+	height: 250px;
+	overflow-y: auto;
+	width: 190px
+}
+
+.movie-q .m-list ul li {
+	border-top: 1px solid #dbdbdb;
+	width: 160px
+}
+
+.movie-q .m-list ul li a {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	padding: 0 7px 0 6px;
+	color: #666;
+	cursor: pointer
+}
+
+.movie-q .m-list ul li a:hover {
+	color: #03618f
+}
+
+.movie-q .m-list ul li .m-name {
+	float: left
+}
+
+.movie-q .m-list ul li .m-score {
+	float: right
+}
+
+.movie-q .tr {
+	margin-top: 1px
+}
+
+.movie-q .tr input {
+	float: left
+}
+
+.movie-q .btn_sub {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/filmnews/filmnews_1bbd9c15.png)
+		-78px 0 no-repeat scroll;
+	width: 25px;
+	height: 25px;
+	border: 0;
+	text-indent: -9999px;
+	cursor: pointer
+}
+
+#sou_window {
+	z-index: 204 !important;
+	width: 173px;
+	background: #f9fbfb;
+	border: 1px solid #dbdbdb;
+	border-top: 0;
+	color: #c6c6c6;
+	font-size: 12px
+}
+
+#sou_window div {
+	line-height: 25px;
+	text-indent: 6px
+}
+
+#sou_window .sou_city {
+	ine-height: 1.5em;
+	text-indent: 0
+}
+
+#sou_window .sou_city ul li {
+	height: 21px;
+	width: 160px;
+	padding: 4px 7px 0 6px;
+	border-top: 1px solid #dbdbdb;
+	color: #666;
+	cursor: pointer
+}
+
+#sou_window .sou_city ul li .fl {
+	float: left
+}
+
+#sou_window .sou_city ul li .fr {
+	float: right
+}
+
+#sou_window .sou_city ul li.cur {
+	color: red
+}
+
+#sou_window .sou_city .tc {
+	float: left
+}
+
+.top-list-all {
+	*zoom: 1
+}
+
+.top-list-all:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.top-list-all .poster {
+	padding: 5px 0;
+	*zoom: 1;
+	height: 65px;
+	*height: 63px;
+	_height: 65px;
+	overflow: hidden
+}
+
+.top-list-all .poster:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.top-list-all .poster dl {
+	position: relative;
+	overflow: auto;
+	zoom: 1;
+	*zoom: 1
+}
+
+.top-list-all .poster dl:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.top-list-all .poster dl .trend {
+	top: 9px;
+	right: 3px
+}
+
+.top-list-all .poster dt,.top-list-all .poster dd {
+	float: left
+}
+
+.top-list-all .poster dt {
+	position: relative;
+	margin-right: 12px
+}
+
+.top-list-all .poster dt a:hover {
+	text-decoration: none
+}
+
+.top-list-all .poster dt img {
+	display: block;
+	width: 116px;
+	height: 65px
+}
+
+.top-list-all .poster-no {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/toplistall/toplist_6b94831d.gif)
+		no-repeat transparent -100px -40px
+}
+
+.top-list-all .poster-title {
+	padding-top: 4px;
+	width: 116px;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.top-list-all .poster-title a {
+	color: #333;
+	font-weight: bold
+}
+
+.top-list-all .poster-title a:hover {
+	color: #f00
+}
+
+.top-list-all .trend {
+	display: block;
+	position: absolute;
+	width: 8px;
+	height: 9px;
+	overflow: hidden;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/toplistall/toplist_6b94831d.gif)
+		no-repeat transparent
+}
+
+.top-list-all .rise {
+	background-position: -40px -80px
+}
+
+.top-list-all .down {
+	background-position: -40px -120px
+}
+
+.top-list-all .hold {
+	background-position: -40px -40px
+}
+
+.top-list-all .poster-brief,.top-list-all .poster-info,.top-list-all .poster-praise,.top-list-all .list-typeinfo
+	{
+	color: #777;
+	cursor: default;
+	width: 90px;
+	height: 18px;
+	overflow: hidden
+}
+
+.top-list-all .poster-brief {
+	width: 110px;
+	color: #666
+}
+
+.top-list-all .poster-info,.top-list-all .poster-praise {
+	display: block;
+	padding: 5px 0 0 15px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/toplistall/toplist_6b94831d.gif)
+		no-repeat -100px -72px transparent
+}
+
+.top-list-all .poster-praise {
+	background-position: -100px -102px
+}
+
+.top-list-all .list-typeinfo {
+	padding: 5px 0 0 0
+}
+
+.top-list-all .list {
+	height: 26px;
+	border-bottom: solid 1px #e3e0de;
+	border-top: 1px solid #f8f8f8;
+	font-size: 12px;
+	_overflow: hidden;
+	color: #838383;
+	*float: left;
+	display: block
+}
+
+.top-list-all .list .trend {
+	top: 11px;
+	right: 3px
+}
+
+.top-list-all .list a {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	height: 29px;
+	width: 258px;
+	color: #333
+}
+
+.top-list-all .list a:hover {
+	text-decoration: none;
+	background-color: #d4d4d4;
+	color: #f00
+}
+
+.top-list-all .list a:hover .list-title {
+	text-decoration: underline
+}
+
+.top-list-all .list span {
+	position: absolute;
+	top: 5px;
+	_top: 6px;
+	height: 18px;
+	overflow: hidden
+}
+
+.top-list-all .list .list-no {
+	top: 6px;
+	left: 0;
+	color: #838383;
+	font-weight: bold;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center
+}
+
+.top-list-all .list .topthree {
+	background: #bf0000;
+	color: #e4e4e4
+}
+
+.top-list-all .list .list-title {
+	left: 29px;
+	width: 160px;
+	white-space: nowrap
+}
+
+.top-list-all .list .list-info {
+	right: 33px;
+	width: 48px;
+	color: #777;
+	text-align: right
+}
+
+.top-list-all .list .list-typeinfo {
+	right: 14px;
+	top: 2px;
+	width: 50px;
+	color: #777;
+	text-align: right
+}
+
+.top-list-all .list-2 {
+	border-top: 0
+}
+
+.top-list-all .list-last {
+	height: 29px;
+	border-bottom: 0 none
+}
+
+.corp-site {
+	*zoom: 1;
+	width: 1000px;
+	padding-top: 9px
+}
+
+.corp-site:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.corp-site li {
+	float: left;
+	margin: 0 8px 8px 0
+}
+
+.corp-site li a {
+	display: block;
+	float: left;
+	width: 114px;
+	height: 48px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/corpsite/corpsite_9012fe8c.png)
+		-620px -117px no-repeat;
+	border: 1px solid #dbdbdb
+}
+
+.corp-site h3 {
+	font: bold 1.17em/2 'ËÎÌå';
+	color: #333;
+	margin-bottom: 5px
+}
+
+.corp-site .youku {
+	background-position: -1px -1px
+}
+
+.corp-site .tudou {
+	background-position: -125px -1px
+}
+
+.corp-site .aiqiyi {
+	background-position: -249px -1px
+}
+
+.corp-site .sohu {
+	background-position: -372px -1px
+}
+
+.corp-site .leshi {
+	background-position: -496px -1px
+}
+
+.corp-site .tecent {
+	background-position: -620px -1px
+}
+
+.corp-site .cntv {
+	background-position: -744px -1px
+}
+
+.corp-site .ifeng {
+	background-position: -868px -1px
+}
+
+.corp-site .pptv {
+	background-position: -1px -59px
+}
+
+.corp-site .xunlei {
+	background-position: -125px -59px
+}
+
+.corp-site .wole {
+	background-position: -249px -59px
+}
+
+.corp-site .kuliu {
+	background-position: -372px -59px
+}
+
+.corp-site .m1905 {
+	background-position: -496px -59px
+}
+
+.corp-site .pps {
+	background-position: -620px -59px
+}
+
+.corp-site .sina {
+	background-position: -868px -59px
+}
+
+.corp-site .netease {
+	background-position: -1px -117px
+}
+
+.corp-site .jidong {
+	background-position: -125px -117px
+}
+
+.corp-site .yinyuetai {
+	background-position: -249px -117px
+}
+
+#focusbox {
+	*zoom: 1;
+	width: 708px
+}
+
+#focusbox:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+#focusbox .area-poster-big,#focusbox .area-text-list {
+	float: left;
+	width: 360px;
+	overflow: hidden
+}
+
+#focusbox .area-poster-small {
+	float: right;
+	width: 345px
+}
+
+#chrome_focusCarousel:focus {
+	transition: border linear .2s, box-shadow linear .5s;
+	-moz-transition: border linear .2s, -moz-box-shadow linear .5s;
+	-webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
+	outline: 0;
+	border-color: rgba(241, 39, 242, .75);
+	box-shadow: 0 0 8px rgba(241, 39, 232, .5);
+	-moz-box-shadow: 0 0 8px rgba(241, 39, 232, .5);
+	-webkit-box-shadow: 0 0 8px rgba(241, 39, 232, 3)
+}
+
+#chrome_focusCarousel .fatd-title {
+	color: #FFF;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 17px;
+	height: 40px;
+	overflow: hidden
+}
+
+#chrome_focusCarousel .fatd-actor span {
+	color: #999
+}
+
+#chrome_focusCarousel .fatd-actor b {
+	font-weight: normal;
+	color: #444
+}
+
+#chrome_focusCarousel .fatd-intro {
+	color: #999;
+	overflow: hidden;
+	margin-top: 14px
+}
+
+#chrome_focusCarousel .fatd-play a {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	width: 123px;
+	height: 32px;
+	z-index: 11;
+	background: transparent
+		url(http://video.hao123.com/browse_static/widget/index/chrome_focuscarouselitem/play_btn_a6d4021d.png)
+		0 -32px;
+	text-indent: -999px
+}
+
+#chrome_focusCarousel .fatd-play a:hover {
+	background-position: 0 0
+}
+
+.special-block .bd {
+	margin-left: 30px
+}
+
+.special-block .vi-165h,.special-block .video-item-list .row-last {
+	margin-right: 25px
+}
+
+.special-block .pa-landscape {
+	border-right: 0
+}
+
+.special-block h4 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 22px;
+	font-family: 'ËÎÌå';
+	margin-left: 30px;
+	color: #444
+}
+
+.special-block .video-item {
+	margin-right: 25px;
+	margin-bottom: 0
+}
+
+.special-block .video-item a.v-thumb .v-play-icon {
+	top: 23px;
+	left: 55px
+}
+
+.special-block .special-txt-list {
+	margin-top: 4px;
+	margin-left: 30px;
+	border-top: 1px solid #ddd;
+	width: 925px;
+	overflow: hidden
+}
+
+.special-block .special-txt-list .special-txt-item {
+	float: left;
+	width: 165px;
+	margin-right: 25px;
+	overflow: hidden;
+	height: 26px;
+	line-height: 26px
+}
+
+.special-block .special-txt-list .special-txt-item .special-txt-link {
+	color: #333
+}
+
+.special-block .special-txt-list .special-txt-item .special-txt-link:hover,.special-block .special-txt-list .special-txt-item .special-txt-link:active
+	{
+	color: #03618f
+}
+
+.special-block .special-txt-list .last {
+	margin-right: 0
+}
+
+.bottom-search {
+	padding-top: 34px;
+	text-align: center
+}
+
+.bottom-search .search-form .text {
+	width: 405px
+}
+
+.bottom-search .search-form .s_ipt_wr {
+	width: 408px;
+	height: 30px;
+	display: inline-block;
+	border: 1px solid #b6b6b6;
+	border-color: #a7a7a7 #C7C7C7 #cdcdcd #C3C3C3;
+	background: #FFF;
+	vertical-align: top;
+	margin-right: 1px;
+	*margin-right: 5px
+}
+
+.bottom-search #kw2 {
+	width: 397px;
+	height: 22px;
+	font: 16px/22px arial;
+	margin: 5px 0 0 5px;
+	outline: 0;
+	background-color: white;
+	border: 0;
+	padding: 0
+}
+
+.bottom-search .search-form .submit {
+	width: 95px;
+	height: 32px;
+	padding-top: 2px\9;
+	font-size: 14px;
+	background: #f1f1f1
+		url(http://list.video.baidu.com/pc_static/open/suggestion/bg_s.png);
+	cursor: pointer;
+	vertical-align: top;
+	border: 0
+}
+
+.bottom-search .search-form .s_btn_h {
+	background-position: -100px 0
+}
+
+.bottom-search .r {
+	padding-top: 30px;
+	position: relative
+}
+
+.bottom-search .search-form .s_btn_wr {
+	width: 97px;
+	height: 34px;
+	display: inline-block;
+	*position: relative;
+	z-index: 0;
+	vertical-align: top
+}
+
+.tabpicarea .tang-title .tang-title-item-next {
+	background-image: none
+}
+
+.tabpicarea .tang-body .tang-body-item {
+	display: none
+}
+
+.tabpicarea .tang-body .tang-body-item-selected {
+	display: block
+}
+
+.recommend-list {
+	width: 980px;
+	margin: 0 auto 10px;
+	padding-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+	*zoom: 1
+}
+
+.recommend-list:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.recommend-list .slogan {
+	*zoom: 1
+}
+
+.recommend-list .slogan:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.recommend-list .slogan .change {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend_hao123/bg_rp_list_ecb9ec9d.png)
+		no-repeat 0 -54px;
+	color: #0c5f8d;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	font-size: 14px;
+	margin: 0 21px 0 20px;
+	padding-left: 22px;
+	cursor: pointer;
+	color: #0053a5;
+	line-height: 20px\9;
+	font-family: Microsoft YaHei;
+	text-decoration: none
+}
+
+.recommend-list .slogan .change:hover {
+	text-decoration: underline
+}
+
+.recommend-list .slogan .change-info {
+	float: left;
+	display: inline;
+	margin: 0 0 0 30px;
+	font-size: 14px;
+	color: #666;
+	line-height: 20px\9;
+	font-family: Microsoft YaHei
+}
+
+.recommend-list .item-bd {
+	overflow: hidden;
+	width: 980px;
+	height: 268px;
+	position: relative
+}
+
+.recommend-list .item-bd .item-list {
+	*zoom: 1;
+	overflow: hidden;
+	margin-right: -300px;
+	position: relative
+}
+
+.recommend-list .item-bd .item-list:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.recommend-list .item-bd .item-list li {
+	position: relative;
+	padding: 5px 42px 14px 0;
+	overflow: visible;
+	float: left;
+	display: inline;
+	width: 127px
+}
+
+.recommend-list .item-bd .item-list li.findex {
+	*z-index: 99
+}
+
+.recommend-list .item-bd .item-list li .item-title {
+	overflow: hidden;
+	float: left;
+	width: 90px;
+	font-size: 14px;
+	height: 21px;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 5px 0 0;
+	overflow: hidden;
+	text-align: left;
+	color: #333;
+	font-weight: bold
+}
+
+.recommend-list .item-bd .item-list li .item-title:hover {
+	color: #03618f;
+	text-decoration: none
+}
+
+.recommend-list .item-bd .item-list li .poster {
+	float: left;
+	width: 127px;
+	height: 171px;
+	position: relative
+}
+
+.recommend-list .item-bd .item-list li .poster .p-cover {
+	width: 123px;
+	height: 167px;
+	border: 2px solid #ccc;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	visibility: hidden
+}
+
+.recommend-list .item-bd .item-list li .poster:hover {
+	border: 0
+}
+
+.recommend-list .item-bd .item-list li .poster:hover .p-cover {
+	visibility: visible
+}
+
+.recommend-list .mode-hd .link-more {
+	float: right;
+	color: #1456a6;
+	line-height: 19px;
+	font-size: 12px;
+	margin-right: 20px
+}
+
+.reason {
+	display: none
+}
+
+.recommend-list .item-bd .item-list .fav-wrapper {
+	position: relative;
+	float: right;
+	display: inline;
+	width: 16px;
+	height: 14px;
+	padding: 5px;
+	z-index: 10
+}
+
+.recommend-list .item-bd .item-list .fav {
+	float: left;
+	display: inline;
+	width: 16px;
+	height: 14px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend_hao123/heart_bg_5913e10f.gif)
+		no-repeat;
+	margin-top: 4px;
+	cursor: pointer
+}
+
+.recommend-list .item-bd .item-list .fav.cur {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend_hao123/heart_bg_5913e10f.gif)
+		-24px 0 no-repeat
+}
+
+.recommend-list .reason {
+	position: absolute;
+	z-index: 999;
+	left: -107px;
+	top: -23px;
+	width: 155px;
+	display: none
+}
+
+.recommend-list .item-bd .item-list .reason-bd {
+	display: block;
+	width: 145px;
+	height: 20px;
+	padding: 2px;
+	*height: 18px;
+	*padding-top: 4px;
+	height: 18px\9;
+	background: #fc8536;
+	border: 1px solid #f60;
+	border-left: none;
+	border-right: 0;
+	color: #fff;
+	font-size: 12px;
+	text-align: center
+}
+
+.recommend-list .item-bd .item-list .reason-bd em {
+	display: inline;
+	margin-left: 2px;
+	font-weight: bold
+}
+
+.recommend-list .item-bd .item-list .reason-bd .more {
+	display: inline
+}
+
+.recommend-list .item-bd .item-list .reason-bd i {
+	display: inline;
+	margin-left: 4px;
+	width: 10px;
+	height: 9px;
+	margin-top: 5px
+}
+
+.recommend-list .item-bd .item-list .topic {
+	color: #999;
+	float: left;
+	height: 54px;
+	overflow: hidden;
+	margin-top: 2px;
+	width: 125px;
+	word-break: break-all;
+	font-size: 12px;
+	clear: both
+}
+
+.recommend-list .mode-ft {
+	overflow: hidden
+}
+
+.recommend-list .mode-ft .control-toggle {
+	float: right;
+	display: block;
+	margin-right: 20px;
+	padding: 0 0 0 18px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend_hao123/bg_rp_list_ecb9ec9d.png)
+		0 -15px no-repeat;
+	color: #1456a6;
+	line-height: 19px
+}
+
+.recommend-list .mode-ft .control-toggle2 {
+	float: right;
+	display: block;
+	margin-right: 20px;
+	padding: 0 0 0 18px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/bdrecommend_hao123/bg_rp_list_ecb9ec9d.png)
+		0 3px no-repeat;
+	color: #1456a6;
+	line-height: 19px
+}
+
+#kinds-bar {
+	height: 123px;
+	background:
+		url(http://video.hao123.com/browse_static/index/index_sa0/mod_bg_v_4a613b45.png)
+		-1109px 0 repeat-y
+}
+
+#kinds-bar .tang-carousel-item {
+	float: left;
+	width: 243px;
+	height: 123px;
+	overflow: hidden;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/kindsbar/split_a2c0c0b5.png)
+		100% 32px no-repeat
+}
+
+#kinds-bar .tang-carousel-item dl {
+	width: 214px;
+	height: 110px;
+	overflow: hidden;
+	padding: 0 17px 0 14px
+}
+
+#kinds-bar .tang-carousel-item dt {
+	position: relative;
+	height: 30px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #fcfcfc;
+	background:
+		url(http://video.hao123.com/browse_static/index/index_sa0/titles_b53f59b3.png)
+		0 0 no-repeat;
+	line-height: 29px
+}
+
+#kinds-bar .tang-carousel-item dt .s-title {
+	display: block;
+	height: 29px;
+	overflow: hidden;
+	border-bottom: 1px solid #e3e0de;
+	text-indent: -999px
+}
+
+#kinds-bar .tang-carousel-item dt .link-more {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-family: \5B8B\4F53, Arial, sans-serif
+}
+
+#kinds-bar .tang-carousel-item .kinds-movie {
+	background-position: 4px -299px
+}
+
+#kinds-bar .tang-carousel-item .kinds-tv {
+	background-position: 4px -329px
+}
+
+#kinds-bar .tang-carousel-item .kinds-tvshow {
+	background-position: 4px -359px
+}
+
+#kinds-bar .tang-carousel-item .kinds-cartoon {
+	background-position: 4px -389px
+}
+
+#kinds-bar .tang-carousel-item dd {
+	width: 224px;
+	overflow: hidden;
+	padding-left: 3px;
+	line-height: 22px;
+	word-wrap: break-word
+}
+
+#kinds-bar .tang-carousel-item dd a {
+	color: #333
+}
+
+#kinds-bar .tang-carousel-item dd a:hover {
+	color: #F00
+}
+
+#kinds-bar .tang-carousel-item .kinds-planA a,#kinds-bar .tang-carousel-item .kinds-planB a
+	{
+	display: inline-block;
+	margin-right: 10px
+}
+
+#kinds-movie
+ 
+.kinds-planA-sec
+,
+#kinds-tv
+ 
+.kinds-planA-sec
+,
+{
+margin-bottom
+:
+5px
+}
+#kinds-cartoon.tang-carousel-item {
+	background: 0
+}
+
+#focusAside .top-list {
+	padding: 0
+}
+
+#focusAside .top-list .poster {
+	padding: 7px 0 5px 16px
+}
+
+#focusAside .top-list .poster dl {
+	height: 65px;
+	overflow: hidden
+}
+
+#focusAside .top-list .poster dt {
+	float: left;
+	width: 116px;
+	height: 65px
+}
+
+#focusAside .top-list .poster dt img {
+	display: block;
+	width: 116px;
+	height: 65px
+}
+
+#focusAside .top-list .poster dd {
+	float: none;
+	margin-left: 126px;
+	color: #c5c5c5
+}
+
+#focusAside .top-list .poster .poster-brief {
+	height: 57px;
+	padding-top: 1px
+}
+
+#focusAside .top-list .poster .poster-title {
+	width: auto;
+	overflow: visible;
+	padding-right: 4px;
+	white-space: normal
+}
+
+#focusAside .top-list .poster .poster-title a {
+	display: block;
+	color: #c5c5c5
+}
+
+#focusAside .top-list .list {
+	height: 26px
+}
+
+#focusAside .top-list .list a {
+	position: static;
+	height: 25px;
+	overflow: hidden;
+	border-bottom: 1px solid #2c2c2c;
+	padding: 1px 0 1px 34px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/toplist/icon_toplist_e46130a0.png)
+		18px 8px no-repeat;
+	color: #c5c5c5;
+	line-height: 23px;
+	text-decoration: none;
+	white-space: nowrap
+}
+
+#focusAside .top-list .list a:hover,#focusAside .top-list .list a:active
+	{
+	text-decoration: underline
+}
+
+.live-list {
+	height: 290px
+}
+
+.live-list .live-list-content {
+	position: relative;
+	overflow: hidden;
+	height: 200px
+}
+
+.live-list .live-list-hd {
+	border-bottom: 1px dashed #e3e3e3;
+	margin-bottom: 15px
+}
+
+.live-list .tang-title {
+	float: left;
+	margin-left: 12px
+}
+
+.live-list .live-update {
+	padding-left: 20px;
+	float: right;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	margin-right: 10px;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	color: #636363;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/live/live_c42987d2.png)
+		0 9px no-repeat scroll
+}
+
+.live-list .live-update:hover {
+	color: red
+}
+
+.live-list .live-tv-list {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	*zoom: 1
+}
+
+.live-list .live-tv-list:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.live-list .live-tv-list li {
+	float: left;
+	width: 245px;
+	height: 100px;
+	overflow: hidden
+}
+
+.live-list .live-tv-list li .live-tv-link {
+	display: block;
+	height: 25px
+}
+
+.live-list .live-tv-list li .live-tv-program {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	padding: 0 10px
+}
+
+.live-list .live-tv-list li .live-tv-program.current {
+	color: #bf6701;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/live/live_c42987d2.png)
+		0 -23px no-repeat scroll
+}
+
+.live-list .live-tv-list li .live-tv-program.dis-active {
+	color: #666
+}
+
+.mod-hot-keyword .hd {
+	position: relative;
+	height: 30px;
+	border-bottom: 1px solid #fcfcfc
+}
+
+.mod-hot-keyword .hd h3 {
+	height: 29px;
+	overflow: hidden;
+	border-bottom: 1px solid #e3e0de;
+	text-indent: -999px
+}
+
+.mod-hot-keyword .hd .des {
+	position: absolute;
+	top: 0;
+	left: 100px;
+	color: #666;
+	line-height: 28px
+}
+
+.mod-hot-keyword .bd {
+	height: 213px;
+	overflow: hidden;
+	padding: 10px 0 0 15px
+}
+
+.mod-hot-keyword .bd a {
+	float: left;
+	width: 122px;
+	height: 30px;
+	overflow: hidden;
+	line-height: 30px;
+	color: #333;
+	font-size: 14px;
+	white-space: nowrap;
+	cursor: pointer
+}
+
+.mod-hot-keyword .bd a span {
+	float: left
+}
+
+.mod-hot-keyword .bd a:hover {
+	color: #F00;
+	text-decoration: underline
+}
+
+.mod-hot-keyword .bd .w2 {
+	color: #245fb3;
+	font-weight: bold
+}
+
+.mod-hot-keyword .bd .w3 {
+	color: #245fb3;
+	font-weight: bold
+}
+
+.mod-hot-keyword .bd .w3 span {
+	padding-right: 19px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/hotkeyword/hot_85d7a0e5.gif)
+		100% 0 no-repeat
+}
+
+.toplistall-hao123 {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/toplistall_hao123/bg_68e228aa.png)
+		0 0 no-repeat scroll;
+	display: inline;
+	float: left;
+	width: 265px;
+	height: 334px;
+	position: relative
+}
+
+.toplistall-hao123 .top-hao123-list {
+	margin: 0 1px 1px 0;
+	border-left: 1px solid #383838; //
+	border-right: 1px solid #383838;
+	overflow: hidden
+}
+
+.toplistall-hao123 .top-item {
+	border-top: 1px solid #383838
+}
+
+.toplistall-hao123 .top-item .top-link {
+	display: block;
+	height: 27px;
+	line-height: 27px;
+	position: relative;
+	padding-left: 31px;
+	padding-right: 5px;
+	overflow: hidden;
+}
+
+.toplistall-hao123 .top-item .top-link .top-no {
+	position: absolute;
+	left: 4px;
+	width: 16px;
+	text-align: center;
+	color: #666;
+	font-weight: bold;
+	height: 16px;
+	line-height: 16px;
+	top: 50%;
+	margin-top: -8px;
+	cursor: pointer
+}
+
+.toplistall-hao123 .top-item .top-link .top-no-hight {
+	background: #e5650a;
+	color: #fff
+}
+
+.toplistall-hao123 .top-item .top-link .top-title {
+	color: #c5c5c5;
+	font-size: 14px;
+}
+
+.toplistall-hao123 .top-item .top-link .top-desc {
+	position: absolute;
+	right: 19px;
+	top: 0;
+	color: #8f8f8f;
+	cursor: pointer
+}
+
+.toplistall-hao123 .top-item .top-link:hover {
+	background: #000
+}
+
+.toplistall-hao123 .top-item .top-link:hover .top-title {
+	color: red
+}
+
+.toplistall-hao123 .top-item.top-poster-item {
+	padding-left: 118px;
+	position: relative;
+	height: 70px;
+	overflow: hidden
+}
+
+.toplistall-hao123 .top-item.top-poster-item .top-poster-link {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	display: block;
+	border: 1px solid #383838;
+	width: 100px;
+	height: 60px;
+	overflow: hidden
+}
+
+.toplistall-hao123 .top-item.top-poster-item h3 {
+	padding: 3px 0
+}
+
+.toplistall-hao123 .top-item.top-poster-item .top-title-link {
+	font-size: 14px;
+	color: #c5c5c5
+}
+
+.toplistall-hao123 .top-item.top-poster-item .top-desc {
+	color: #8f8f8f;
+	padding-right: 5px
+}
+
+.toplistall-hao123 .top-item.top-poster-item .top-desc .top-detail {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	color: #c5c5c5
+}
+
+.toplistall-hao123 .top-item.top-poster-item .top-desc .top-detail:hover
+	{
+	color: red
+}
+
+.toplistall-hao123 .top-movie-rank {
+	position: absolute;
+	top: 0;
+	right: -23px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/toplistall_hao123/bg_68e228aa.png)
+		-267px 0 no-repeat scroll;
+	text-indent: -9999px;
+	width: 24px;
+	height: 86px
+}
+
+.focuspicarea {
+	width: 345px;
+	overflow: hidden
+}
+
+.focuspicarea ul {
+	width: 346px
+}
+
+.focuspicarea li {
+	float: left;
+	margin: 0 3px 2px 0;
+	_display: inline
+}
+
+.focuspicarea li a {
+	display: block;
+	position: relative;
+	width: 170px;
+	height: 114px;
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.focuspicarea li a img {
+	width: 170px;
+	height: 114px
+}
+
+.focuspicarea li a .s-meta {
+	position: absolute;
+	top: 91px;
+	left: 0;
+	width: 100%;
+	height: 43px
+}
+
+.focuspicarea li a .v-hot,.focuspicarea li a .v-new {
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 45px;
+	height: 46px
+}
+
+.focuspicarea li a .v-hot {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/focuspicarea/video_hot_dace48d8.png)
+		0 0 no-repeat scroll;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/browse_static/widget/index/focuspicarea/video_hot_dace48d8.png')
+}
+
+.focuspicarea li a .v-new {
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/focuspicarea/video_new_847704d0.png)
+		0 0 no-repeat scroll;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/browse_static/widget/index/focuspicarea/video_new_847704d0.png')
+}
+
+.focuspicarea li a .s-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 43px;
+	background: #000;
+	opacity: .7;
+	filter: alpha(opacity = 70)
+}
+
+.focuspicarea li a .s-play {
+	visibility: hidden;
+	position: absolute;
+	top: -2px;
+	right: -3px;
+	width: 30px;
+	height: 30px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/focuscarousel/focuscarousel_e3ee2649.png)
+		0 -205px no-repeat;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/browse_static/widget/index/focuscarousel/btn_play_s_3a2700b5.png')
+}
+
+.focuspicarea li a .s-title,.focuspicarea li a .s-intro {
+	position: absolute;
+	left: 8px
+}
+
+.focuspicarea li a .s-title {
+	top: 2px;
+	color: #f5f5f5;
+	font-family: \5b8b\4f53, Arial;
+	font-size: 13px
+}
+
+.focuspicarea li a .s-intro {
+	visibility: hidden;
+	top: 20px;
+	color: #c5c5c5;
+	font-size: 12px
+}
+
+.focuspicarea li a .s-control {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background:
+		url(http://video.hao123.com/browse_static/widget/index/focuscarousel/focuscarousel_e3ee2649.png)
+		-999px -999px no-repeat;
+	cursor: pointer
+}
+
+.focuspicarea li a.hover,.focuspicarea li a:hover,.focuspicarea li a:active
+	{
+	text-decoration: none
+}
+
+.focuspicarea li a.hover .s-meta,.focuspicarea li a:hover .s-meta,.focuspicarea li a:active .s-meta
+	{
+	top: 71px
+}
+
+.focuspicarea li a.hover .s-play,.focuspicarea li a.hover .s-intro,.focuspicarea li a:hover .s-play,.focuspicarea li a:hover .s-intro,.focuspicarea li a:active .s-play,.focuspicarea li a:active .s-intro
+	{
+	visibility: visible
+}

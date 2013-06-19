@@ -1,0 +1,639 @@
+html body {
+	background: #fbfbfb
+}
+
+a:hover,a:active {
+	color: #03618f;
+	text-decoration: none
+}
+
+.nav a:hover,.nav a:active {
+	color: #FFF
+}
+
+.nav_sub a:hover,.nav_sub a:active {
+	color: #d9e7f1
+}
+
+#main {
+	width: 984px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top:10px;
+}
+
+#main .footer a:hover,#main .footer a:active {
+	text-decoration: underline
+}
+
+.chan-sec {
+	margin-bottom: 15px;
+	background:
+		url(http://video.hao123.com/browse_static/index/hao123_index_sa1/line_1bb9ef24.png)
+		left top no-repeat;
+	padding-top: 20px;
+}
+
+.chan-sec .tabpicarea .tang-title .tang-title-item a,.chan-sec .tabtoplist .tang-title .tang-title-item a
+	{
+	background-color: #f8f8f8
+}
+
+.chan-sec .tabtoplist .tabtoplist-hd {
+	margin-top: 11px
+}
+
+.chan-sec .sec-main {
+	width: 730px;
+	margin-right: 0
+}
+
+.chan-sec .sec-aside {
+	float: right;
+	width: 264px;
+	margin-right: -18px
+}
+
+.chan-sec .chan-sec-ft {
+	clear: both;
+	height: 10px;
+	overflow: hidden;
+	font-size: 1px;
+	line-height: 1px
+}
+
+.pa-normal,.pa-first-screen,.pa-landscape {
+	margin: 7px 0;
+	padding: 0;
+	border-right: 1px solid #ddd
+}
+
+.pa-normal a,.pa-first-screen a,.pa-landscape a {
+	color: #444
+}
+
+.pa-normal a:link,.pa-normal a.visited,.pa-first-screen a:link,.pa-first-screen a.visited,.pa-landscape a:link,.pa-landscape a.visited
+	{
+	color: #333
+}
+
+.pa-normal a:hover,.pa-normal a:active,.pa-first-screen a:hover,.pa-first-screen a:active,.pa-landscape a:hover,.pa-landscape a:active
+	{
+	color: #03618f
+}
+
+.pa-normal .video-item .v-desc .v-s-intro {
+	color: #888
+}
+
+.pa-first-screen-list {
+	width: 417px
+}
+
+.pa-first-screen-focus {
+	width: 259px;
+	margin: 0 32px 0 0
+}
+
+.pa-first-screen-focus .focus-img {
+	width: 259px
+}
+
+.pa-first-screen-focus .focus-img span.title-text,.pa-first-screen-focus .focus-img span.title-bg
+	{
+	width: 229px;
+	padding: 0 15px;
+	overflow: hidden
+}
+
+.pa-first-screen-focus .focus-img span.title-text-wrapper {
+	width: 229px
+}
+
+#searchBoxWrapper {
+	background-color: #FFF
+}
+
+#searchBoxWrapper .newheader {
+	margin: 0 auto;
+	width: 984px
+}
+
+#navbarWrapper {
+	background: #025a9e
+		url(http://list.video.baidu.com/zhuanti/test_nav/nav_bg_200w_b.png)
+		repeat-x 0 -34px
+}
+
+#navbarWrapper .nav {
+	margin: 0 auto;
+	width: 984px
+}
+
+#navbarWrapper .nav_main,#navbarWrapper .nav_sub {
+	background-image: none
+}
+
+.nav_main li.first a.current span,.nav_main li.first a.current:hover span
+	{
+	background-position: 0 -238px
+}
+
+.nav_main li.first a.current span {
+	padding-left: 20px
+}
+
+#secMini .sec-main-inner,#secMovie .sec-main,#secTV .sec-main,#secMovie .sec-aside-inner,#secTV .sec-aside-inner
+	{
+	height: 500px
+}
+
+#secMini .sec-aside-inner {
+	height: 256px;
+	overflow: hidden
+}
+
+#secTamasha .sec-main,#secCartoon .sec-main,#secTamasha .sec-aside-inner,#secCartoon .sec-aside-inner
+	{
+	height: 270px
+}
+
+#kindsBar {
+	margin-bottom: 4px
+}
+
+.sec-aside .hd {
+	position: relative;
+	height: 29px;
+	margin: 0 13px 0 11px
+}
+
+.sec-aside .hd h3 {
+	height: 28px;
+	overflow: hidden;
+	color: #312e2c;
+	font: 20px/1 Î¢ÈíÑÅºÚ;
+	background:
+		url(http://video.hao123.com/browse_static/index/hao123_index_sa1/icons_3904c197.png)
+		0 -49px no-repeat;
+	text-indent: 20px
+}
+
+.sec-aside .hd .anchor-more {
+	position: absolute;
+	top: 2px;
+	right: 9px;
+	font: 12px/18px \5B8B\4F53, Arial, sans-serif
+}
+
+.sec-aside .mod-hot-keyword .bd {
+	font-family: ËÎÌå
+}
+
+.sec-aside .mod-hot-keyword .hd .des {
+	left: 126px;
+	color: #666;
+	line-height: 21px
+}
+
+.sec-aside .mod-hot-keyword .hd h3 {
+	border: 0
+}
+
+.video-item .v-desc {
+	text-align: center
+}
+
+.video-item .v-desc .v-title {
+	font-weight: bold
+}
+
+.video-item a.v-thumb .v-play-icon {
+	display: none;
+	top: 49px;
+	left: 30px
+}
+
+.video-item a.v-thumb:hover .v-play-icon {
+	display: block;
+	_display: none
+}
+
+.video-item a.v-thumb .v-play-icon,.info-first-screen-focus .focus-img .v-play-icon,.pa-first-screen-focus .focus-img .v-play-icon
+	{
+	display: none;
+	width: 54px;
+	height: 54px;
+	background:
+		url(http://video.hao123.com/browse_static/index/hao123_index_sa1/playicon_23ba34fb.png)
+		50% 50% no-repeat
+}
+
+.video-item a.v-thumb:hover .v-play-icon,.info-first-screen-focus .focus-img:hover .v-play-icon,.pa-first-screen-focus .focus-img:hover .v-play-icon
+	{
+	display: block;
+	_display: none
+}
+
+#secMini .video-item a.v-thumb .v-play-icon {
+	display: none;
+	top: 23px;
+	left: 55px
+}
+
+#secMini .video-item a.v-thumb:hover .v-play-icon {
+	display: block;
+	_display: none
+}
+
+.info-first-screen-focus .focus-img .v-play-icon {
+	display: none;
+	top: 73px;
+	left: 133px
+}
+
+.info-first-screen-focus .focus-img:hover .v-play-icon {
+	display: block;
+	_display: none
+}
+
+.pa-first-screen-focus .focus-img .v-play-icon {
+	display: none;
+	top: 54px;
+	left: 97px
+}
+
+.pa-first-screen-focus .focus-img:hover .v-play-icon {
+	display: block;
+	_display: none
+}
+
+.video-item a.v-thumb .v-play-mask,.info-first-screen-focus .focus-img .v-play-mask,.pa-first-screen-focus .focus-img .v-play-mask
+	{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+	filter: alpha(Opacity = 50);
+	_display: none !important
+}
+
+.video-item a.v-thumb:hover .v-play-mask,.info-first-screen-focus .focus-img:hover .v-play-mask,.pa-first-screen-focus .focus-img:hover .v-play-mask
+	{
+	display: block;
+	_display: none !important
+}
+
+.top-list {
+	padding: 0 10px 0 12px
+}
+
+.top-list .poster {
+	margin-bottom: 4px;
+	padding-top: 8px
+}
+
+.top-list .poster dt {
+	margin-right: 9px
+}
+
+.top-list .poster dt a {
+	display: block;
+	width: 116px;
+	height: 65px
+}
+
+.top-list .poster-title {
+	width: 107px;
+	margin-bottom: 1px
+}
+
+.top-list .poster-brief {
+	width: 107px;
+	margin-bottom: 3px
+}
+
+.top-list .list {
+	float: none;
+	height: 27px;
+	*height: 24px;
+	border-top: 0
+}
+
+.top-list .list a {
+	width: auto;
+	height: 27px;
+	*height: 24px;
+	color: #333;
+	line-height: 16px
+}
+
+.top-list .list a:hover {
+	background: 0;
+	color: #F00
+}
+
+.top-list .list .list-no {
+	top: 6px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	background: #cbcbcb;
+	color: #FFF;
+	font-weight: normal;
+	line-height: 15px;
+	text-align: center
+}
+
+.top-list .list .no1,.top-list .list .no2,.top-list .list .no3 {
+	background: #f96c10
+}
+
+.top-list .list .list-title {
+	top: 4px;
+	left: 25px;
+	height: 16px
+}
+
+.top-list .list .list-info {
+	top: 3px;
+	height: 16px
+}
+
+.top-list .list .trend {
+	top: 7px
+}
+
+.corp-site {
+	padding-top: 20px;
+	background:
+		url(http://video.hao123.com/browse_static/index/hao123_index_sa1/line_1bb9ef24.png)
+		left top no-repeat
+}
+
+.corp-site h3 {
+	height: 30px;
+	overflow: hidden;
+	color: #312e2c;
+	font: 20px/29px Î¢ÈíÑÅºÚ;
+	margin-bottom: 10px
+}
+
+#kindsBar #kinds-bar {
+	background: 0
+}
+
+#kindsBar #kinds-bar .tang-carousel-item dt {
+	border: 0;
+	background: 0
+}
+
+#kindsBar #kinds-bar .tang-carousel-item dt .s-title {
+	border: 0;
+	color: #312e2c;
+	font: 16px/29px Î¢ÈíÑÅºÚ;
+	text-indent: 0
+}
+
+#main_id {
+	width: 980px;
+	overflow: hidden;
+	margin-left: 2px;
+	padding: 4px 0 11px
+}
+
+#secMini.chan-sec {
+	padding-top: 12px
+}
+
+#secMini .sec-main,#secMini .sec-aside {
+	padding-top: 10px
+}
+
+#secMini .sec-aside {
+	background-position: -723px 0
+}
+
+#secMini .sec-aside-inner {
+	background-position: -728px 0
+}
+
+#secMini .sec-aside .chan-sec-ft {
+	background-position: -723px 100%
+}
+
+.popular {
+	float: right;
+	width: 238px;
+	height: 217px;
+	overflow: hidden;
+	padding: 9px 0 0 0
+}
+
+.popular a {
+	height: 102px;
+	overflow: hidden;
+	margin-bottom: 13px
+}
+
+.popular img {
+	width: 238px;
+	height: 102px
+}
+
+#focusWrapper {
+	position: relative;
+	min-width: 984px;
+	overflow: hidden;
+	margin-bottom: 18px
+}
+
+#focusWrapper .inner-wrapper {
+	position: relative;
+	min-width: 984px;
+	overflow: hidden;
+	padding: 14px 0 7px
+}
+
+#focus {
+	position: relative;
+	width: 979px;
+	margin: 0 auto;
+	padding: 0 3px 0 2px;
+	*zoom: 1
+}
+
+#focus:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+#focus .sec-main {
+	float: left;
+	width: 708px;
+	padding-right: 6px;
+	background: #191919
+}
+
+#focus .link-lastday-left,#focus .link-lastday-right {
+	position: absolute;
+	top: -14px;
+	width: 1000px;
+	height: 376px;
+	outline: 0;
+	_display: none
+}
+
+#focus .link-lastday-left {
+	left: -1010px
+}
+
+#focus .link-lastday-right {
+	right: -1010px
+}
+
+#focusAside .sub-hd {
+	height: 31px
+}
+
+#focusAside .sub-hd a {
+	float: left;
+	width: 129px;
+	height: 31px;
+	background:
+		url(http://video.hao123.com/browse_static/index/hao123_index_sa1/focus_tab_bg_c72a58dc.png)
+		0 0 repeat-x;
+	color: #999;
+	font: bold 14px/30px Arial, sans-serif;
+	text-align: center;
+	text-decoration: none
+}
+
+#focusAside .sub-hd a.link-first {
+	margin-right: 1px
+}
+
+#focusAside .sub-hd a.current {
+	background: #272727;
+	color: #FFF
+}
+
+#focusAside .sub-bd {
+	height: 291px;
+	padding: 2px;
+	background: #272727
+}
+
+#focusAside .tabtoplistall .tang-title {
+	border: 0;
+	background: #3e3e3e
+}
+
+#focusAside .tabtoplistall .tang-title .tang-title-item {
+	width: 49px;
+	border-right: solid 1px #272727
+}
+
+#focusAside .tabtoplistall .tang-title .first {
+	width: 53px
+}
+
+#focusAside .top-list-all .list {
+	float: none;
+	height: 25px;
+	*height: 22px
+}
+
+#focusAside .top-list-all .list a {
+	width: auto;
+	height: 25px;
+	*height: 22px
+}
+
+#focusAside .top-list-all .list .list-no {
+	top: 5px
+}
+
+#focusAside .top-list-all .list .list-title,#focusAside .top-list-all .list .list-typeinfo
+	{
+	top: 3px
+}
+
+.video-item .vt-114v .v-update,.video-item .vt-125v .v-update {
+	text-align: center;
+	text-indent: 0
+}
+
+.mod-hot-keyword .bd a:hover,.pa-landscape .pa-landscape-list .video-item .v-title a:hover,.top-list-all .list a:hover,.top-list .list a:hover,.top-list-all .poster-title a:hover,.focuslist li a:hover,poster-title,.focuslist li a:hover,#kinds-bar .tang-carousel-item dd a:hover
+	{
+	color: #03618f;
+	text-decoration: none
+}
+
+.top-list-all .list a:hover .list-title,.focuslist li,.focuspicarea li a,.top-list-all .list a,.top-list-all .poster-title a,.top-list .list a:hover .list-title
+	{
+	text-decoration: none
+}
+
+#focusCarouselNew .tang-carousel-container .tang-carousel-element .tang-carousel-item
+	{
+	text-decoration: none
+}
+
+.footer {
+	font-family: ËÎÌå
+}
+
+.show_for_ipad {
+	display: none
+}
+
+.ipad .show_for_pc {
+	display: none
+}
+
+.ipad .show_for_ipad {
+	display: block
+}
+
+.tabpicarea .tang-title .tang-title-item-selected a,.tabtoplist .tang-title .tang-title-item-selected a,.round-corner-tabpicarea .tang-title .tang-title-item-selected a
+	{
+	background-image:
+		url(http://video.hao123.com/browse_static/index/hao123_index_sa1/bg_tab_b09bad28.png)
+}
+
+.round-corner-tabpicarea .hd-inner h3 {
+	background:
+		url(http://video.hao123.com/browse_static/index/hao123_index_sa1/icons_3904c197.png)
+		0 -9px no-repeat scroll
+}
+
+#secMovie {
+	overflow: visible
+}
+
+#secMovie .sec-main {
+	position: relative;
+	z-index: 100;
+	margin-right: -10px
+}
+
+#header {
+	background: #fff
+}
+
+.anchor-more,#kindsBar dt a {
+	text-decoration: none
+}
+
+.anchor-more:hover,#kindsBar dt a:hover {
+	text-decoration: underline
+}

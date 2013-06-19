@@ -1,0 +1,2038 @@
+html body {
+	background: #fff
+}
+
+#main {
+	width: 984px;
+	margin: 0 auto
+}
+
+.content-sec {
+	padding-bottom: 35px;
+	border-bottom: 1px solid #DDD;
+	*zoom: 1
+}
+
+.content-sec:after {
+	content: "\0020";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden
+}
+
+.content-sec-loading {
+	background:
+		url(/browse_static/new_detail_hao123/layout/loading_85086680.gif) 50%
+		200px no-repeat
+}
+
+.sec-main {
+	float: left;
+	width: 100%
+}
+
+.sec-main-inner {
+	padding: 0 12px 0 282px
+}
+
+.sec-aside {
+	float: left;
+	width: 246px;
+	margin-left: -972px;
+	height: 700px
+}
+
+.mod-main-detail {
+	margin-bottom: 15px
+}
+
+.mod-main-detail .hd {
+	height: 21px;
+	border-bottom: 1px solid #DDD;
+	padding: 0 0 1px;
+	line-height: 21px;
+	*padding: 1px 0 0
+}
+
+.mod-main-detail .hd h2 {
+	float: left;
+	color: #333;
+	font-size: 14px;
+	font-weight: bold
+}
+
+.mod-main-detail .hd .more {
+	float: right
+}
+
+.mod-main-detail .hd a.more,.mod-main-detail .hd .more a {
+	color: #999;
+	font-size: 12px
+}
+
+#navbarWrapper {
+	margin-bottom: 14px
+}
+
+.clearfix {
+	*zoom: 1;
+	overflow: visible
+}
+
+.clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.seprate {
+	border-top: solid 1px #e4e4e4;
+	padding-top: 20px
+}
+
+.splitTitle {
+	font-size: 14px;
+	font-family: Arial, ËÎÌå;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 15px;
+	margin-right: 20px
+}
+
+#specialArea {
+	background-color: #FFF
+}
+
+.special-area {
+	position: relative;
+	color: #666;
+	padding: 25px 0 11px;
+	border-bottom: 1px solid #e4e4e4;
+	zoom: 1;
+	line-height: normal
+}
+
+.special-area-first {
+	padding-top: 4px
+}
+
+.special-area-last {
+	border: 0 none
+}
+
+.special-area .poster-sec {
+	width: 180px;
+	float: left
+}
+
+.special-area .info-sec {
+	float: left;
+	width: 690px
+}
+
+#specialArea .sp-expander {
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #dedede;
+	cursor: pointer;
+	background: transparent
+		url(http://list.video.baidu.com/serialAld/keybg.png) repeat-x;
+	margin-bottom: 25px
+}
+
+#specialArea .sp-expander span {
+	display: block;
+	width: 120px;
+	margin: 0 auto;
+	color: #666;
+	background: transparent
+		url(http://list.video.baidu.com/static/image/multiSeason_bg_webkit.gif)
+		no-repeat 105px -108px
+}
+
+#specialArea .sp-expander-opened span {
+	background-position: 105px -145px
+}
+
+.special-area .ep-picker-wrapper {
+	margin-top: 20px
+}
+
+.special-area .ep-picker-site {
+	position: relative;
+	zoom: 1;
+	*padding-bottom: 10px;
+	_padding-bottom: 5px
+}
+
+.special-area .title-wrapper {
+	position: relative
+}
+
+.special-area .title-wrapper .title-cont {
+	/**width: 350px;**/
+	float: left
+}
+
+.special-area .title-wrapper h3,.special-area .title-wrapper .update-info,.special-area .title-wrapper .alias,.special-area .title-wrapper .update_freq,.special-area .title-wrapper .rating-tag,.special-area .title-wrapper .rating-info
+	{
+	float: left
+}
+
+.special-area .title-wrapper .update-info {
+	margin-top: 14px;
+	margin-left: 10px
+}
+
+.special-area .title-wrapper .alias,.special-area .title-wrapper .update_freq,.special-area .title-wrapper .rating-tag
+	{
+	margin-top: 14px;
+	margin-left: 22px
+}
+
+.special-area .title-wrapper .update-info b.newest {
+	color: #bf0000
+}
+
+.special-area .title-wrapper .alias {
+	color: #999
+}
+
+.special-area .title-wrapper .alias span {
+	color: #bf0000
+}
+
+.special-area .title-wrapper .update_freq {
+	color: #c60a00
+}
+
+.special-area .title-wrapper .rating-tag {
+	color: #999
+}
+
+.special-area .title-wrapper h3 span {
+	font-size: 24px;
+	text-decoration: none;
+	font-family: "Microsoft YaHei", "SimHei";
+	color: #222;
+	font-weight: normal
+}
+
+.special-area .type-tag {
+	position: absolute;
+	float: right;
+	right: 0;
+	top: 5px;
+	font-size: 12px;
+	background-color: #858585;
+	color: #FFF;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	*line-height: 22px;
+	padding: 0 9px
+}
+
+.special-area .type-tag b {
+	position: absolute;
+	font-size: 0;
+	width: 1px;
+	height: 1px;
+	display: block;
+	background-color: #FFF
+}
+
+.special-area .type-tag b.tl {
+	left: 0;
+	top: 0
+}
+
+.special-area .type-tag b.tr {
+	right: 0;
+	top: 0
+}
+
+.special-area .type-tag b.bl {
+	left: 0;
+	bottom: 0
+}
+
+.special-area .type-tag b.br {
+	right: 0;
+	bottom: 0
+}
+
+.sp-more-container {
+	border-top: 1px solid #e4e4e4
+}
+
+.special-area .rating-info {
+	font-family: Garamond, 'Times New Roman';
+	color: #F00;
+	font-size: 28px;
+	line-height: 22px;
+	font-weight: bold;
+	position: relative;
+	width: 34px;
+	top: 7px;
+	right: 3px;
+	z-index: 10;
+	display: block
+}
+
+.special-area .rating-info span {
+	font-size: 14px;
+	height: 14px;
+	position: relative;
+	line-height: 14px;
+	top: -8px;
+	font-weight: bold
+}
+
+.special-area .sinfo {
+	font-family: "ËÎÌå";
+	font-size: 13px;
+	line-height: 20px;
+	overflow: hidden;
+	vertical-align: baseline;
+	word-wrap: break-word
+}
+
+.special-area .greytxt {
+	color: #777
+}
+
+.special-area .plaintxt {
+	color: #444
+}
+
+.special-area .alias-name {
+	color: #bf0000
+}
+
+.special-area .pr14 {
+	padding-right: 14px
+}
+
+.special-area .darktxt {
+	color: #000
+}
+
+.special-area .sinfo a {
+	color: #00c;
+	margin: 0 3px
+}
+
+.special-area .onel {
+	margin-left: 1px
+}
+
+.special-area .topm12 {
+	margin-top: 12px
+}
+
+.special-area .nobmargin {
+	margin-bottom: 0;
+	margin-top: 12px
+}
+
+.special-area .toggle {
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	margin-bottom: -2px;
+	*margin-bottom: 2px;
+	text-align: center;
+	width: 14px
+}
+
+.special-area .toggle-close {
+	background: url("http://list.video.baidu.com/ald/foldkey.gif") no-repeat
+		scroll 0 0 transparent;
+	cursor: pointer
+}
+
+.special-area .toggle-open {
+	background: url("http://list.video.baidu.com/ald/foldkey.gif") no-repeat
+		scroll 0 -30px transparent;
+	cursor: pointer
+}
+
+.special-area .vblong,.special-area .vbshort {
+	display: none
+}
+
+.special-area .site-tab {
+	border-bottom: 1px solid #dedede
+}
+
+.special-area .site-tab-item {
+	float: left;
+	position: relative;
+	top: 0;
+	border: 1px solid #FFF;
+	border-width: 1px 1px 0;
+	border-color: #FFF #FFf #dedede;
+	padding: 0 8px;
+	background-color: #FFF;
+	cursor: pointer;
+	height: 22px
+}
+
+.special-area .site-tab-item-current {
+	border-color: #dedede #DEDEDE #FFF;
+	top: 1px
+}
+
+.special-area .site-tab-item a:link,.special-area .site-tab-item a:visited,.special-area .site-tab-item a:hover,.special-area .site-tab-item a:active
+	{
+	color: #666;
+	text-decoration: none
+}
+
+.special-area .site-tab-item-current span {
+	top: -1px
+}
+
+.special-area .site-tab-item span {
+	display: block;
+	height: 22px;
+	position: relative;
+	line-height: 22px;
+	padding-left: 20px;
+	float: left
+}
+
+.special-area .site-tab-item span img {
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 0
+}
+
+.special-area .site-tab-one,.special-area .site-tab-one .site-tab-item,.special-area .site-tab-one .site-tab-item-current
+	{
+	border: 0 none
+}
+
+.special-area .site-tab-text-tag {
+	padding: 0;
+	cursor: default
+}
+
+.special-area .no-cur-pointer {
+	cursor: default
+}
+
+.special-area .site-tab-text-tag span {
+	padding: 0
+}
+
+.special-area .ep-history-tip {
+	position: absolute;
+	height: 24px;
+	line-height: 20px;
+	overflow: hidden;
+	top: -26px;
+	left: 0;
+	font-weight: normal;
+	width: 108px;
+	background-image:
+		url(http://list.video.baidu.com/serialAld/multiwatching.gif);
+	display: block;
+	padding-left: 6px;
+	z-index: 9;
+	color: #333;
+	font-size: 12px
+}
+
+.special-area b.ep-history-tip a,.special-area b.ep-history-tip a:link,.special-area b.ep-history-tip a:visited,.special-area b.ep-history-tip a:hover,.special-area b.ep-history-tip a:active
+	{
+	font-weight: normal;
+	color: #03C;
+	font-size: 13px;
+	height: auto;
+	line-height: 20px;
+	width: auto;
+	border: 0 none;
+	display: inline;
+	background-image: none;
+	background-color: transparent;
+	text-decoration: underline
+}
+
+.poster-area .share-bar {
+	float: left;
+	margin: 4px 0;
+	width: 164px;
+	height: 28px;
+	text-align: right
+}
+
+.poster-area .share-bar #bdshare .bds_more {
+	background: url(http://list.video.baidu.com/serialAld/sharebar_bg.png)
+		right 0 no-repeat !important;
+	padding: 0;
+	display: inline-block;
+	width: 27px;
+	height: 28px;
+	zoom: 1
+}
+
+.poster-area .share-bar #bdshare .bds_tsina {
+	display: inline-block;
+	width: 137px;
+	height: 28px;
+	padding: 0;
+	background: url(http://list.video.baidu.com/serialAld/sharebar_bg.png) 0
+		-29px no-repeat !important
+}
+
+.poster-area .share-bar #bdshare .bds_tsina:hover {
+	background-position: left 0 !important;
+	opacity: 1;
+	filter: alpha(opacity = 100)
+}
+
+.poster-area .share-bar #bdshare .bds_more:hover {
+	background-position: right -29px !important;
+	opacity: 1;
+	filter: alpha(opacity = 100)
+}
+
+.sp-movie-area .more-site-cont {
+	float: left;
+	clear: both;
+	padding-top: 10px;
+	font-size: 12px
+}
+
+.guess_your_favor {
+	margin-top: 4px;
+	width: 330px;
+	float: right;
+	background: #f6f6f6;
+	font-family: 'Î¢ÈíÑÅºÚ';
+	color: #969696
+}
+
+.guess_your_favor a,.guess_your_favor .collection:visited,.guess_your_favor .beloved:visited
+	{
+	color: #969696;
+	font-family: 'Î¢ÈíÑÅºÚ';
+	text-decoration: none
+}
+
+.guess_your_favor .collection,.guess_your_favor .beloved,.guess_your_favor .shareto,.guess_your_favor .score
+	{
+	float: left;
+	margin-left: -1px;
+	padding: 0 15px;
+	border: 1px solid #ccc;
+	line-height: 25px;
+	height: 25px;
+	cursor: pointer;
+	display: inline-block;
+	width: auto
+}
+
+.guess_your_favor .score {
+	overflow: hidden;
+	cursor: text;
+	width: 61px
+}
+
+.guess_your_favor .score .score-info {
+	position: relative;
+	top: -1px;
+	font-style: normal;
+	vertical-align: middle;
+	position: relative;
+	font-family: Garamond, 'Times New Roman';
+	color: red;
+	font-size: 24px;
+	font-weight: bold
+}
+
+.guess_your_favor .score .score-info span {
+	position: relative;
+	top: -10px;
+	font-size: 12px
+}
+
+.guess_your_favor .collection {
+	background:
+		url(/browse_static/new_detail_hao123/ui/specialarea/saCSS/guess_icon_70c994f1.png)
+		15px 7px no-repeat;
+	padding-left: 35px;
+	margin-left: 0
+}
+
+.guess_your_favor .beloved {
+	background:
+		url(/browse_static/new_detail_hao123/ui/specialarea/saCSS/guess_icon_70c994f1.png)
+		15px -16px no-repeat;
+	padding-left: 35px
+}
+
+.guess_your_favor .shareto {
+	background:
+		url(/browse_static/new_detail_hao123/ui/specialarea/saCSS/guess_icon_70c994f1.png)
+		59px -38px no-repeat;
+	padding-right: 35px;
+	position: relative
+}
+
+.guess_your_favor .shareto .bdshare_t {
+	position: absolute;
+	left: -1px;
+	top: 25px;
+	display: none;
+	width: 171px;
+	border: 1px solid #CCC;
+	padding-left: 7px;
+	background: #f6f6f6
+}
+
+.guess_your_favor .shareto .bdshare_t a {
+	padding-left: 24px
+}
+
+.guess_your_favor .has-collected,.guess_your_favor .has-loved,.guess_your_favor .collection:hover,.guess_your_favor .beloved:hover
+	{
+	background-color: #cee4ff;
+	border-color: #89bffe;
+	z-index: 10;
+	position: relative
+}
+
+.sp-movie-area {
+	overflow: hidden;
+	padding-bottom: 20px
+}
+
+.sp-movie-area .AL_f {
+	float: left
+}
+
+.sp-movie-area .AL_f:after {
+	content: '\20';
+	display: block;
+	height: 0;
+	clear: both
+}
+
+.sp-movie-area .AL_link {
+	font-size: 13px;
+	width: 100%;
+	_height: 62px;
+	zoom: 1 overflow:hidden
+}
+
+.sp-movie-area .AL_link .no-more {
+	font: bold 14px/25px "ºÚÌå";
+	color: #333;
+	border: 1px dashed #ccc;
+	background: #fafafa;
+	float: left;
+	padding: 0 20px;
+	margin-top: 20px
+}
+
+.sp-movie-area .AL_play {
+	background:
+		url("/browse_static/new_detail_hao123/layout/btn_play_f6a3c7b7.png") 0
+		0 no-repeat;
+	width: 128px;
+	height: 40px;
+	display: block;
+	margin-top: 21px;
+	margin-right: 10px;
+	float: left
+}
+
+.sp-movie-area .AL_play:hover {
+	background:
+		url("/browse_static/new_detail_hao123/layout/btn_play_f6a3c7b7.png") 0
+		-40px no-repeat
+}
+
+.sp-movie-area .AL_play_no {
+	width: 168px;
+	height: 40px;
+	display: block;
+	margin-top: 21px;
+	margin-right: 10px;
+	float: left
+}
+
+.sp-movie-area .AL_res {
+	clear: both
+}
+
+.sp-movie-area .AL_res a {
+	outline: 0;
+	text-decoration: none;
+	background-position: right top;
+	line-height: 21px;
+	height: 21px;
+	display: inline-block;
+	float: left;
+	color: #497bc4;
+	width: 80px
+}
+
+.sp-movie-area .AL_res a div {
+	background-position: left top;
+	_padding: 5px 0 0 0;
+	white-space: nowrap
+}
+
+.sp-movie-area .AL_res img {
+	padding: 0 4px 2px 0;
+	vertical-align: text-top
+}
+
+.sp-movie-area .more-site-title {
+	color: #777;
+	display: block;
+	line-height: 22px;
+	_padding-top: 2px;
+	font-size: 12px;
+	float: left
+}
+
+.sp-movie-area .more-site-list {
+	padding-left: 85px
+}
+
+.result {
+	width: 19.9%;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	text-align: center;
+	line-height: 148%;
+	margin-bottom: 9px;
+	margin-bottom: 2px;
+	height: 165;
+	zoom: 1
+}
+
+.result .crop {
+	width: 128px;
+	height: 96px;
+	padding: 0;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	margin-bottom: 2px;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.result .crop .v-play-mask {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: .5;
+	filter: alpha(Opacity = 50);
+	z-index: 20
+}
+
+.result .crop .v-play-icon {
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 42px;
+	height: 42px;
+	margin: -21px 0 0 -21px;
+	z-index: 21;
+	background:
+		url(http://video.baidu.com/browse_static/index/index_sa0/playicon_23ba34fb.png)
+		50% 50% no-repeat;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://list.video.baidu.com/ald/detail_play_icon_s.png",
+		sizingMethod="crop")
+}
+
+.zt .crop {
+	background: url(http://list.video.baidu.com/static/image/result_zt.gif)
+		no-repeat 1px 0
+}
+
+.result a.crop:hover {
+	background-position: 1px -109px;
+	cursor: pointer
+}
+
+.result a.crop:hover .v-play-mask,.result a.crop:hover .v-play-icon {
+	visibility: visible;
+	zoom: 1
+}
+
+.result a.crop:hover img {
+	border-color: #82b1e7
+}
+
+.result .img {
+	width: 128px;
+	height: 96px;
+	border: 1px solid #dcdcdc
+}
+
+.result-link {
+	word-break: break-all;
+	width: 136px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	overflow: hidden
+}
+
+.result .hd,.result .time,.icon-bg {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	height: 17px;
+	line-height: 17px;
+	color: #fff;
+	overflow: hidden
+}
+
+.result .hd {
+	left: 0;
+	background: url(http://list.video.baidu.com/static/image/hd.gif)
+		no-repeat left top;
+	width: 32px;
+	text-indent: -9999px
+}
+
+.result .time {
+	font-size: 12px;
+	font-weight: bolder;
+	text-align: center;
+	right: 0;
+	right: 11px\9;
+	bottom: 4px\9;
+	_bottom: 3px;
+	_right: 10px;
+	font-family: Arial;
+	overflow: hidden
+}
+
+.result .time-wrap {
+	position: relative
+}
+
+.time-wrap .text {
+	position: relative;
+	z-index: 11;
+	padding: 0 5px;
+	height: 17px;
+	line-height: 17px
+}
+
+.icon-bg {
+	background-color: #000;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+	width: 100%;
+	height: 17px;
+	z-index: 10;
+	top: 0;
+	left: 0
+}
+
+.result .title {
+	margin: 0;
+	padding: 0
+}
+
+.result-meta,.result-meta a {
+	color: #999
+}
+
+.result-meta .site {
+	font-size: 11px
+}
+
+.result-meta .type {
+	height: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666;
+	width: 130px;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.result-meta .type a {
+	color: #666
+}
+
+.sp_resultsList {
+	margin-top: 10px
+}
+
+.sp_resultsList .result .img {
+	border: 0
+}
+
+.sp_resultsList .result-link,.sp_resultsList .result-link font,.sp_resultsList .result-link:visited
+	{
+	color: #444;
+	text-decoration: none;
+	font-size: 12px
+}
+
+.sp_resultsList .result-link:hover {
+	text-decoration: underline
+}
+
+.sp_resultsList .more-cover:hover {
+	background: #eaf0f8
+}
+
+.sp_resultsList .result a.crop:hover {
+	z-index: 0;
+	cursor: pointer
+}
+
+.sp_resultsList .more-cover {
+	width: 128px;
+	height: 96px;
+	background: #fff;
+	text-decoration: none;
+	opacity: .9;
+	filter: alpha(opacity = 90);
+	position: absolute;
+	left: 4px;
+	top: 0;
+	z-index: 15;
+	zoom: 1
+}
+
+.sp_resultsList .more-words {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	zoom: 1;
+	z-index: 17;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	text-align: center;
+	color: #333;
+	font: bold 15px/96px \5fae\8f6f\96c5\9ed1;
+	background: url(http://list.video.baidu.com/serialAld/get_more.png)
+		no-repeat center center
+}
+
+.sp_resultsList .more-words em {
+	display: none
+}
+
+.dnaTags {
+	*zoom: 1
+}
+
+.dnaTags:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.dnaTags span.greytxt {
+	float: left;
+	height: 24px;
+	line-height: 24px
+}
+
+.dnaTags a:link,.dnaTags a:hover,.dnaTags a:visited {
+	float: left;
+	margin: 0 5px 2px 0;
+	background:
+		url(/browse_static/new_detail_hao123/ui/specialarea/saCSS/bg_3699060f.png)
+		0 0 no-repeat;
+	color: #205db8;
+	height: 24px;
+	line-height: 24px;
+	text-decoration: none
+}
+
+.dnaTags a:link span,.dnaTags a:hover span,.dnaTags a:visited span {
+	display: block;
+	padding: 0 5px;
+	background:
+		url(/browse_static/new_detail_hao123/ui/specialarea/saCSS/bg_3699060f.png)
+		100% -25px no-repeat
+}
+
+.dnaTags a:hover,.dnaTags a:active {
+	background-position: 0 -50px
+}
+
+.dnaTags a:hover span,.dnaTags a:active span {
+	background-position: 100% -75px
+}
+
+#similarMovie {
+	font: 12px/1.5 arial, ËÎÌå, georgia, verdana, helvetica, sans-serif;
+	position: relative;
+	width: 100%;
+	padding: 0 0 10px;
+	overflow: hidden;
+	*zoom: 1
+}
+
+#similarMovie .tang-carousel {
+	background: #fff
+}
+
+#similarMovie .tang-carousel-container {
+	position: relative;
+	float: left;
+	width: 560px;
+	height: auto;
+	overflow: hidden
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element {
+	height: 130px
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item
+	{
+	float: left;
+	display: inline;
+	width: 120px;
+	height: 120px;
+	padding: 10px
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item-selected
+	{
+	background: skyblue
+}
+
+#similarMovie .tang-carousel-btn {
+	top: 33px
+}
+
+#similarMovie a.tang-carousel-btn-prev:link,#similarMovie a.tang-carousel-btn-prev:visited
+	{
+	background-position: 0 0
+}
+
+#similarMovie a.tang-carousel-btn-next:link,#similarMovie a.tang-carousel-btn-next:visited
+	{
+	background-position: -42px 0
+}
+
+#similarMovie a.tang-carousel-btn-prev:hover {
+	background-position: 0 -42px;
+	background-color: #0084ff
+}
+
+#similarMovie a.tang-carousel-btn-next:hover {
+	background-position: -42px -42px;
+	background-color: #0084ff
+}
+
+#similarMovie a.tang-carousel-btn-prev-disabled:link,#similarMovie a.tang-carousel-btn-prev-disabled:visited,#similarMovie a.tang-carousel-btn-prev-disabled:hover,#similarMovie a.tang-carousel-btn-prev-disabled:active
+	{
+	background-position: 0 -84px
+}
+
+#similarMovie a.tang-carousel-btn-next-disabled:link,#similarMovie a.tang-carousel-btn-next-disabled:visited,#similarMovie a.tang-carousel-btn-next-disabled:hover,#similarMovie a.tang-carousel-btn-next-disabled:active
+	{
+	background-position: -42px -84px
+}
+
+#similarMovie:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+#similarMovie a:hover,#similarMovie a:active {
+	outline: 0;
+	text-decoration: none;
+	zoom: 1
+}
+
+#similarMovie #dotted {
+	display: none
+}
+
+#similarMovie .tang-carousel-btn {
+	position: absolute;
+	text-indent: -9999px;
+	height: 142px;
+	width: 8px;
+	overflow: hidden;
+	background:
+		url(/browse_static/widget/new_detail_hao123/similarMovie/btn_e109863d.png)
+		no-repeat transparent;
+	margin-top: 0
+}
+
+#similarMovie .tang-carousel-btn-prev,#similarMovie .tang-carousel-btn-prev-disabled
+	{
+	left: 0
+}
+
+#similarMovie .tang-carousel-btn-next,#similarMovie .tang-carousel-btn-next-disabled
+	{
+	right: 0
+}
+
+#similarMovie a.tang-carousel-btn-prev:link,#similarMovie a.tang-carousel-btn-prev:visited
+	{
+	background-position: 0 46%
+}
+
+#similarMovie a.tang-carousel-btn-next:link,#similarMovie a.tang-carousel-btn-next:visited
+	{
+	background-position: -16px 46%
+}
+
+#similarMovie a.tang-carousel-btn-prev:hover {
+	background-position: -8px 46%;
+	background-color: #fff
+}
+
+#similarMovie a.tang-carousel-btn-next:hover {
+	background-position: -24px 46%;
+	background-color: #fff
+}
+
+#similarMovie a.tang-carousel-btn-prev-disabled:link,#similarMovie a.tang-carousel-btn-prev-disabled:visited,#similarMovie a.tang-carousel-btn-prev-disabled:hover,#similarMovie a.tang-carousel-btn-prev-disabled:active
+	{
+	background-position: 0 46%;
+	cursor: default
+}
+
+#similarMovie a.tang-carousel-btn-next-disabled:link,#similarMovie a.tang-carousel-btn-next-disabled:visited,#similarMovie a.tang-carousel-btn-next-disabled:hover,#similarMovie a.tang-carousel-btn-next-disabled:active
+	{
+	background-position: -16px 46%;
+	cursor: default
+}
+
+#similarMovie .hd {
+	margin-bottom: 10px
+}
+
+#similarMovie .hd a.more:link,#similarMovie .hd a.more:visited {
+	text-align: right;
+	color: #245fb3
+}
+
+#similarMovie .hd a.more:hover {
+	text-decoration: underline
+}
+
+#similarMovie .tang-carousel {
+	background: 0
+}
+
+#similarMovie .tang-carousel-container {
+	width: 660px;
+	height: 164px;
+	overflow: hidden;
+	margin: 0 25px;
+	display: inline
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element {
+	*zoom: 1
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item
+	{
+	float: left;
+	width: 114px;
+	height: auto;
+	margin-right: 18px;
+	padding: 0
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt
+	{
+	position: relative;
+	font: 12px/18px Arial, \5fae\8f6f\96c5\9ed1, \5b8b\4f53, sans-serif;
+	font-weight: nomal;
+	zoom: 1
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .playicon
+	{
+	position: absolute;
+	left: 59px;
+	top: 23px;
+	background:
+		url(/browse_static/widget/new_detail_hao123/similarMovie/playicon_23ba34fb.png)
+		no-repeat center center transparent;
+	height: 54px;
+	width: 54px;
+	visibility: hidden;
+	_visibility: visible;
+	_background-image: none
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .mask
+	{
+	background-color: #000;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 0;
+	filter: alpha(Opacity = 50);
+	-moz-opacity: .5;
+	opacity: .5;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	zoom: 1
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .subtitbg,#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .year,#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .rating
+	{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 12px;
+	width: 90%;
+	padding: 0 5%;
+	height: 22px;
+	line-height: 22px;
+	cursor: pointer
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .subtitbg
+	{
+	background-color: #000;
+	filter: alpha(Opacity = 60);
+	-moz-opacity: .6;
+	opacity: .6
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .year,#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .rating
+	{
+	color: #FFF;
+	z-index: 4;
+	text-align: left;
+	font-weight: nomal
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .rating
+	{
+	text-align: right
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt .rating em
+	{
+	color: #f6872c
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt a.is_play:hover .playicon
+	{
+	cursor: pointer;
+	visibility: visible;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/browse_static/widget/new_detail_hao123/similarMovie/playicon_23ba34fb.png')
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dt a.is_play:hover .mask
+	{
+	cursor: pointer;
+	visibility: visible
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item dd
+	{
+	width: 114px;
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item .title
+	{
+	width: 100%;
+	text-align: center
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item .title a
+	{
+	color: ##056ea1;
+	font-size: 12px;
+	line-height: 30px
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item .title a:hover
+	{
+	color: #f00;
+	text-decoration: none
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item .sub-title
+	{
+	color: #666
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item img
+	{
+	width: 114px;
+	height: 142px;
+	display: block;
+	zoom: 1
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .last-item
+	{
+	margin-right: 0
+}
+
+#similarMovie .tang-carousel-container .tang-carousel-element .tang-carousel-item-selected
+	{
+	background: 0
+}
+
+.mod-detail-prevue .hd h2 b {
+	display: inline-block;
+	width: 17px;
+	height: 23px;
+	background:
+		url(/browse_static/widget/new_detail_hao123/prevue/dot_06cb8e66.gif)
+		50% 8px no-repeat;
+	vertical-align: middle
+}
+
+.mod-detail-prevue .hd .more {
+	padding-right: 18px;
+	background:
+		url(/browse_static/widget/new_detail_hao123/prevue/foldkey_d6e3d13e.gif)
+		100% 4px no-repeat
+}
+
+.mod-detail-prevue .bd {
+	position: relative;
+	width: 100%;
+	overflow: hidden
+}
+
+.mod-detail-prevue .bd .not-data {
+	padding: 6px 0 1px 6px;
+	color: #666;
+	font-family: \5B8B\4F53, arial, sans-serif;
+	font-size: 13px
+}
+
+.mod-detail-prevue .bd ul {
+	width: 700px;
+	margin-right: -10px
+}
+
+.mod-detail-prevue .bd li {
+	float: left;
+	width: 165px;
+	height: 119px;
+	overflow: hidden;
+	margin: 10px 10px 0 0
+}
+
+.mod-detail-prevue .bd li a.link-pic {
+	display: block;
+	position: relative;
+	width: 165px;
+	height: 96px;
+	text-decoration: none
+}
+
+.mod-detail-prevue .bd li a.link-pic img {
+	width: 165px;
+	height: 96px;
+	vertical-align: top
+}
+
+.mod-detail-prevue .bd li a.link-pic .duration,.mod-detail-prevue .bd li a.link-pic .duration-mask
+	{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 37px;
+	height: 15px;
+	color: #FFF;
+	font: 11px/15px Arial, sans-serif;
+	text-align: center
+}
+
+.mod-detail-prevue .bd li a.link-pic .duration-mask {
+	background: #000;
+	opacity: .6;
+	filter: alpha(opacity = 60)
+}
+
+.mod-detail-prevue .bd li a.link-pic .s-mask {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+	cursor: pointer
+}
+
+.mod-detail-prevue .bd li a.link-pic .s-play {
+	visibility: hidden;
+	position: absolute;
+	left: 61px;
+	top: 28px;
+	height: 42px;
+	width: 42px;
+	background:
+		url(/browse_static/widget/new_detail_hao123/prevue/detail_play_icon_s_23ba34fb.png)
+		no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/browse_static/widget/new_detail_hao123/prevue/detail_play_icon_s_23ba34fb.png",
+		sizingMethod="crop")
+}
+
+.mod-detail-prevue .bd li a.link-pic:hover {
+	_zoom: 1
+}
+
+.mod-detail-prevue .bd li a.link-pic:hover .s-mask,.mod-detail-prevue .bd li a.link-pic:hover .s-play
+	{
+	visibility: visible
+}
+
+.mod-detail-prevue .bd li a.link-title {
+	color: #666;
+	line-height: 23px;
+	text-decoration: none;
+	white-space: nowrap
+}
+
+.mod-detail-prevue .bd li a.link-title .v-type {
+	margin-right: 1px;
+	color: #333
+}
+
+.mod-detail-prevue .bd li a.link-title:hover {
+	text-decoration: underline
+}
+
+.douban {
+	margin-top: 10px
+}
+
+.douban .list .item {
+	padding-bottom: 16px
+}
+
+.douban .list .title-bg {
+	background: none repeat scroll 0 0 #f8f8f8;
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	overflow: hidden
+}
+
+.douban .list .title {
+	font-weight: normal;
+	padding-left: 6px;
+	float: left;
+	display: block
+}
+
+.douban .list .point {
+	color: #e98365;
+	display: inline-block;
+	font-family: "Arial";
+	font-weight: bold;
+	line-height: 22px
+}
+
+.douban .list .grade {
+	height: 18px;
+	position: relative;
+	width: 55px;
+	margin-left: 6px;
+	float: left;
+	display: block
+}
+
+.douban .list .grade-bg,.douban .list .grade-star {
+	display: block;
+	height: 11px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 7px;
+	width: 55px
+}
+
+.douban .list .grade-bg {
+	background:
+		url("/browse_static/widget/new_detail_hao123/douban/commentstar_9b0864a2.png")
+		no-repeat scroll 0 -11px transparent;
+	z-index: 1
+}
+
+.douban .list .grade-star {
+	background:
+		url("/browse_static/widget/new_detail_hao123/douban/commentstar_9b0864a2.png")
+		no-repeat scroll 0 0 transparent;
+	z-index: 2
+}
+
+.douban .list .text {
+	clear: both;
+	color: #666;
+	line-height: 20px;
+	padding-bottom: 11px;
+	text-indent: 2em
+}
+
+.douban .list .nnt-love {
+	color: #999
+}
+
+.douban .list .date {
+	color: #999;
+	line-height: 22px;
+	padding: 0 15px
+}
+
+.douban .list .more-link {
+	padding-left: 10px
+}
+
+.poster-area .bottompic {
+	position: relative;
+	background-color: #F3F8FE;
+    border: 1px solid #DDE2E5;
+    margin-bottom: 8px;
+}
+
+.bottompic strong{
+    border-bottom: 1px solid #DDE2E5;
+    color: #106492;
+    display: block;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 15px;
+}
+
+.bottompic li{
+	background-image: url("http://www.piaohua.com/templets/images/../images/line.gif");
+    background-position: 0 bottom;
+    background-repeat: repeat-x;
+    color: #106492;
+    display: block;
+    height: 43px;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+.poster-area .postera {
+	text-decoration: none;
+	width: 246px;
+	height: 328px;
+	display: block;
+	position: relative
+}
+
+.poster-area .AL_hd {
+	cursor: pointer;
+	background: url("http://list.video.baidu.com/ald/hd_bg_new.png") 0 0
+		no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	*background: 0;
+	*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://list.video.baidu.com/ald/hd_bg_new.png',
+		sizingMethod='crop');
+	width: 52px;
+	height: 52px
+}
+
+.poster-area .AL_bd {
+	display: block;
+	cursor: pointer;
+	background-color: #000;
+	filter: alpha(opacity = 60);
+	opacity: .6;
+	width: 150px;
+	height: 24px;
+	position: absolute;
+	bottom: 6px;
+	left: 6px;
+	overflow: hidden;
+	zoom: 1
+}
+
+.poster-area .AL_time {
+	display: block;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 13px;
+	font-weight: bold;
+	position: absolute;
+	right: 16px;
+	bottom: 4px;
+	text-align: right
+}
+
+.poster-area .postera .bottom-bd {
+	background-color: #000;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+	display: block;
+	height: 24px;
+	opacity: .6;
+	filter: alpha(opacity = 60);
+	overflow: hidden;
+	position: absolute;
+	width: 246px
+}
+
+.poster-area .postera .bottom-update {
+	bottom: 9px;
+	color: #fff;
+	display: block;
+	font-size: 13px;
+	position: absolute;
+	right: 16px;
+	text-align: right
+}
+
+.poster-area .postera .bottom-update span {
+	text-decoration: none
+}
+
+.poster-area .postera .vsingleplaybg {
+	background: black;
+	cursor: pointer;
+	height: 328px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	width: 246px;
+	filter: alpha(Opacity = 50);
+	-moz-opacity: .5;
+	opacity: .5
+}
+
+.poster-area .postera:hover .vsingleplaybg {
+	visibility: visible
+}
+
+.poster-area .postera .vsingleplay {
+	background:
+		url("http://list.video.baidu.com/ald/detail_play_icon_b.png")
+		no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	height: 66px;
+	left: 90px;
+	position: absolute;
+	top: 117px;
+	visibility: hidden;
+	width: 66px;
+	_background: 0
+}
+
+.poster-area .postera img {
+	height: 328px;
+	width: 246px;
+	vertical-align: top
+}
+
+.poster-area .postera:hover .vsingleplay {
+	visibility: visible;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://list.video.baidu.com/ald/detail_play_icon_b.png',
+		sizingMethod='crop')
+}
+
+.poster-area .bottom-innerpic {
+	width: 246px
+}
+
+.poster-area .baidushare {
+	height: 27px;
+	padding-top: 5px
+}
+
+.poster-area .txtcolshare {
+	color: #999
+}
+
+.poster-area .txtshare {
+	display: block;
+	float: left;
+	height: 16px;
+	padding-bottom: 6px;
+	padding-top: 3px
+}
+
+.poster-area span.txtsharemore {
+	display: block;
+	float: left;
+	width: 17px;
+	height: 17px;
+	padding: 0;
+	margin: 0;
+	background: url("http://list.video.baidu.com/ald/shareMore.gif")
+		no-repeat scroll 9px 9px transparent !important
+}
+
+.poster-area .s_intro {
+	margin-top: 8px
+}
+
+.poster-area .s_intro p {
+	line-height: 20px
+}
+
+.poster-area .txtcolinf {
+	color: #666
+}
+
+.poster-area .sinfo {
+	font-family: "ËÎÌå";
+	font-size: 13px;
+	line-height: 20px;
+	overflow: hidden;
+	vertical-align: baseline;
+	word-wrap: break-word
+}
+
+.poster-area .greytxt {
+	color: #777
+}
+
+.poster-area .plaintxt {
+	color: #444
+}
+
+.poster-area .pr14 {
+	padding-right: 14px
+}
+
+.poster-area .darktxt {
+	color: #000
+}
+
+.poster-area .sinfo a {
+	color: #00c;
+	margin: 0 3px
+}
+
+.poster-area .onel {
+	margin-left: 1px
+}
+
+.poster-area .topm12 {
+	margin-top: 12px
+}
+
+.poster-area .nobmargin {
+	margin-bottom: 0;
+	margin-top: 12px
+}
+
+.poster-area .toggle {
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	margin-bottom: -2px;
+	text-align: center;
+	width: 14px
+}
+
+.poster-area .toggle-close {
+	background: url("http://list.video.baidu.com/ald/foldkey.gif") no-repeat
+		scroll 0 0 transparent;
+	cursor: pointer
+}
+
+.poster-area .toggle-open {
+	background: url("http://list.video.baidu.com/ald/foldkey.gif") no-repeat
+		scroll 0 -30px transparent;
+	cursor: pointer
+}
+
+.poster-area .bds_tools a {
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-family: 'ËÎÌå', Arial;
+	height: 16px;
+	padding-bottom: 3px;
+	padding-left: 22px;
+	padding-top: 6px
+}
+
+.poster-area .bds_tools a {
+	background: url("http://bdimg.share.baidu.com/static/images/is.png")
+		no-repeat scroll 0 0 transparent
+}
+
+.poster-area .bds_qzone {
+	background-position: 0 -75px !important
+}
+
+.poster-area .bds_tsina {
+	background-position: 0 -115px !important
+}
+
+.poster-area .bds_bdhome {
+	background-position: 0 -155px !important
+}
+
+.poster-area .bds_renren {
+	background-position: 0 -195px !important
+}
+
+.poster-area .bds_tqq {
+	background-position: 0 -235px !important
+}
+
+.poster-area .bds_kaixin001 {
+	background-position: 0 -275px !important
+}
+
+.poster-area .bds_tqf {
+	background-position: 0 -315px !important
+}
+
+.poster-area .bds_hi {
+	background-position: 0 -355px !important
+}
+
+.poster-area .bds_douban {
+	background-position: 0 -395px !important
+}
+
+.poster-area .bds_tsohu {
+	background-position: 0 -435px !important
+}
+
+.poster-area .bds_msn {
+	background-position: 0 -475px !important
+}
+
+.poster-area .bds_qq {
+	background-position: 0 -515px !important
+}
+
+.poster-area .bds_taobao {
+	background-position: 0 -555px !important
+}
+
+.poster-area .bds_tieba {
+	background-position: 0 -595px !important
+}
+
+.poster-area .bds_buzz {
+	background-position: 0 -635px !important
+}
+
+.poster-area .bds_sohu {
+	background-position: 0 -675px !important
+}
+
+.poster-area .bds_t163 {
+	background-position: 0 -715px !important
+}
+
+.poster-area .bds_qy {
+	background-position: 0 -755px !important
+}
+
+.poster-area .bds_tfh {
+	background-position: 0 -795px !important
+}
+
+.poster-area .bds_hx {
+	background-position: 0 -835px !important
+}
+
+.poster-area .bds_fx {
+	background-position: 0 -875px !important
+}
+
+.poster-area .bds_ff {
+	background-position: 0 -915px !important
+}
+
+.poster-area .bds_xg {
+	background-position: 0 -955px !important
+}
+
+.poster-area .bds_ty {
+	background-position: 0 -995px !important
+}
+
+.poster-area .bds_s51 {
+	background-position: 0 -1035px !important
+}
+
+.poster-area .bds_fl5 {
+	background-position: 0 -1075px !important
+}
+
+.poster-area .bds_fbook {
+	background-position: 0 -1115px !important
+}
+
+.poster-area .bds_twi {
+	background-position: 0 -1155px !important
+}
+
+.poster-area .bds_ms {
+	background-position: 0 -1195px !important
+}
+
+.poster-area .bds_deli {
+	background-position: 0 -1235px !important
+}
+
+.poster-area .bds_s139 {
+	background-position: 0 -1275px !important
+}
+
+.poster-area .bds_zx {
+	background-position: 0 -1315px !important
+}
+
+.poster-area .bds_linkedin {
+	background-position: 0 -1354px !important
+}
+
+.poster-area .bds_copy {
+	background-position: 0 -1393px !important
+}
+
+.poster-area .bds_ifeng {
+	background-position: 0 -1431px !important
+}
+
+.poster-area .bds_tuita {
+	background-position: 0 -1470px !important
+}
+
+.poster-area .bds_meilishuo {
+	background-position: 0 -1549px !important
+}
+
+.poster-area .bds_mogujie {
+	background-position: 0 -1589px !important
+}
+
+.poster-area .bds_diandian {
+	background-position: 0 -1629px !important
+}
+
+.poster-area .bds_huaban {
+	background-position: 0 -1669px !important
+}
+
+.poster-area .bds_leho {
+	background-position: 0 -1709px !important
+}
+
+.poster-area .bds_wealink {
+	background-position: 0 -1749px !important
+}
+
+.poster-area .bds_duitang {
+	background-position: 0 -1789px !important
+}
+
+.poster-area .bds_thx {
+	background-position: 0 -1829px !important
+}
+
+.poster-area .bds_mail {
+	background-position: 0 -1870px !important
+}
+
+.poster-area .bds_print {
+	background-position: 0 -1910px !important
+}
+
+.poster-area .bds_baidu {
+	background-position: 0 -1950px !important
+}
+
+.btn-dl-bro {
+	margin-top: 8px;
+	display: block;
+	width: 247px;
+	height: 42px
+}
+
+.btn-dl-bro a {
+	background:
+		url(/browse_static/new_detail_hao123/ui/specialarea/saCSS/button_9fe5db80.png)
+		0 0 no-repeat;
+	display: inline-block;
+	width: 247px;
+	height: 42px;
+	overflow: hidden;
+	color: #FFF;
+	font-size: 12px;
+	line-height: 42px;
+	text-decoration: none;
+	padding-left: 60px
+}
+
+.btn-dl-bro a:hover {
+	background-position: 0 -84px;
+	text-decoration: none
+}
+
+.btn-dl-bro a:active {
+	background-position: 0 -42px
+}
