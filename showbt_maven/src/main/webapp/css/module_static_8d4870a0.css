@@ -1,0 +1,918 @@
+.bd-content {
+	font: 12px \5B8B\4F53, arial
+}
+
+.bd-content .bd-filter a {
+	font: 12px \5B8B\4F53, arial;
+	color: #558bd9
+}
+
+.bd-content .bd-filter a:visited {
+	color: #558bd9
+}
+
+.bd-content .bd-filter a:focus {
+	color: #558bd9
+}
+
+.bd-content .bd-filter a:hover {
+	color: red
+}
+
+.bd-content .bd-filter a:active {
+	color: #558bd9
+}
+
+.bd-content .bd-filter .bd-filter-header {
+	*zoom: 1;
+	padding-top: 4px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #558bd9
+}
+
+.bd-content .bd-filter .bd-filter-header:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.bd-content .bd-filter .bd-filter-header .bd-channel-title {
+	color: #444;
+	font: 18px \5fae\8f6f\96c5\9ed1, \5B8B\4F53;
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	padding-left: 4px
+}
+
+.bd-content .bd-filter .bd-filter-header .bd-other-channels {
+	float: right;
+	height: 14px;
+	line-height: 14px;
+	padding-top: 6px;
+	*zoom: 1
+}
+
+.bd-content .bd-filter .bd-filter-header .bd-other-channels:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.bd-content .bd-filter .bd-filter-header .bd-other-channels .bd-split {
+	margin: 5px;
+	color: #a7a9ac
+}
+
+.bd-content .bd-filter .bd-filter-content {
+	background: #fdfdfd;
+	border: 1px solid #e5e5e5;
+	-webkit-box-shadow: 0 0 1px #f4f4f4;
+	-moz-box-shadow: 0 0 1px #f4f4f4;
+	box-shadow: 0 0 1px #f4f4f4;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding: 8px 0
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-section {
+	position: relative;
+	*zoom: 1;
+	padding-left: 48px;
+	padding-right: 10px
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-section:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-title {
+	height: 22px;
+	line-height: 22px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 41px;
+	text-align: right;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	color: #444
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-list {
+	line-height: 22px
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-list a {
+	padding-left: 8px;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	text-decoration: none;
+	margin-bottom: 5px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/filter_35155954.png)
+		0 100px no-repeat scroll;
+	font: 12px \5B8B\4F53, arial;
+	line-height: 22px;
+	height: 22px;
+	color: #444
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-list a span {
+	display: inline-block;
+	padding-right: 8px;
+	line-height: 22px;
+	height: 22px;
+	cursor: pointer;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/filter_35155954.png) 0 100px no-repeat scroll
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-list a.hover,.bd-content .bd-filter .bd-filter-content .bd-filter-list a:hover
+	{
+	color: #558bd9;
+	background-position: left 0
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-list a.hover span,.bd-content .bd-filter .bd-filter-content .bd-filter-list a:hover span
+	{
+	background-position: right -53px
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-list a.filter-sel-active
+	{
+	color: #fff;
+	background-position: left -26px
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-list a.filter-sel-active span
+	{
+	background-position: right -79px
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-list a.filter-sel-active:hover
+	{
+	color: #fff;
+	background-position: left -26px
+}
+
+.bd-content .bd-filter .bd-filter-content .bd-filter-list a.filter-sel-active:hover span
+	{
+	background-position: right -79px
+}
+
+.bd-content .bd-filter .bd-filter-bottom {
+	margin-top: 10px;
+	position: relative;
+	z-index: 99;
+	*zoom: 1
+}
+
+.bd-content .bd-filter .bd-filter-bottom:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-order-tip {
+	color: #444;
+	height: 26px;
+	line-height: 26px;
+	top: 0;
+	position: absolute;
+	right: 88px;
+	display: block
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order {
+	top: 0;
+	right: 2px;
+	position: absolute;
+	z-index: 100;
+	border: 1px solid #d4d5d5;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width: 75px
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li {
+	height: 24px;
+	line-height: 24px
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li.dropdown-default
+	{
+	position: relative;
+	font-size: 0
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li.dropdown-default .dropdown-default-text
+	{
+	padding-right: 24px;
+	font-size: 12px
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li.dropdown-default .order-arrow
+	{
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 24px;
+	width: 24px;
+	background: #fbfbfb
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/arrow_40f44716.png)
+		7px 10px no-repeat
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li.dropdown-item
+	{
+	display: none
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li.dropdown-item a:hover
+	{
+	background: #f0f1f2
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li.dropdown-item a.filter-sel-active
+	{
+	background: #fbfbfb
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/arrow_40f44716.png)
+		60px -24px no-repeat
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li.dropdown-item a.filter-sel-active:hover
+	{
+	background: #fbfbfb
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/arrow_40f44716.png)
+		60px -24px no-repeat
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li .filter-sel,.bd-content .bd-filter .bd-filter-bottom .bd-filter-order li .dropdown-default-text
+	{
+	padding-left: 11px;
+	text-decoration: none;
+	color: #444;
+	height: 24px;
+	line-height: 24px;
+	background: #fbfbfb;
+	display: block
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-result {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	color: #a7a9ac
+}
+
+.bd-content .bd-filter .bd-filter-bottom .bd-filter-result .bd-filter-count
+	{
+	color: #ff0202;
+	margin: 0 3px
+}
+
+.bd-content .bd-videos {
+	padding-top: 10px;
+	position: relative;
+	z-index: 20
+}
+
+.bd-content .bd-videos .bd-video-loading {
+	top: 0;
+	left: 0;
+	display: none;
+	position: absolute;
+	width: 984px;
+	z-index: 200
+}
+
+.bd-content .bd-videos .bd-video-loading .bd-video-loading-bg {
+	background: #fff;
+	filter: alpha(opacity =   60);
+	-khtml-opacity: .6;
+	-moz-opacity: .6;
+	opacity: .6;
+	width: 100%;
+	height: 100%
+}
+
+.bd-content .bd-videos .bd-video-loading .bd-video-loading-icon {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 190px;
+	height: 174px;
+	margin-left: -95px;
+	z-index: 202;
+	filter: alpha(opacity =   70);
+	-khtml-opacity: .7;
+	-moz-opacity: .7;
+	opacity: .7;
+	text-indent: -9999px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/loading_af3c7032.gif)
+		center center scroll no-repeat
+}
+
+.bd-content .bd-videos .bd-video-list {
+	*zoom: 1
+}
+
+.bd-content .bd-videos .bd-video-list:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-none .bd-video-none-tip
+	{
+	text-align: center;
+	color: #444;
+	margin: 70px auto 24px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-none .bd-video-refresh {
+	width: 136px;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/refresh_a28c542a.png)
+		0 0 no-repeat scroll;
+	text-indent: -9999px;
+	display: block;
+	margin: 0 auto
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item {
+	display: inline;
+	float: left;
+	width: 138px;
+	padding: 1px;
+	margin: 0 28px 20px 0;
+	position: relative;
+	z-index: 96
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-poster {
+	overflow: hidden;
+	position: relative;
+	z-index: 30;
+	padding: 2px;
+	text-decoration: none;
+	width: 134px;
+	height: 185px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/poster_f31cf533.png)
+		0 0 no-repeat scroll;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/poster_f31cf533.png',
+		enabled='true', sizingMethod='scale')
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-poster .bd-video-link
+	{
+	position: relative;
+	z-index: 0;
+	width: 134px;
+	height: 185px;
+	overflow: hidden;
+	display: block;
+	text-decoration: none
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-poster .bd-video-img
+	{
+	visibility: hidden;
+	cursor: pointer;
+	position: relative
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-poster .bd-video-complete
+	{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 54px;
+	height: 54px;
+	cursor: pointer;
+	z-index: 20;
+	text-indent: -9999px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/complete_9f550ecd.png)
+		0 0 no-repeat scroll;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/complete_9f550ecd.png',
+		enabled='true', sizingMethod='scale')
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-poster .bd-video-rating
+	{
+	position: absolute;
+	cursor: pointer;
+	bottom: 6px;
+	left: 10px;
+	color: #f68e56;
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	z-index: 30
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-poster .bd-video-rating em
+	{
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-poster .bd-video-update
+	{
+	position: absolute;
+	cursor: pointer;
+	bottom: 6px;
+	left: 0;
+	width: 134px;
+	height: 14px;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	color: #fff;
+	z-index: 30
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-poster .bd-video-bg
+	{
+	position: absolute;
+	z-index: 29;
+	cursor: pointer;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/rating_05a1ce95.png)
+		0 0 repeat-x scroll;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/rating_05a1ce95.png',
+		enabled='true', sizingMethod='scale');
+	bottom: 0;
+	left: 0;
+	height: 28px;
+	display: block;
+	width: 134px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta {
+	display: none;
+	position: absolute;
+	top: -4px;
+	height: 201px;
+	width: 428px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail
+	{
+	position: absolute;
+	width: 258px;
+	overflow: hidden;
+	top: 7px;
+	z-index: 102
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-title
+	{
+	padding: 13px 0 8px;
+	font: 18px \5B8B\4F53, arial;
+	width: 210px;
+	height: 25px;
+	line-height: 25px;
+	overflow: hidden;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	color: #558bd9
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-title a
+	{
+	color: #558bd9;
+	font-weight: bold;
+	text-decoration: none
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-rating
+	{
+	position: absolute;
+	color: #f7941d;
+	font: 18px \5B8B\4F53, arial;
+	top: 18px;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	height: 20px;
+	line-height: 20px;
+	right: 16px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-meta-list
+	{
+	*zoom: 1;
+	position: relative;
+	padding-top: 20px;
+	margin-bottom: 15px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-meta-list:after
+	{
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-meta-list li
+	{
+	display: inline;
+	float: left;
+	line-height: 20px;
+	height: 20px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-meta-list li .bd-split
+	{
+	margin-left: 5px;
+	color: #a7a9ac
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-meta-list li .bd-video-tip
+	{
+	color: #a7a9ac
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-meta-list li a
+	{
+	color: #427fd0
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-meta-list li .bd-video-meta-none,.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-meta-list li .bd-video-meta-filter
+	{
+	color: #444
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-meta-list li.bd-video-actors
+	{
+	position: absolute;
+	top: 0;
+	left: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	width: 252px;
+	color: #427fd0
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-intro
+	{
+	line-height: 20px;
+	height: 60px;
+	overflow: hidden;
+	color: #5f5f5f
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-detail .bd-video-intro .bd-video-intro-more
+	{
+	color: #558bd9
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-meta .bd-video-meta-bg
+	{
+	height: 201px;
+	width: 428px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/tip_d6023030.png)
+		0 0 no-repeat scroll;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/tip_d6023030.png',
+		enabled='true', sizingMethod='scale');
+	_background: 0
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-primary {
+	width: 138px;
+	padding-top: 5px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-primary .bd-video-title
+	{
+	font: 14px \5B8B\4F53, arial;
+	width: 134px;
+	overflow: hidden;
+	padding: 0 2px;
+	line-height: 18px;
+	height: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	color: #558bd9;
+	text-align: center
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-primary .bd-video-title a
+	{
+	color: #558bd9;
+	text-decoration: none;
+	font-weight: bold
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-primary .bd-video-s-intro
+	{
+	color: #b2b2b2;
+	text-align: center;
+	font: 12px \5B8B\4F53, arial;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	width: 134px;
+	overflow: hidden;
+	padding: 0 2px;
+	line-height: 18px;
+	height: 18px;
+	overflow: hidden
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-primary .bd-video-actors
+	{
+	margin-top: 5px;
+	font: 12px \5B8B\4F53, arial;
+	width: 134px;
+	overflow: hidden;
+	padding: 0 2px;
+	line-height: 18px;
+	height: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	text-align: center;
+	color: #666
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-primary .bd-video-actors .bd-video-meta-none
+	{
+	color: #666
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item .bd-video-primary .bd-video-actors a
+	{
+	color: #666;
+	margin-right: 2px;
+	line-height: 19px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-meta-left .bd-video-meta
+	{
+	right: -6px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-meta-left .bd-video-meta .bd-video-meta-bg
+	{
+	background-position: right 0
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-meta-left .bd-video-meta .bd-video-detail
+	{
+	right: 155px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-meta-right .bd-video-meta
+	{
+	left: -6px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-meta-right .bd-video-meta .bd-video-detail
+	{
+	left: 155px
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-meta-right .bd-video-meta .bd-video-meta-bg
+	{
+	background-position: left 0
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-item-active
+	{
+	z-index: 97
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-item-active .bd-video-poster
+	{
+	z-index: 99
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-item-active .bd-video-meta
+	{
+	z-index: 98
+}
+
+.bd-content .bd-videos .bd-video-list .bd-video-item.bd-video-item-last
+	{
+	margin-right: 0
+}
+
+.bd-content .bd-pagination {
+	margin-bottom: 30px
+}
+
+.bd-content .bd-pagination .bd-pagination-list {
+	text-align: center
+}
+
+.bd-content .bd-pagination .bd-pagination-list a {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	font: 12px \5B8B\4F53, arial;
+	color: #558bd9;
+	background: #fff;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	padding: 0 10px;
+	margin: 0 3px;
+	border: 1px solid #96b5dd;
+	text-decoration: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px
+}
+
+.bd-content .bd-pagination .bd-pagination-list a:hover {
+	background: #96b5dd;
+	color: #fff
+}
+
+.bd-content .bd-pagination .bd-pagination-list a.filter-sel-active {
+	background: #4c7ab7;
+	color: #fff;
+	border: 1px solid #4c7ab7
+}
+
+.bd-content .bd-pagination .bd-pagination-list a.filter-sel-active:hover
+	{
+	background: #4c7ab7
+}
+
+.bd-content .bd-pagination .bd-pagination-list a.bd-pagination-prev,.bd-content .bd-pagination .bd-pagination-list a.bd-pagination-next
+	{
+	padding: 0 18px
+}
+
+.bd-sidebar {
+	position: fixed;
+	_position: absolute;
+	bottom: 40%;
+	left: 50%;
+	margin-left: 500px;
+	width: 37px;
+	height: 92px;
+	color: red;
+	z-index: 1000
+}
+
+.bd-sidebar .bd-back-top {
+	height: 37px;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/backtop_3c4fa09f.png)
+		0 0 no-repeat scroll;
+	background-position: left 0;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	text-indent: -9999px;
+	width: 37px
+}
+
+.bd-sidebar .bd-back-top:hover {
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/backtop_3c4fa09f.png)
+		0 0 no-repeat scroll;
+	background-position: right 0;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	text-indent: -9999px;
+	width: 37px
+}
+
+.bd-sidebar .bd-feedback {
+	height: 52px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/backtop_3c4fa09f.png)
+		0 0 no-repeat scroll;
+	background-position: left -40px;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	text-indent: -9999px;
+	width: 37px
+}
+
+.bd-sidebar .bd-feedback:hover {
+	background:
+		url(http://video.hao123.com/browse_static/widget/pisces_sub_hao123/content/backtop_3c4fa09f.png)
+		0 0 no-repeat scroll;
+	background-position: right -40px;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	text-indent: -9999px;
+	width: 37px
+}
+
+.bd-subchannel-movie .bd-videos,.bd-subchannel-movie .bd-video-list,.bd-subchannel-movie .bd-video-loading,.bd-subchannel-tvplay .bd-videos,.bd-subchannel-tvplay .bd-video-list,.bd-subchannel-tvplay .bd-video-loading
+	{
+	height: 1100px
+}
+
+.bd-subchannel-movie .bd-video-item,.bd-subchannel-tvplay .bd-video-item
+	{
+	height: 251px
+}
+
+.bd-subchannel-cartoon .bd-videos,.bd-subchannel-cartoon .bd-video-list,.bd-subchannel-cartoon .bd-video-loading,.bd-subchannel-tamasha .bd-videos,.bd-subchannel-tamasha .bd-video-list,.bd-subchannel-tamasha .bd-video-loading
+	{
+	height: 791px
+}
+
+.bd-subchannel-cartoon .bd-video-item,.bd-subchannel-tamasha .bd-video-item
+	{
+	height: 232px
+}

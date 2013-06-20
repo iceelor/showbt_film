@@ -1,0 +1,46 @@
+mphtml body {
+	background: #fff
+}
+
+#main {
+	width: 984px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 10px
+}
+
+.sec-main {
+	float: left;
+	width: 100%
+}
+
+.main-inner {
+	padding-left: 276px
+}
+
+.sec-aside {
+	float: left;
+	width: 252px;
+	margin-left: -984px
+}
+
+.content-sec {
+	padding-bottom: 35px
+}
+
+.content-sec,.video-category .section {
+	zoom: 1
+}
+
+.content-sec:after,.video-category .section:after {
+	content: "\0020";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.footer {
+	border-top: 1px solid #d9d9d9
+}

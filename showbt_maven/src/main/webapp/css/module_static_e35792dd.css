@@ -1,0 +1,594 @@
+.mod-aside {
+	border: 1px solid #dbdbdb
+}
+
+.mod-aside .hd {
+	height: 34px;
+	border: 0;
+	border-bottom: 1px solid #dbdbdb;
+	padding-left: 23px;
+	background:
+		url(/browse_static/widget/new_sub_hao123/video_category/mod_side_hd_bd_82b379f2.png)
+		0 50% repeat-x;
+	line-height: 34px
+}
+
+.video-category {
+	padding: 7px 17px 13px
+}
+
+.video-category .section {
+	padding: 9px 0 8px;
+	*padding-bottom: 14px
+}
+
+.video-category h4 {
+	padding-left: 6px;
+	color: #333;
+	font-size: 12px;
+	font-weight: bold; +
+	padding-top: 3px; +
+	line-height: 15px;
+	_padding-top: 0;
+	_line-height: 18px
+}
+
+.video-category .links a,.video-category .links .current {
+	float: left;
+	height: 15px;
+	margin: 6px 2px;
+	padding: 2px 4px 0;
+	font-family: \5B8B\4F53;
+	line-height: 15px; +
+	padding: 2px 4px 0
+}
+
+.video-category .links a {
+	_background: #FFF
+}
+
+.video-category .links a:link {
+	color: #245fb3
+}
+
+.video-category .links .current,.video-category .links a:hover {
+	background-color: #658fca;
+	color: #fff;
+	text-decoration: none;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px
+}
+
+.video-lists .hd {
+	height: 35px;
+	border-bottom: 1px solid #dbdbdb;
+	line-height: 33px
+}
+
+.video-lists .meta-result {
+	float: right;
+	padding: 2px 24px 0 0;
+	color: #666
+}
+
+.video-lists b {
+	color: #333
+}
+
+.video-lists .tab {
+	float: left;
+	padding-right: 2px
+}
+
+.video-lists .tab li {
+	float: left;
+	width: 74px;
+	margin-right: -1px;
+	font-size: 14px
+}
+
+.video-lists .tab li.current strong,.video-lists .tab li a {
+	display: block;
+	height: 33px;
+	border: 1px solid #dbdbdb;
+	border-bottom: 0;
+	padding-top: 1px;
+	background: #f7f7f7;
+	color: #333;
+	text-decoration: none;
+	text-align: center
+}
+
+.video-lists .tab li a:hover {
+	background: #DDD
+}
+
+.video-lists .tab li.current {
+	position: relative;
+	margin-bottom: -1px
+}
+
+.video-lists .tab li.current strong {
+	height: 34px;
+	background: #FFF
+}
+
+.video-lists .no-result {
+	padding: 16px 0 0 14px;
+	font-size: 14px;
+	line-height: 21px
+}
+
+.video-lists .video-browser-down {
+	float: left;
+	padding: 2px 0 0 15px
+}
+
+.video-lists .video-browser-down a,.video-lists .video-browser-down a:visited
+	{
+	color: #245fb3;
+	font-weight: bold
+}
+
+.page-navgation {
+	padding-top: 8px;
+	text-align: center
+}
+
+.page-navgation a,.page-navgation .cur {
+	display: inline-block;
+	min-width: 20px;
+	height: 20px;
+	margin: 0 2px;
+	border: 1px solid #e7ecf0;
+	padding: 2px;
+	line-height: 20px;
+	text-decoration: none;
+	_width: 20px
+}
+
+.page-navgation .cur {
+	position: relative;
+	min-width: 22px;
+	height: 22px;
+	border: 0;
+	font-weight: bolder;
+	line-height: 22px;
+	_width: 22px
+}
+
+.page-navgation a:hover {
+	background-color: #e9f1f7;
+	text-decoration: none
+}
+
+.page-navgation .disable {
+	visibility: hidden
+}
+
+.page-navgation .page-ctrl,.page-navgation .disable {
+	width: 58px
+}
+
+.video-item {
+	float: left;
+	overflow: hidden
+}
+
+.video-item .v-thumb {
+	display: block;
+	position: relative;
+	overflow: hidden
+}
+
+.video-item .v-thumb:hover {
+	text-decoration: none
+}
+
+.video-item .v-thumb .v-update,.video-item .v-thumb .v-update-bg {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	z-index: 10;
+	color: #FFF;
+	bottom: 0;
+	left: 0;
+	text-indent: 6px;
+	cursor: pointer
+}
+
+.video-item .v-thumb .v-update-bg {
+	background-color: #000;
+	opacity: .35;
+	filter: alpha(opacity = 35);
+	z-index: 1
+}
+
+.video-item .v-thumb .v-duration,.video-item .v-thumb .v-duration-bg {
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	line-height: 15px;
+	position: absolute;
+	z-index: 10;
+	color: #FFF;
+	bottom: 0;
+	right: 0;
+	padding: 0 3px;
+	background: url(http://video.baidu.com/img/duration.png) repeat-x 0 0
+		transparent;
+	_background-image: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.baidu.com/img/duration.png',
+		sizingMethod=  scale)
+}
+
+.video-item .v-site-list {
+	text-align: left;
+	margin-top: 3px
+}
+
+.video-item .v-s-actor,.video-item .v-similar {
+	width: 100%;
+	overflow: hidden;
+	color: #666;
+	white-space: nowrap
+}
+
+.video-item .v-similar a.link-similar {
+	display: block;
+	width: 58px;
+	height: 22px;
+	padding-left: 22px;
+	background:
+		url(/browse_static/widget/new_sub_hao123/videoitem/bg_similar_898b276f.png)
+		-80px 0 no-repeat;
+	color: #333;
+	line-height: 22px;
+	text-decoration: none
+}
+
+.video-item .v-similar a.link-similar:hover,.video-item .v-similar a.link-similar:active
+	{
+	background-position: 0 0
+}
+
+.video-item .v-thumb .v-prevue {
+	background:
+		url(/browse_static/widget/new_sub_hao123/videoitem/prevue_d67da1db.gif)
+		no-repeat 0 0;
+	width: 32px;
+	height: 17px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2
+}
+
+.video-item a.v-thumb .v-play-icon {
+	position: absolute;
+	background: url(http://video.baidu.com/img/play_icon.png) no-repeat 0 0
+		transparent;
+	height: 32px;
+	width: 32px;
+	visibility: hidden;
+	_visibility: visible;
+	_background-image: none
+}
+
+.video-item a.v-thumb:hover .v-play-icon {
+	cursor: pointer;
+	visibility: visible;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://video.baidu.com/img/play_icon.png')
+}
+
+.video-item a.v-thumb .v-shade {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 114px;
+	height: 17px;
+	background-color: #000;
+	opacity: .35;
+	filter: alpha(opacity = 35);
+	z-index: 1
+}
+
+.video-item a.v-thumb .v-drama,.video-item a.v-thumb .v-tidbit {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background:
+		url(/browse_static/widget/new_sub_hao123/videoitem/drama_ab3ea9d7.gif)
+		no-repeat 0 0 transparent;
+	height: 17px;
+	width: 32px;
+	z-index: 2
+}
+
+.video-item a.v-thumb .v-tidbit {
+	background-image:
+		url(/browse_static/widget/new_sub_hao123/videoitem/tidbit_9a41f8eb.gif)
+}
+
+.video-item a.v-thumb .v-thd {
+	position: absolute;
+	right: 4px;
+	bottom: 0;
+	color: #FFF;
+	z-index: 2; +
+	bottom: -2px;
+	_bottom: 0
+}
+
+.video-item .rating {
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.vi-130v {
+	width: 130px;
+	margin: 0 34px 22px 0
+}
+
+.video-item .vt-130v {
+	width: 130px;
+	height: 180px
+}
+
+.video-item .vt-130v img {
+	width: 130px;
+	height: 180px
+}
+
+.video-item .vt-130v .v-update,.video-item .vt-130v .v-update-bg {
+	width: 130px
+}
+
+.video-item a.vt-130v .v-play-icon {
+	left: 49px;
+	top: 74px
+}
+
+.vi-114v {
+	width: 114px;
+	height: auto;
+	margin: 0 34px 18px 0;
+	_margin-bottom: 19px
+}
+
+.video-item .vt-114v {
+	width: 114px;
+	height: 152px
+}
+
+.video-item .vt-114v img {
+	width: 114px;
+	height: 152px
+}
+
+.video-item .vt-114v .v-update,.video-item .vt-114v .v-update-bg {
+	width: 114px
+}
+
+.video-item a.vt-114v .v-play-icon {
+	left: 41px;
+	top: 60px
+}
+
+.vi-150h {
+	width: 150px;
+	height: 126px;
+	margin: 0 20px 20px 0
+}
+
+.video-item .vt-150h {
+	width: 150px;
+	height: 84px
+}
+
+.video-item .vt-150h img {
+	width: 150px;
+	height: 84px
+}
+
+.video-item .vt-150h .v-update,.video-item .vt-150h .v-update-bg {
+	width: 150px
+}
+
+.video-item a.vt-150h .v-play-icon {
+	left: 59px;
+	top: 26px
+}
+
+.video-item .v-desc {
+	line-height: 18px;
+	text-align: left
+}
+
+.video-item .v-desc .v-s-intro {
+	color: #999;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.video-item-list .row-last {
+	margin-right: 0
+}
+
+.video-item .v-desc .v-title {
+	margin-top: 5px;
+	overflow: hidden;
+	white-space: nowrap
+}
+
+.pa-normal {
+	padding-top: 20px; +
+	padding-bottom: 20px;
+	_padding-bottom: 0;
+	*zoom: 1
+}
+
+.pa-normal:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.pa-normal .pa-normal-list {
+	width: 100%
+}
+
+.pa-normal .video-item .v-title {
+	font-size: 14px;
+	line-height: 20px;
+	height: 20px;
+	margin-top: 5px
+}
+
+.pa-normal .video-item .v-desc .v-s-intro {
+	color: #666
+}
+
+.pa-normal .video-item-list .row-last {
+	margin-right: 0
+}
+
+.detail-tip .tang-close {
+	z-index: 1;
+	position: absolute
+}
+
+.detail-tip .tang-background {
+	border: 0;
+	background-color: #000;
+	opacity: .1;
+	filter: alpha(opacity = 10);
+	margin: 1px 0 0 1px
+}
+
+.detail-tip .tang-foreground {
+	background-color: #fafafa;
+	border: 1px solid #d5d5d5;
+	margin: 0 1px 1px 0;
+	overflow: hidden
+}
+
+.detail-tip .tang-foreground-inner {
+	padding: 11px 11px 0
+}
+
+.detail-tip .arrow_left,.detail-tip .arrow_right {
+	top: 20px;
+	height: 12px;
+	width: 17px;
+	z-index: 1;
+	font-size: 1px;
+	position: absolute;
+	background: transparent
+		url(/browse_static/widget/new_sub_hao123/detailtip/arrow_743868bb.png)
+		no-repeat 0 0
+}
+
+.detail-tip .arrow_right {
+	left: -11px
+}
+
+.detail-tip .arrow_left {
+	right: -11px;
+	background-position: -17px 0
+}
+
+.detail-tip .ie6__ .arrow_bottom {
+	margin-top: -4px
+}
+
+.detail-tip .ie6__ .arrow_top,.detail-tip .ie6__ .arrow_bottom {
+	background-image: url(./arrow.gif)
+}
+
+.detail-tip-dir-left .arrow_right {
+	display: none
+}
+
+.detail-tip-dir-right .arrow_left {
+	display: none
+}
+
+.detail-tip h4 {
+	width: 215px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	text-overflow: ellipsis;
+	color: #666
+}
+
+.detail-tip .detail-tip-prop {
+	padding: 4px 0 8px;
+	border-bottom: 1px solid #e6e6e6;
+	white-space: nowrap
+}
+
+.detail-tip .detail-tip-prop strong {
+	font-weight: normal;
+	color: #666
+}
+
+.detail-tip .detail-tip-prop a {
+	padding: 0 7px 0 0
+}
+
+.detail-tip .detail-tip-date a {
+	padding: 0
+}
+
+.detail-tip .detail-tip-type,.detail-tip .detail-tip-area,.detail-tip .detail-tip-date
+	{
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline
+}
+
+.detail-tip .detail-tip-prop li b {
+	font-weight: normal;
+	color: #e6e6e6;
+	padding: 0 4px 0 0
+}
+
+.detail-tip .detail-tip-actor {
+	white-space: nowrap
+}
+
+.detail-tip .detail-tip-intro {
+	padding-top: 7px;
+	height: 62px;
+	color: #666
+}
+
+.detail-tip .rating {
+	position: absolute;
+	right: 11px;
+	top: 10px;
+	z-index: 10px
+}
+
+.detail-tip .rating-bg {
+	background-image: none;
+	display: none
+}
+
+.detail-tip .noactor,.detail-tip .nodate {
+	display: none
+}
