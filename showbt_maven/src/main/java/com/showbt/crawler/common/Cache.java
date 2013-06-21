@@ -7,7 +7,9 @@ import java.util.Map;
 
 import org.springframework.stereotype.Component;
 
+import com.showbt.crawler.bean.Adverting;
 import com.showbt.crawler.bean.Category;
+import com.showbt.crawler.service.AdvertingService;
 import com.showbt.crawler.service.CategoryService;
 
 @Component
@@ -15,6 +17,16 @@ public class Cache {
 	private static Cache cache = null;
 	
 	private static Map<String, Category> categoryCache = null;
+	
+	private static Map<String, Adverting> advertingCache = null;
+	public static void setCategoryCache(Map<String, Category> categoryCache) {
+		Cache.categoryCache = categoryCache;
+	}
+
+	public static void setAdvertingCache(Map<String, Adverting> advertingCache) {
+		Cache.advertingCache = advertingCache;
+	}
+
 	private Cache(){}
 	
 	public static Cache getInstance(){
@@ -24,6 +36,11 @@ public class Cache {
 		return cache;
 	}
 
+	/**
+	 * 分类缓存
+	 * @param categoryService
+	 * @return
+	 */
 	public Map<String, Category> getCategoryCache(CategoryService categoryService) {
 		if(categoryCache == null){
 			List<Category> cList = categoryService.getCategoryAll();
@@ -50,5 +67,20 @@ public class Cache {
 		}
 		return categoryCache;
 	}
-
+	
+	/**
+	 * 广告缓存
+	 * @param adbertingService
+	 * @return
+	 */
+	public Map<String, Adverting> getAdvertingCache(AdvertingService advertingService) {
+		if(advertingCache == null){
+			advertingCache = new LinkedHashMap<String, Adverting>();
+			List<Adverting> dl = advertingService.getAdvertingAll();
+			for(Adverting ad: dl){
+				advertingCache.put(ad.getAdKey(), ad);
+			}
+		}
+		return advertingCache;
+	}
 }

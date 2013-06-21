@@ -13,9 +13,10 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
+import com.showbt.constants.ShowBtTable;
 import com.showbt.crawler.common.bean.BaseTO;
 
-@Table(name="tb_dytt8",uniqueConstraints = {@UniqueConstraint(columnNames = { "sourceUrl" })})
+@Table(name=ShowBtTable.TABLEPREFIX+"_dytt8",uniqueConstraints = {@UniqueConstraint(columnNames = { "sourceUrl" })})
 @Entity
 public class Dytt8 extends BaseTO{
 	@Transient

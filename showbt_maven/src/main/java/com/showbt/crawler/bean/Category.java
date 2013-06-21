@@ -10,9 +10,10 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
+import com.showbt.constants.ShowBtTable;
 import com.showbt.crawler.common.bean.BaseTO;
 
-@Table(name = "tb_category", uniqueConstraints = { @UniqueConstraint(columnNames = { "category" }) })
+@Table(name = ShowBtTable.TABLEPREFIX+"_category", uniqueConstraints = { @UniqueConstraint(columnNames = { "category" }) })
 @Entity
 public class Category extends BaseTO {
 	@Transient

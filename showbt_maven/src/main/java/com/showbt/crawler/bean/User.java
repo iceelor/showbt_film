@@ -8,8 +8,9 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import com.showbt.constants.ShowBtTable;
 import com.showbt.crawler.common.bean.BaseTO;
-@Table(name="tb_users")
+@Table(name=ShowBtTable.TABLEPREFIX+"_users")
 @Entity
 public class User extends BaseTO {
 

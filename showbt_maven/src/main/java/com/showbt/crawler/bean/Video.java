@@ -12,6 +12,7 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
+import com.showbt.constants.ShowBtTable;
 import com.showbt.crawler.common.bean.BaseTO;
 
 /**
@@ -20,7 +21,7 @@ import com.showbt.crawler.common.bean.BaseTO;
 * 2011-4-6
 * http://hi.juziku.com/sunlightcs/
 */
-@Table(name="tb_video" ,uniqueConstraints = {@UniqueConstraint(columnNames = { "sourceUrl" })})
+@Table(name=ShowBtTable.TABLEPREFIX+"_video" ,uniqueConstraints = {@UniqueConstraint(columnNames = { "sourceUrl" })})
 @Entity
 public class Video extends BaseTO{
 

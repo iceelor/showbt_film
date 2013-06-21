@@ -47,7 +47,7 @@
 									<#list topRecommentList as dytt8>
 										<li <#if dytt8_index==0>class="item-selected"</#if> style="cursor: pointer;">
 											<a target="_blank" href="content?id=${dytt8.id}"> 
-												<img src="<#if dytt8.slideImg??>${dytt8.slideThumb}<#else>${dytt8.indexThumb}</#if>">
+												<img src="<#if dytt8.slideImg??>${dytt8.slideThumb}<#elseif dytt8.indexThumb??>${dytt8.indexThumb}</#if>">
 												<div class="jiantou"></div>
 											</a>
 										</li>
@@ -77,7 +77,7 @@
 								<#if dytt8_index==0>
 									<li class="top-item top-poster-item">
 										<a static="stp=po" href="content?id=${dytt8.id}" title="${dytt8.title}" target="_blank" class="top-poster-link"> 
-											<img width="100" src="${dytt8.indexThumb}" alt="${dytt8.title}" title="${dytt8.title}" class="top-poster">
+											<img width="100" src="<#if dytt8.indexThumb??>${dytt8.indexThumb}</#if>" alt="${dytt8.title}" title="${dytt8.title}" class="top-poster">
 										</a>
 										<h3>
 											<a href="content?id=${dytt8.id}" title="${dytt8.title}" target="_blank" class="top-title-link">${dytt8.title}</a>

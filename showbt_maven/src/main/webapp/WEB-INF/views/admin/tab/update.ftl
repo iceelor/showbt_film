@@ -8,7 +8,7 @@
 <script type="text/javascript" src="../../js/jquery.cleditor.js"></script>
 <script type="text/javascript">
    $(document).ready(function() {
-     $("#input").cleditor()[0].focus();
+     $("#input").cleditor({width:700,height:650})[0].focus();
    });
  </script>
  <style type="text/css">
