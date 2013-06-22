@@ -9,16 +9,22 @@ import org.springframework.stereotype.Component;
 
 import com.showbt.crawler.bean.Adverting;
 import com.showbt.crawler.bean.Category;
+import com.showbt.crawler.bean.WebSetting;
 import com.showbt.crawler.service.AdvertingService;
 import com.showbt.crawler.service.CategoryService;
+import com.showbt.crawler.service.WebSettingService;
+
+import freemarker.template.TemplateMethodModel;
+import freemarker.template.TemplateModelException;
 
 @Component
 public class Cache {
 	private static Cache cache = null;
 	
 	private static Map<String, Category> categoryCache = null;
-	
 	private static Map<String, Adverting> advertingCache = null;
+	private static Map<String, WebSetting> webSettingCache = null;
+	
 	public static void setCategoryCache(Map<String, Category> categoryCache) {
 		Cache.categoryCache = categoryCache;
 	}
@@ -34,6 +40,10 @@ public class Cache {
 			cache = new Cache();
 		}
 		return cache;
+	}
+
+	public static void setWebSettingCache(Map<String, WebSetting> webSettingCache) {
+		Cache.webSettingCache = webSettingCache;
 	}
 
 	/**
@@ -82,5 +92,19 @@ public class Cache {
 			}
 		}
 		return advertingCache;
+	}
+	
+	/**
+	 * 网站设置
+	 */
+	public Map<String, WebSetting> getWebSettingCache(WebSettingService webSettingService) {
+		if(webSettingCache == null){
+			webSettingCache = new LinkedHashMap<String, WebSetting>();
+			List<WebSetting> dl = webSettingService.getWebSettingAll();
+			for(WebSetting ws: dl){
+				webSettingCache.put(ws.getsKey(), ws);
+			}
+		}
+		return webSettingCache;
 	}
 }

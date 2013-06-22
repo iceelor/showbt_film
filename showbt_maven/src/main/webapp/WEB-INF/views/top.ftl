@@ -10,7 +10,7 @@
 		</p>
 		<ul id="trl">
 			<div class="showad">
-				<a href="http://union.moonbasa.com/rd/newrd?e=274&adtype=1&unionid=iceelor&subunionid=&other=&url=" target="_blank"><img src="http://union.moonbasa.com/adimg?e=274&adtype=1&unionid=iceelor&subunionid="  border="0" /></a>
+				${showBtStatic("adverting@index_top_img").adCode}
 				<div style="display:none"></div>
 			</div>
 		</ul>

@@ -15,6 +15,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.showbt.crawler.bean.Dytt8;
 import com.showbt.crawler.bean.Video;
+import com.showbt.crawler.common.Cache;
+import com.showbt.crawler.service.AdvertingService;
 import com.showbt.crawler.service.Dytt8Service;
 import com.showbt.crawler.service.VideoService;
 import com.showbt.util.HttpService;
@@ -23,6 +25,8 @@ import com.showbt.util.HttpService;
 public class IndexController {
 	private @Autowired Dytt8Service dytt8Service;
 	private @Autowired VideoService videoService;
+	private @Autowired AdvertingService advertingService;
+	
 	
 	@RequestMapping(value="/index")
 	public ModelAndView index(HttpServletRequest request, HttpServletResponse response){
@@ -39,6 +43,7 @@ public class IndexController {
         mv.addObject("topRightRecommentList",topRightRecommentList);
         mv.addObject("videoRecommenList",videoRecommenList);
         mv.addObject("videoList",vlst);
+        mv.addObject("ad", Cache.getInstance().getAdvertingCache(advertingService));
         String t = request.getParameter("t");
         mv.addObject("t", StringUtils.isNotBlank(t)?t:"i");
         return mv;

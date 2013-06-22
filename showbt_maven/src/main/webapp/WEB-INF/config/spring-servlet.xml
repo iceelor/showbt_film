@@ -57,6 +57,11 @@
 		<property name="exposeRequestAttributes" value="false"/>
 		<property name="exposeSessionAttributes" value="false"/>
 		<property name="exposeSpringMacroHelpers" value="true"/>
+		<property name="attributesMap">
+          <map>
+            <entry key="showBtStatic"><bean class="com.showbt.crawler.common.FreemarkerStatic" /></entry>
+          </map>
+        </property>
 	</bean>
 
 	<!-- 使用静态资源文件 -->

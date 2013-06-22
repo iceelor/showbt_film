@@ -121,6 +121,9 @@
 			<!--右侧end-->
 			<!--<div class="chan-sec-ft">&nbsp;</div>-->
 		</div>
+		<div id="ad_01">
+			${showBtStatic("adverting@index_movie_bottom_img").adCode}
+		</div>
 	<!--电影begin-->
 	<!--在线视频begin-->
 		<div class="chan-sec">
@@ -232,6 +235,9 @@
 			</div>
 			<!--右侧end-->
 		</div>
+		<div id="ad_01">
+			${showBtStatic("adverting@index_video_bottom_img").adCode}
+		</div>
 		<div id="friendlink">
 			<h2><span class="title">友情链接 </span></h2>
 			<div id="friendlinkcon">
@@ -250,10 +256,7 @@
 	</div>
 	<!--在线视频end-->
 	<#include "/foot.ftl">
-	<div id="ad_01">
-		<script src="http://wm.lrswl.com/page/s.php?s=37229&w=160&h=300"></script>
-	</div>
-	<iframe width="460" src="index.do" scrolling="no" height="300" frameborder="0" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" id="adIframe"></iframe>
+	<iframe width="460" style="display:none;" src="index.do" scrolling="no" height="300" frameborder="0" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" id="adIframe"></iframe>
 	</body>
 	
 	<script language="javascript">
@@ -261,7 +264,7 @@
 			var o = document.getElementById("ad_01")
 			var ifr = o.getElementsByTagName("iframe");
 			var aid = ifr[0].src;
-			getContent(aid);
+			//getContent(aid);
 		}
 		
 		function getContent(url){
