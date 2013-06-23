@@ -6,19 +6,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.math.NumberUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.showbt.crawler.bean.WebSetting;
 import com.showbt.crawler.common.Cache;
-import com.showbt.crawler.service.WebSettingService;
+import com.showbt.crawler.common.controller.BaseController;
 
 @Controller("webSetting_Controller")
 @RequestMapping(value="/admin")
-public class WebSettingController {
-	
-	private @Autowired WebSettingService webSettingService;
+public class WebSettingController extends BaseController{
 	
 	@RequestMapping(value="/webSetting")
 	public String ad(HttpServletRequest request, HttpServletResponse response){

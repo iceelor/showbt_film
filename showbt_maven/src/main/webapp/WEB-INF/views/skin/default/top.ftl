@@ -1,6 +1,6 @@
 <div id="top">
 	<div id="tl">
-		<a href="http://www.piaohua.com"><img width="203" height="66" alt="秀种资源网" src="img/logo.jpg"></a>
+		<a href="http://www.piaohua.com"><img width="203" height="66" alt="秀种资源网" src="${showBtStatic("websetting@websetting_template_default_path").sValue}img/logo.jpg"></a>
 	</div>
 	<div id="tr">
 		<p>
@@ -18,7 +18,7 @@
 			<form target="_blank" action="http://donkey4u.com/search/" name="formsearch" id="form1">
 				<input type="hidden" value="0" name="kwtype">
 				<input type="text" onblur="if(this.value==''){this.value='直接输入电影的关键词...';}" onfocus="if(this.value=='直接输入电影的关键词...'){this.value='';}" value="直接输入电影的关键词..." id="search-keyword" class="k" name="keyword">
-				<input type="image" src="img/tsoubtn.jpg" value="提交" id="button" class="r" name="searchtype">
+				<input type="image" src="${showBtStatic("websetting@websetting_template_default_path").sValue}img/tsoubtn.jpg" value="提交" id="button" class="r" name="searchtype">
 			</form><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a style="color:#0067B0" href="http://www.showbt.com">最新电影下载</a>就上秀种网www.showbt.com </p>
 		</div>

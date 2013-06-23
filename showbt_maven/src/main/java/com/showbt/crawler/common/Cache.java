@@ -14,9 +14,6 @@ import com.showbt.crawler.service.AdvertingService;
 import com.showbt.crawler.service.CategoryService;
 import com.showbt.crawler.service.WebSettingService;
 
-import freemarker.template.TemplateMethodModel;
-import freemarker.template.TemplateModelException;
-
 @Component
 public class Cache {
 	private static Cache cache = null;

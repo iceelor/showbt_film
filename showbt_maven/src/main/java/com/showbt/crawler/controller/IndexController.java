@@ -16,21 +16,20 @@ import org.springframework.web.servlet.ModelAndView;
 import com.showbt.crawler.bean.Dytt8;
 import com.showbt.crawler.bean.Video;
 import com.showbt.crawler.common.Cache;
-import com.showbt.crawler.service.AdvertingService;
+import com.showbt.crawler.common.controller.BaseController;
 import com.showbt.crawler.service.Dytt8Service;
 import com.showbt.crawler.service.VideoService;
 import com.showbt.util.HttpService;
 
-@Controller
-public class IndexController {
+@Controller("film_index_controller")
+public class IndexController extends BaseController{
+	
 	private @Autowired Dytt8Service dytt8Service;
 	private @Autowired VideoService videoService;
-	private @Autowired AdvertingService advertingService;
-	
 	
 	@RequestMapping(value="/index")
 	public ModelAndView index(HttpServletRequest request, HttpServletResponse response){
-		ModelAndView mv = new ModelAndView("index");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"index");
 		List<Dytt8> dlst = dytt8Service.indexFilm();
 		List<Video> vlst = videoService.indexVideo();
 		List<Video> videoRecommenList = videoService.indexRecommendVideo();

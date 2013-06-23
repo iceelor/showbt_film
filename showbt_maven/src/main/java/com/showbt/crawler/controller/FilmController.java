@@ -15,11 +15,12 @@ import com.showbt.crawler.bean.Category;
 import com.showbt.crawler.bean.Dytt8;
 import com.showbt.crawler.common.Cache;
 import com.showbt.crawler.common.ResultSet;
+import com.showbt.crawler.common.controller.BaseController;
 import com.showbt.crawler.service.CategoryService;
 import com.showbt.crawler.service.Dytt8Service;
 
 @Controller
-public class FilmController {
+public class FilmController extends BaseController{
 	private @Autowired Dytt8Service dytt8Service;
 	private @Autowired CategoryService categoryService;
 	
@@ -28,7 +29,7 @@ public class FilmController {
 	public ModelAndView content(HttpServletRequest request, HttpServletResponse response){
 		String sid = request.getParameter("id");
 		long id = 0;
-		ModelAndView mv = new ModelAndView("content");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"content");
 		int category = 0;
 		if(StringUtils.isNumeric(sid)){
 			id = Long.parseLong(sid);
@@ -54,7 +55,7 @@ public class FilmController {
 	
 	@RequestMapping(value="/filmList")
 	public ModelAndView list(HttpServletRequest request, HttpServletResponse response){
-		ModelAndView mv = new ModelAndView("list");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"list");
 		ResultSet<Dytt8> rs = new ResultSet<Dytt8>();
 		String p = request.getParameter("page");
 		String ord = request.getParameter("ord");

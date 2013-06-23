@@ -1,16 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+		<title><#if showBtStatic("websetting@websetting_title")??>${showBtStatic("websetting@websetting_title").sValue}<#else>秀种资源网</#if></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>秀种资源网</title>
-		<link href="css/module_01.css" rel="stylesheet"/>
-		<link href="css/module_static_8d4870a0.css" rel="stylesheet"/>
-		<link href="css/movie_27a6d47d.css" rel="stylesheet"/>
-		
-		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<meta name="keywords" content="<#if showBtStatic("websetting@websetting_keywords")??>${showBtStatic("websetting@websetting_keywords").sValue}</#if>"/>
+		<meta name="description" content="<#if showBtStatic("websetting@websetting_description")??>${showBtStatic("websetting@websetting_description").sValue}</#if>"/>
+		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_01.css" rel="stylesheet"/>
+		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_static_8d4870a0.css" rel="stylesheet"/>
+		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/movie_27a6d47d.css" rel="stylesheet"/>
+		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery-1.7.2.min.js"></script>
 	</head>
 	<body>
-	<#include "/top.ftl">
+	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/top.ftl">
 	<div id="main">
 		<!--new list begin-->
 		<div id="bd-content" class="bd-content bd-subchannel-movie">
@@ -58,11 +59,11 @@
 			<!--CONTENT-->
 			<div id="bd-videos" class="bd-videos">
 				<ul id="bd-video-list" class="bd-video-list" style="display: block;">
-					<#if filmList ??>
-						<#list filmList as dytt8>
+					<#if videoList ??>
+						<#list videoList as video>
 							<#macro rowlast>bd-video-item   bd-video-meta-right</#macro>
-							<#if 1<(dytt8_index+1)>
-								<#if (dytt8_index+1)%6==0>
+							<#if 1<(video_index+1)>
+								<#if (video_index+1)%6==0>
 									<#macro rowlast>bd-video-item bd-video-item-last bd-video-meta-left</#macro>		
 								<#else>
 									<#macro rowlast>bd-video-item   bd-video-meta-right</#macro>									
@@ -70,21 +71,16 @@
 							</#if>
 							<li class="<@rowlast />">
 			                    <div class="bd-video-poster">
-			                        <a class="bd-video-link" target="_blank" href="content?id=${dytt8.id}" style="display: block;">
-			                            <img alt="${dytt8.title}" src="<#if dytt8.indexThumb??>${dytt8.indexThumb}</#if>" class="bd-video-img" style="margin-top: -2px; margin-left: 0px; height: 189px; width: 134px; visibility: visible;">
+			                        <a class="bd-video-link" target="_blank" href="videoContent?id=${video.id}" style="display: block;">
+			                            <img alt="${video.title}" src="<#if video.pic??>${video.pic}</#if>" class="bd-video-img" style="margin-top: -2px; margin-left: 0px; height: 189px; width: 134px; visibility: visible;">
 			                            <span class="bd-video-rating"><em>7.8</em> 分</span>
 			                            <span class="bd-video-bg"></span>
 			                        </a>
 			                    </div>
 			                    <div class="bd-video-primary">
-			                        <h4 class="bd-video-title"><a target="_blank" title="${dytt8.title}" href="content?id=${dytt8.id}" static="stp=ti">${dytt8.title}</a></h4>
+			                        <h4 class="bd-video-title"><a target="_blank" title="${video.title}" href="videoContent?id=${video.id}" static="stp=ti">${video.title}</a></h4>
 				                    <div class="bd-video-actors">
-					                    <#if dytt8.protagonist ??>
-											<#list dytt8.protagonist?split(" ") as p>
-												<a target="_blank" href="#" title="${p}">${p}</a>
-												<#break>
-											</#list>
-										</#if>
+					                    
 			                        </div>
 				               		<div class="bd-video-s-intro" title="激情创业的青春年少">激情创业的青春年少</div>                    
 				               	</div>
@@ -98,19 +94,19 @@
 			<div id="bd-pagination" class="bd-pagination">
 				<div id="bd-pagination-list" class="bd-pagination-list filter-group" static="s=1701&tn=submovie_hao123&bl=pagebar">
 					<#if 1<page-5>
-						<a class="bd-pagination-page bd-pagination-prev filter-sel" href="filmList?t=m&page=1" title="首页" data-val="1" data-key="pn">首页</a>
+						<a class="bd-pagination-page bd-pagination-prev filter-sel" href="videoList?t=v&page=1" title="首页" data-val="1" data-key="pn">首页</a>
 					</#if>
 					<#if 1<page>
-						<a class="bd-pagination-page bd-pagination-prev filter-sel" href="filmList?t=m&page=${page-1}">&lt;上一页</a>
+						<a class="bd-pagination-page bd-pagination-prev filter-sel" href="videoList?t=v&page=${page-1}">&lt;上一页</a>
 					</#if>
 					<#list beginPageNum ..endPageNum as pp>
-						<a <#if pp==page>class="bd-pagination-page filter-sel-active filter-sel" <#else>class="bd-pagination-page filter-sel"</#if> href="filmList?t=m&page=${pp}">${pp}</span>
+						<a <#if pp==page>class="bd-pagination-page filter-sel-active filter-sel" <#else>class="bd-pagination-page filter-sel"</#if> href="videoList?t=v&page=${pp}">${pp}</span>
 					</#list>
 					<#if page<maxPage>
-						<a class="bd-pagination-page bd-pagination-next filter-sel" href="filmList?t=m&page=${page+1}">下一页&gt;</a>
+						<a class="bd-pagination-page bd-pagination-next filter-sel" href="videoList?t=v&page=${page+1}">下一页&gt;</a>
 					</#if>
 					<#if 4<maxPage-page>
-					<a class="bd-pagination-page bd-pagination-prev filter-sel" href="filmList?t=m&page=${maxPage}" title="尾页" data-val="112" data-key="pn">尾页</a>
+					<a class="bd-pagination-page bd-pagination-prev filter-sel" href="videoList?t=v&page=${maxPage}" title="尾页" data-val="112" data-key="pn">尾页</a>
 					</#if>
 				</div>
 			</div>
@@ -118,6 +114,6 @@
 		</div>
 		<!--new list end-->	
 </div>
-<#include "/foot.ftl">
+<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/foot.ftl">
 	</body>
 </html>

@@ -1,18 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+		<title>${dytt8.title}---<#if showBtStatic("websetting@websetting_title")??>${showBtStatic("websetting@websetting_title").sValue}</#if></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="keywords" content="电影下载,最新电影,电影天堂,电影网,高清电影下载,电影网站,showbt.com"/>
-		<meta name="description" content="秀种电影网－最新电影,秀种资源网－每天搜集最新免费电影下载。用户可使用迅雷软件快速下载最新的免费电影、小电影、高清电影等服务。还可以在线收看从各大视频网站搜集到的最新搞笑视频"/>
-		<title>${dytt8.title}---秀种资源网</title>
-		<link href="css/module_01.css" rel="stylesheet"/>
-		<link href="css/dytt8_content.css" rel="stylesheet"/>
-		<link href="css/bdsstyle.css" rel="stylesheet"/>
-		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slider.js"></script>		
+		<meta name="keywords" content="<#if showBtStatic("websetting@websetting_movie_keywords")??>${showBtStatic("websetting@websetting_movie_keywords").sValue}</#if>"/>
+		<meta name="description" content="<#if showBtStatic("websetting@websetting_movie_description")??>${showBtStatic("websetting@websetting_movie_description").sValue}</#if>"/>
+		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_01.css" rel="stylesheet"/>
+		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/dytt8_content.css" rel="stylesheet"/>
+		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/bdsstyle.css" rel="stylesheet"/>
+		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery.slider.js"></script>		
 	</head>
 	<body>
-	<#include "/top.ftl">
+	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/top.ftl">
 	<div id="main" style="margin-top:15px;">
 		<div id="contentSec" class="content-sec">
 			<div class="sec-main">
@@ -287,6 +287,6 @@
 			<!--左侧图片区end-->
 		</div>
 	</div>
-	<#include "/foot.ftl">
+	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/foot.ftl">
 	</body>
 </html>

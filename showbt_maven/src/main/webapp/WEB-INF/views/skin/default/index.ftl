@@ -2,18 +2,17 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>秀种资源网</title>
+		<title><#if showBtStatic("websetting@websetting_title")??>${showBtStatic("websetting@websetting_title").sValue}<#else>秀种资源网</#if></title>
 		<!--<link href="css/menu.css" rel="stylesheet"/>-->
-		<link href="css/showbt_index_.css" rel="stylesheet"/>
-		<link href="css/module_02.css" rel="stylesheet"/>
-		<link href="css/module_01.css" rel="stylesheet"/>
-		
-		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slider.js"></script>		
+		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/showbt_index_.css" rel="stylesheet"/>
+		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_02.css" rel="stylesheet"/>
+		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_01.css" rel="stylesheet"/>
+		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery.slider.js"></script>		
 	</head>
 	<body>
-	<#include "/top.ftl">
-	<#include "/slide.ftl">
+	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/top.ftl">
+	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/slide.ftl">
 	<!--电影begin-->
 	<div id="main">
 		<div class="chan-sec" id="secTV">
@@ -121,9 +120,11 @@
 			<!--右侧end-->
 			<!--<div class="chan-sec-ft">&nbsp;</div>-->
 		</div>
-		<div id="ad_01">
-			${showBtStatic("adverting@index_movie_bottom_img").adCode}
-		</div>
+		<#if showBtStatic("adverting@index_movie_bottom_img")??>
+			<div id="ad_01">
+				${showBtStatic("adverting@index_movie_bottom_img").adCode}
+			</div>
+		</#if>
 	<!--电影begin-->
 	<!--在线视频begin-->
 		<div class="chan-sec">
@@ -235,9 +236,11 @@
 			</div>
 			<!--右侧end-->
 		</div>
-		<div id="ad_01">
-			${showBtStatic("adverting@index_video_bottom_img").adCode}
-		</div>
+		<#if showBtStatic("adverting@index_video_bottom_img")??>
+			<div id="ad_01">
+				${showBtStatic("adverting@index_video_bottom_img").adCode}
+			</div>
+		</#if>
 		<div id="friendlink">
 			<h2><span class="title">友情链接 </span></h2>
 			<div id="friendlinkcon">
@@ -255,7 +258,7 @@
 		</div>
 	</div>
 	<!--在线视频end-->
-	<#include "/foot.ftl">
+	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/foot.ftl">
 	<iframe width="460" style="display:none;" src="index.do" scrolling="no" height="300" frameborder="0" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" id="adIframe"></iframe>
 	</body>
 	

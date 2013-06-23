@@ -15,11 +15,12 @@ import com.showbt.crawler.bean.Category;
 import com.showbt.crawler.bean.Video;
 import com.showbt.crawler.common.Cache;
 import com.showbt.crawler.common.ResultSet;
+import com.showbt.crawler.common.controller.BaseController;
 import com.showbt.crawler.service.CategoryService;
 import com.showbt.crawler.service.VideoService;
 
 @Controller
-public class VideoController {
+public class VideoController extends BaseController{
 	private @Autowired VideoService videoService;
 	private @Autowired CategoryService categoryService;
 	
@@ -27,7 +28,7 @@ public class VideoController {
 	public ModelAndView videoContent(HttpServletRequest request, HttpServletResponse response){
 		String sid = request.getParameter("id");
 		long id = 0;
-		ModelAndView mv = new ModelAndView("videoContent");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"videoContent");
 		if(StringUtils.isNumeric(sid)){
 			id = Long.parseLong(sid);
 			mv.addObject("video",videoService.getVideo(id));
@@ -39,7 +40,7 @@ public class VideoController {
 	
 	@RequestMapping(value="/videoList")
 	public ModelAndView videoList(HttpServletRequest request, HttpServletResponse response){
-		ModelAndView mv = new ModelAndView("videolist");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"videolist");
 		ResultSet<Video> rs = new ResultSet<Video>();
 		String p = request.getParameter("page");
 		Map<String, Category> clst = Cache.getInstance().getCategoryCache(categoryService);
