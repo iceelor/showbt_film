@@ -29,6 +29,9 @@
 										</h3>
 									</div>
 								</div>
+								<div class="desc-wrapper">
+									<a href="#down">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a>
+								</div>
 								<!--
 								<div class="desc-wrapper">
 									<div class="sinfo topm12">
@@ -79,13 +82,18 @@
 								<a static="stp=lj&amp;to=play" class="AL_play" href="#" target="_blank"></a>
 								<div class="AL_res clearfix">
 									<div class="more-site-cont">
-										<span class="more-site-title">更多优质结果：</span>
+										<span class="more-site-title">下载地址：</span>
 										<div class="more-site-list">
-											<a title="爱奇艺" href="#" target="_blank">
-												<div>
-													<img width="16" height="16" align="absmiddle" src="http://list.video.baidu.com/logo/iqiyi.gif">爱奇艺
-												</div>
-											</a>
+											<a name="down"></a>
+											<!-- JavaScript专用链代码 -->
+											<script src="http://pstatic.xunlei.com/js/webThunderDetect.js"></script>
+											<script src="http://pstatic.xunlei.com/js/base64.js"></script>
+											<script language="javascript">
+											var thunder_url = "${dytt8.downUrl}";
+											var thunder_pid = "${dytt8.id}";
+											var restitle = "";
+											document.write('<a href="#" thunderHref="' + ThunderEncode(thunder_url) + '" thunderPid="' + thunder_pid + '" thunderResTitle="' + restitle + '" onClick="return OnDownloadClick_Simple(this,2,4)" oncontextmenu="ThunderNetwork_SetHref(this)">迅雷专用高速下载</a> ');
+											</script>
 										</div>
 									</div>
 								</div>
