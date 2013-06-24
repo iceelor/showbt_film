@@ -17,6 +17,7 @@ public class BaseController {
 	
 	protected String getWebSetting(String key){
 		Map<String,WebSetting> wsList = Cache.getInstance().getWebSettingCache(webSettingService);
+		if(wsList==null || wsList.size()<1) return "";
 		return wsList.get(key).getsValue();
 	}
 	
