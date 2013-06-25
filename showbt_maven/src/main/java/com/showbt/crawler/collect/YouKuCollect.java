@@ -16,7 +16,7 @@ import com.showbt.util.HttpService;
 
 public class YouKuCollect {
 	public static Video getYouKuVideo(String url,String method, String encode) throws Exception{
-System.out.println(url);
+//System.out.println(url);
 		int startIndex = url.indexOf("/id_")+4;
 		int endIndex = url.indexOf(".html");
 		String id = url.substring(startIndex,endIndex);

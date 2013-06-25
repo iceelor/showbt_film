@@ -5,7 +5,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="keywords" content="<#if showBtStatic("websetting@websetting_video_keywords")??>${showBtStatic("websetting@websetting_video_keywords").sValue}</#if>"/>
 		<meta name="description" content="<#if showBtStatic("websetting@websetting_video_description")??>${showBtStatic("websetting@websetting_video_description").sValue}</#if>"/>
-		
+		<link rel="shortcut icon" href="/favicon.ico" />		
+		<#if showBtStatic("websetting@websetting_head")??>${showBtStatic("websetting@websetting_head").sValue}</#if>
 		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_01.css" rel="stylesheet"/>
 		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/dytt8_content.css" rel="stylesheet"/>
 		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/bdsstyle.css" rel="stylesheet"/>

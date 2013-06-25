@@ -4,6 +4,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title><#if showBtStatic("websetting@websetting_title")??>${showBtStatic("websetting@websetting_title").sValue}<#else>秀种资源网</#if></title>
 		<!--<link href="css/menu.css" rel="stylesheet"/>-->
+		<link rel="shortcut icon" href="/favicon.ico" />		
+		<#if showBtStatic("websetting@websetting_head")??>${showBtStatic("websetting@websetting_head").sValue}</#if>
 		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/showbt_index_.css" rel="stylesheet"/>
 		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_02.css" rel="stylesheet"/>
 		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_01.css" rel="stylesheet"/>
