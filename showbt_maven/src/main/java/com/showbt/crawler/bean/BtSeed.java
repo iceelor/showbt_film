@@ -41,4 +41,37 @@ public class BtSeed extends BaseTO{
 	 */
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date addTime= new Date();
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getMagnetUrl() {
+		return magnetUrl;
+	}
+
+	public void setMagnetUrl(String magnetUrl) {
+		this.magnetUrl = magnetUrl;
+	}
+
+	public Date getAddTime() {
+		return addTime;
+	}
+
+	public void setAddTime(Date addTime) {
+		this.addTime = addTime;
+	}
+	
 }
