@@ -113,7 +113,9 @@ System.out.println("寻找帖子...........");
 		for(String img: imageUrl){
 			imgstr+=img+",";
 		}
-		imgstr = imgstr.substring(0,imgstr.length()-1);
+		if(imgstr.endsWith(",")){
+			imgstr = imgstr.substring(0,imgstr.length()-1);
+		}
 		dytt8.setImageUrl(imgstr);
 		dytt8.setContent(content);
 		return dytt8;

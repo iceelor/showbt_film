@@ -37,6 +37,11 @@ public class BtSeed extends BaseTO{
 	private String magnetUrl;
 	
 	/**
+	 * 种子文件大小
+	 */
+	private String fileSize;
+	
+	/**
 	 * 采集时间
 	 */
 	@Temporal(TemporalType.TIMESTAMP)
@@ -72,6 +77,14 @@ public class BtSeed extends BaseTO{
 
 	public void setAddTime(Date addTime) {
 		this.addTime = addTime;
+	}
+
+	public String getFileSize() {
+		return fileSize;
+	}
+
+	public void setFileSize(String fileSize) {
+		this.fileSize = fileSize;
 	}
 	
 }

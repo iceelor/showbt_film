@@ -38,6 +38,7 @@
 				<li <#if t ??><#if t=='i'>class="hao-selected "<#else> class="hao-first "</#if></#if>><a target="_self" href="index?t=i">首页</a></li>
 				<li <#if t ??><#if t=='m'>class="hao-selected "</#if></#if>><a target="_self" href="filmList?t=m">电影</a></li>
 				<li <#if t ??><#if t=='v'>class="hao-selected "</#if></#if>><a target="_self" href="videoList?t=v">在线视频</a></li>
+				<li <#if t ??><#if t=='s'>class="hao-selected "</#if></#if>><a target="_self" href="search?t=s">搜索种子</a></li>
 				<!--<li class="hao-nobg"><a target="_self" href="#/">综艺</a></li>
 				<li><a target="_self" href="#">动漫</a></li>
 				<li><a target="_self" href="#">直播</a></li>

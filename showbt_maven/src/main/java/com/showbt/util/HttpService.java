@@ -150,9 +150,10 @@ public class HttpService {
 			Header header = entity.getContentType();
 			String type = header.getValue();
 			if(type.indexOf("charset=") != -1){
-				type = type.substring(type.lastIndexOf("=")+1,type.length());	
+				Encode = type.substring(type.lastIndexOf("=")+1,type.length());	
 			}
-			doc = Jsoup.parse(entity.getContent(), type, url);
+System.out.println("encode:"+Encode);
+			doc = Jsoup.parse(entity.getContent(), Encode, url);
 		}
 		return doc;
 	}
@@ -171,9 +172,9 @@ public class HttpService {
 			Header header = entity.getContentType();
 			String type = header.getValue();
 			if(type.indexOf("charset=") != -1){
-				type = type.substring(type.lastIndexOf("=")+1,type.length());	
+				setEncode(type.substring(type.lastIndexOf("=")+1,type.length()));	
 			}
-			doc = Jsoup.parse(entity.getContent(), type, url);
+			doc = Jsoup.parse(entity.getContent(), Encode, url);
 		}
 		return doc;
 	}
@@ -198,4 +199,9 @@ public class HttpService {
 	public static void setProxyState(boolean proxyState) {
 		HttpService.proxyState = proxyState;
 	}
+
+	public static void setEncode(String encode) {
+		Encode = encode;
+	}
+	
 }
