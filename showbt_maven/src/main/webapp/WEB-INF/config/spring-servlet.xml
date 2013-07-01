@@ -51,9 +51,11 @@
 	<!-- FreeMarker视图解析 -->
 	<bean id="freeMarkerViewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
 	    <property name="contentType" value="text/html; charset=UTF-8"/>
+	     <!-- 将Spring的FreeMarkerView改成我们扩展的View -->
 		<property name="cache" value="true"/>
 		<property name="prefix" value="/"/>
 		<property name="suffix" value=".ftl"/>
+<!--         <property name="viewClass" value="com.showbt.crawler.controller.admin.MyFreeMarkerView" /> -->
 		<property name="exposeRequestAttributes" value="false"/>
 		<property name="exposeSessionAttributes" value="false"/>
 		<property name="exposeSpringMacroHelpers" value="true"/>
