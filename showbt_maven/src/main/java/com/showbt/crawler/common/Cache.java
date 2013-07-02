@@ -9,9 +9,11 @@ import org.springframework.stereotype.Component;
 
 import com.showbt.crawler.bean.Adverting;
 import com.showbt.crawler.bean.Category;
+import com.showbt.crawler.bean.KeyWord;
 import com.showbt.crawler.bean.WebSetting;
 import com.showbt.crawler.service.AdvertingService;
 import com.showbt.crawler.service.CategoryService;
+import com.showbt.crawler.service.KeyWordService;
 import com.showbt.crawler.service.WebSettingService;
 
 @Component
@@ -21,6 +23,7 @@ public class Cache {
 	private static Map<String, Category> categoryCache = null;
 	private static Map<String, Adverting> advertingCache = null;
 	private static Map<String, WebSetting> webSettingCache = null;
+	private static Map<String ,KeyWord> keyWordCache = null;
 	
 	public static void setCategoryCache(Map<String, Category> categoryCache) {
 		Cache.categoryCache = categoryCache;
@@ -28,6 +31,10 @@ public class Cache {
 
 	public static void setAdvertingCache(Map<String, Adverting> advertingCache) {
 		Cache.advertingCache = advertingCache;
+	}
+
+	public static void setKeyWordCache(Map<String, KeyWord> keyWordCache) {
+		Cache.keyWordCache = keyWordCache;
 	}
 
 	private Cache(){}
@@ -103,5 +110,19 @@ public class Cache {
 			}
 		}
 		return webSettingCache;
+	}
+	
+	/**
+	 * 关键字缓存
+	 */
+	public Map<String, KeyWord> getKeyWordCache(KeyWordService keyWordService) {
+		if(keyWordCache == null){
+			keyWordCache = new LinkedHashMap<String, KeyWord>();
+			List<KeyWord> dl = keyWordService.getKeyWordAll();
+			for(KeyWord kw: dl){
+				keyWordCache.put(kw.getKeyword(), kw);
+			}
+		}
+		return keyWordCache;
 	}
 }

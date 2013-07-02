@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -37,7 +38,6 @@ public class Dytt8Controller {
 	}
 	
 	@RequestMapping(value="/collectDytt8Do")
-	@ResponseBody
 	public String collectDytt8Do(HttpServletRequest request, HttpServletResponse response){
 		String BASEHOST = "http://www.dytt8.net";
 		String host = BASEHOST ;
@@ -55,6 +55,7 @@ public class Dytt8Controller {
 		if(StringUtils.isNotBlank(proxy) && proxy.trim().equals("1")){
 			HttpService.setProxyState(true);
 		}
+		List<String> result = new ArrayList<String>();
 		for(int i=STARTPAGE;i<PAGECOUNT;i++){
 			if(i == 1){
 				host = BASEHOST+"/html/gndy/dyzz/index.html";
@@ -62,14 +63,15 @@ public class Dytt8Controller {
 				host = BASEHOST+"/html/gndy/dyzz/list_23_"+i+".html";
 			}
 System.out.println("进入第"+i+"页"+host);
-			dytt8Service.collectDytt8(host);
+			result.addAll(dytt8Service.collectDytt8(host));
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
-		return "finished";
+		request.setAttribute("result", result);
+		return "admin/dytt8/collectResult";
 	}
 	
 	/**

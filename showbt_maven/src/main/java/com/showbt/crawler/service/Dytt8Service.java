@@ -18,7 +18,7 @@ public interface Dytt8Service extends BaseService<Dytt8> {
 	 * 采集每一页的内容
 	 * @param url
 	 */
-	public void collectDytt8(String url);
+	public List<String> collectDytt8(String url);
 	
 	/**
 	 * 得到已经采集过但数据不完整的数据，准备进行重新采集

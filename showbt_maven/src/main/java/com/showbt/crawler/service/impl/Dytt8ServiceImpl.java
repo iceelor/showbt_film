@@ -1,5 +1,6 @@
 package com.showbt.crawler.service.impl;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,13 +21,21 @@ import com.showbt.crawler.service.Dytt8Service;
 public class Dytt8ServiceImpl extends BaseServiceImpl<Dytt8> implements Dytt8Service {
 	private @Autowired Dytt8DAO<Dytt8> dytt8Dao;
 	
-	public void collectDytt8(String url){
-		List<Dytt8> dlist = Dytt8Collect.collect(url);
+	public List<String> collectDytt8(String url){
+		List<String> res = new ArrayList<String>();
+		List<Dytt8> dlist = null;
+		try {
+			dlist = Dytt8Collect.collect(url);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		for(Dytt8 d: dlist){
 			if(!isExist(d.getSourceUrl())){
 				this.editSave(d);
+				res.add(d.getTitle());
 			}
 		}
+		return res;
 	}
 	
 	public boolean isExist(String sourceUrl){
@@ -40,7 +49,12 @@ public class Dytt8ServiceImpl extends BaseServiceImpl<Dytt8> implements Dytt8Ser
 	public void reCollect(){
 		String hql = "from Dytt8 d where d.downUrl is null";
 		List<Dytt8> dList = dytt8Dao.queryAll(hql);
-		List<Dytt8> dres = Dytt8Collect.reCollect(dList);
+		List<Dytt8> dres = null;
+		try {
+			dres = Dytt8Collect.reCollect(dList);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
 		for(Dytt8 d : dres){
 			try{
 				this.editSave(d);

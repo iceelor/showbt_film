@@ -27,7 +27,7 @@ public class Dytt8Collect {
 	
 	static String method = "get";
 	
-	public static List<Dytt8> collect(String url){
+	public static List<Dytt8> collect(String url) throws Exception{
 		List<Dytt8> res = new ArrayList<Dytt8>();
 		String pageContext = HttpService.httpResponseToStr(url, method, encode);
 		List<String> articleURLS = getArticleURL(pageContext);
@@ -40,7 +40,7 @@ public class Dytt8Collect {
 		return res;
 	}
 	
-	public static List<Dytt8> reCollect(List<Dytt8> dList){
+	public static List<Dytt8> reCollect(List<Dytt8> dList) throws Exception{
 		List<Dytt8> reslut = new ArrayList<Dytt8>();
 		for(BaseTO d : dList){
 			Dytt8 dytt8 = (Dytt8)d;
@@ -57,7 +57,7 @@ public class Dytt8Collect {
 	 * @param pageStr  网页字符串
 	 * @return
 	 */
-	public static List<String> getArticleURL(String pageContext){
+	public static List<String> getArticleURL(String pageContext) throws Exception{
 		if(pageContext == null){
 			return null;
 		}
@@ -83,7 +83,7 @@ System.out.println("寻找帖子...........");
 	 * @param articleContext
 	 * @return
 	 */
-	public  static Dytt8 getDytt8(String articleContext){
+	public  static Dytt8 getDytt8(String articleContext) throws Exception{
 		Dytt8 dytt8 = new Dytt8();
 		if(articleContext == null){
 			return null;
@@ -126,7 +126,7 @@ System.out.println("寻找帖子...........");
 	 * @param articleURLS
 	 * @return
 	 */
-	public  static List<String> getImgURLS(String articleContext){
+	public  static List<String> getImgURLS(String articleContext) throws Exception{
 		List<String>ImgURLS = new ArrayList<String>();
 		if(articleContext == null){
 			return null;
@@ -144,7 +144,7 @@ System.out.println("获取图片地址-----------");
 	 * 保存图片
 	 * @param ImgURL
 	 */
-	public  static void savepic(String ImgURL){
+	public  static void savepic(String ImgURL) throws Exception{
 		if(ImgURL == null){
 			return ;
 		}

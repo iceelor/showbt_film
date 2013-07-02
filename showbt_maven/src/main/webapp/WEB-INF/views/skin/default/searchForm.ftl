@@ -92,7 +92,7 @@
 			<form enctype="application/x-www-form-urlencoded" method="post" action="searchDo" class="search-form" id="seedSearchForm" name="search-form" accept-charset="utf-8" >
 				<div class="outer-wrap">
 					<div class="inner-wrap">
-						<input type="text" autocomplete="off" class="search-key keyInput" name="keywords" id="searchKey" value="欧美" />
+						<input type="text" autocomplete="off" maxlength="20" class="search-key keyInput" name="keywords" id="searchKey" value="欧美" />
 						<input type="button" value="搜索" onclick="seedSearch()" class="search-btn" id="searchBtn" />
 					</div>
 				</div>
