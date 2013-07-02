@@ -15,4 +15,6 @@ public interface BtSeedService extends BaseService<BtSeed> {
 	public BtSeed getBtSeed(long id);
 	
 	public boolean isExist(String title);
+	
+	public ResultSet<BtSeed> getBtSeedList(ResultSet<BtSeed> rs, String keyword);
 }

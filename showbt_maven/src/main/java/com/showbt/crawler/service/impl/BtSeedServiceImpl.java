@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,13 +17,12 @@ import com.showbt.crawler.service.BtSeedService;
 @Service("btSeedService")
 @Transactional
 public class BtSeedServiceImpl extends BaseServiceImpl<BtSeed> implements BtSeedService {
-	private BtSeedDAO<BtSeed> btSeedDao;
+	private @Autowired BtSeedDAO<BtSeed> btSeedDao;
 
 	public List<BtSeed> getBtSeedAll() {
 		String hql = "from BtSeed bs ";
 		List<BtSeed> dList = btSeedDao.queryAll(hql);
 		return dList;
-
 	}
 
 	public BtSeed getBtSeed(long id) {
@@ -49,5 +49,16 @@ public class BtSeedServiceImpl extends BaseServiceImpl<BtSeed> implements BtSeed
 		m.put("title", title);
 		List<BtSeed> dList = btSeedDao.queryAll(hql, m);
 		return (dList!=null&&dList.size()>0)?true:false;
+	}
+
+	@Override
+	public ResultSet<BtSeed> getBtSeedList(ResultSet<BtSeed> rs, String keyword) {
+		String hql = "from BtSeed bs where bs.title like :title";
+		Map<String, Object> m = new HashMap<String, Object>();
+		m.put("title", "%"+keyword+"%");
+		rs.setTotalRecord((int)btSeedDao.count(hql,m));
+		List<BtSeed> dList = btSeedDao.query(hql+" order by bs.id desc", m, rs.getCurrentPage(), rs.getPageSize());
+		rs.setResults(dList);
+		return rs;
 	}
 }

@@ -2,6 +2,7 @@ package com.showbt.crawler.controller;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -18,6 +19,7 @@ import com.showbt.crawler.bean.BtSeed;
 import com.showbt.crawler.bean.KeyWord;
 import com.showbt.crawler.collect.TorrentkittyCollect;
 import com.showbt.crawler.common.Cache;
+import com.showbt.crawler.common.ResultSet;
 import com.showbt.crawler.common.controller.BaseController;
 import com.showbt.crawler.service.BtSeedService;
 
@@ -48,29 +50,34 @@ System.out.println(keywords);
 		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"searchResult");
 		if(StringUtils.isBlank(keywords)) return mv;
 		KeyWord kw = Cache.getInstance().getKeyWordCache(keyWordService).get(keywords.trim());
-		Map<String, Object> res = null;
+		Map<String, Object> res = new HashMap<String, Object>();
 		List<BtSeed> btList = null;
+		ResultSet<BtSeed> rs = new ResultSet<BtSeed>();
 		if(kw == null){
 			res = TorrentkittyCollect.get(keywords, page);
+			btList = (List<BtSeed>) res.get("resultList");
 			kw = new KeyWord();
 			kw.setKeyword(keywords);
 			kw.setAddTime(new Date());
 			kw.setState(0);
+			kw.setRecordNum(btList.size());
+			kw.setMaxPage(Integer.parseInt(res.get("maxPage").toString()));
+			kw.setCurrent(1);
 			keyWordService.editSave(kw);
 			Cache.getInstance().getKeyWordCache(keyWordService).put(keywords, keyWordService.getKeyWord(keywords));
-			btList = (List<BtSeed>) res.get("resultList");
 			for(BtSeed bs: btList){
 				if(!btSeedService.isExist(bs.getTitle())){
 					btSeedService.editSave(bs);
 				}
 			}
 		}
+		rs = btSeedService.getBtSeedList(rs, keywords);
 		String t = request.getParameter("t");
-		mv.addObject("result", res.get("resultList"));
+		mv.addObject("result", rs.getResults());
         mv.addObject("t", StringUtils.isNotBlank(t)?t:"s");
-		mv.addObject("page", res.get("page"));
+		mv.addObject("page", rs.getCurrentPage());
 		mv.addObject("keywords", keywords);
-		mv.addObject("maxPage", res.get("maxPage"));
+		mv.addObject("maxPage", rs.getMaxPage());
 		return mv;
 	}
 }

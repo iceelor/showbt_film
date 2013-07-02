@@ -44,6 +44,16 @@ public class KeyWord extends BaseTO{
 	private int recordNum;
 	
 	/**
+	 * 关键词搜索结果总共多少页
+	 */
+	private int maxPage;
+	
+	/**
+	 * 采集到第几页
+	 */
+	private int current;
+	
+	/**
 	 * 采集时间
 	 */
 	@Temporal(TemporalType.TIMESTAMP)
@@ -88,4 +98,21 @@ public class KeyWord extends BaseTO{
 	public void setRecordNum(int recordNum) {
 		this.recordNum = recordNum;
 	}
+
+	public int getMaxPage() {
+		return maxPage;
+	}
+
+	public void setMaxPage(int maxPage) {
+		this.maxPage = maxPage;
+	}
+
+	public int getCurrent() {
+		return current;
+	}
+
+	public void setCurrent(int current) {
+		this.current = current;
+	}
+	
 }
