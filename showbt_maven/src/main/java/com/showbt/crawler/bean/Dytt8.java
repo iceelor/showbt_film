@@ -151,6 +151,10 @@ public class Dytt8 extends BaseTO{
 	 * 文件格式
 	 */
 	private String fileFormat;
+	/**
+	 * 静态地址
+	 */
+	private String htmlUrl;
 	public String getTitle() {
 		return title;
 	}
@@ -318,5 +322,11 @@ public class Dytt8 extends BaseTO{
 	}
 	public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
+	}
+	public String getHtmlUrl() {
+		return htmlUrl;
+	}
+	public void setHtmlUrl(String htmlUrl) {
+		this.htmlUrl = htmlUrl;
 	}
 }

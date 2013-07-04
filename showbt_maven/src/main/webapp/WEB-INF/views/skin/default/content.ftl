@@ -14,7 +14,7 @@
 		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery.slider.js"></script>		
 	</head>
 	<body>
-	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/top.ftl">
+	<#include "top.ftl">
 	<div id="main" style="margin-top:15px;">
 		<div id="contentSec" class="content-sec">
 			<div class="sec-main">
@@ -300,6 +300,6 @@
 			<!--左侧图片区end-->
 		</div>
 	</div>
-	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/foot.ftl">
+	<#include "foot.ftl">
 	</body>
 </html>

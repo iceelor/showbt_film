@@ -5,8 +5,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 
@@ -23,14 +25,51 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.showbt.crawler.bean.Dytt8;
 import com.showbt.crawler.common.ResultSet;
+import com.showbt.crawler.common.TemplateManager;
+import com.showbt.crawler.common.controller.BaseController;
 import com.showbt.crawler.service.Dytt8Service;
 import com.showbt.util.HttpService;
 import com.showbt.util.ResizeImage;
 
 @Controller
 @RequestMapping(value="/admin")
-public class Dytt8Controller {
+public class Dytt8Controller extends BaseController{
 	private @Autowired Dytt8Service dytt8Service;
+	
+	@RequestMapping(value="/createDytt8Template")
+	@ResponseBody
+	public String createDytt8Template(HttpServletRequest request, HttpServletResponse response){
+		List<Dytt8> dlist = dytt8Service.indexFilm();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+		for(Dytt8 d: dlist){
+			String templatePath = getDefaultTemptalePath()+"content.ftl";
+			String targetHtmlPath = "movie/"+sdf.format(d.getAddTime())+"/"+sdf.format(d.getAddTime())+d.getId()+".html";
+			HashMap<String, Object> model = new HashMap<String, Object>();
+			model.put("dytt8", d);
+			
+			int category = 0;
+			category = d.getCategory();
+			
+			ResultSet<Dytt8> rs1 = new ResultSet<Dytt8>();
+			rs1.setCurrentPage(1);
+			rs1.setPageSize(25);
+			rs1 = dytt8Service.getCategoryList(category, rs1);
+			model.put("categoryList", rs1.getResults());
+			
+			ResultSet<Dytt8> rs = new ResultSet<Dytt8>();
+			rs.setCurrentPage(1);
+			rs.setPageSize(25);
+			rs = dytt8Service.getFaverateList(rs);
+			model.put("faverteList", rs.getResults());
+			String t = request.getParameter("t");
+			model.put("t", StringUtils.isNotBlank(t)?t:"m");
+	        
+			String result = TemplateManager.getInstance().createHTML(model, templatePath,targetHtmlPath, request);
+			d.setHtmlUrl(result);
+			dytt8Service.editUpdate(d);
+		}
+		return "生成完成";
+	}
 	
 	@RequestMapping(value="/collectDytt8")
 	public String collectDytt8(HttpServletRequest request, HttpServletResponse response){
