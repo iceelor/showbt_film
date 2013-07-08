@@ -1,17 +1,14 @@
+<#include "macro-head.ftl">
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<title>${dytt8.title}---<#if showBtStatic("websetting@websetting_title")??>${showBtStatic("websetting@websetting_title").sValue}</#if></title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="keywords" content="<#if showBtStatic("websetting@websetting_movie_keywords")??>${showBtStatic("websetting@websetting_movie_keywords").sValue}</#if>"/>
-		<meta name="description" content="<#if showBtStatic("websetting@websetting_movie_description")??>${showBtStatic("websetting@websetting_movie_description").sValue}</#if>"/>
-		<link rel="shortcut icon" href="/favicon.ico" />		
-		<#if showBtStatic("websetting@websetting_head")??>${showBtStatic("websetting@websetting_head").sValue}</#if>
-		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_01.css" rel="stylesheet"/>
-		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/dytt8_content.css" rel="stylesheet"/>
-		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/bdsstyle.css" rel="stylesheet"/>
-		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery.slider.js"></script>		
+		<@head title="${dytt8.title}---${websetting_title?html}">
+	        <meta name="keywords" content="<#if dytt8.tags ??><#list dytt8.tags?split(" ") as tag>${tag}<#if tag_has_next>,</#if></#list></#if>,${websetting_movie_keywords}"/>              
+	        <meta name="description" content="<#if dytt8.tags ??><#list dytt8.tags?split(" ") as tag>${tag}<#if tag_has_next>,</#if></#list></#if>,${websetting_movie_description}"/>
+        </@head>			
+		<link href="${staticServePath}/${websetting_template_default_path}css/dytt8_content.css" rel="stylesheet"/>
+		<link href="${staticServePath}/${websetting_template_default_path}css/bdsstyle.css" rel="stylesheet"/>		
+		
 	</head>
 	<body>
 	<#include "top.ftl">
@@ -278,7 +275,7 @@
 								<ul>
 									<#if categoryList ??>
 										<#list categoryList as cat>
-										<li><a href="content?id=${cat.id}">${cat.title}</a></li>
+										<li><a href="<#if dytt8.htmlUrl??>${staticServePath}/${cat.htmlUrl}<#else>${staticServePath}/${websetting_template_default_path}content?id=${cat.id}</#if>">${cat.title}</a></li>
 										</#list>
 									</#if>
 								</ul>
@@ -286,7 +283,7 @@
 								<ul>
 									<#if faverteList ??>
 										<#list faverteList as fav>
-										<li><a href="content?id=${fav.id}">${fav.title}</a>
+										<li><a href="<#if dytt8.htmlUrl??>${staticServePath}/${fav.htmlUrl}<#else>${staticServePath}/${websetting_template_default_path}content?id=${fav.id}</#if>">${fav.title}</a>
 											<span><#if fav.protagonist ??>${fav.protagonist}</#if></span></li>
 										</#list>
 									</#if>

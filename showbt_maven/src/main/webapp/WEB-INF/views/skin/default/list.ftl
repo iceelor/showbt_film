@@ -1,19 +1,16 @@
+<#include "macro-head.ftl">
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<title><#if showBtStatic("websetting@websetting_title")??>${showBtStatic("websetting@websetting_title").sValue}<#else>秀种资源网</#if></title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="keywords" content="<#if showBtStatic("websetting@websetting_keywords")??>${showBtStatic("websetting@websetting_keywords").sValue}</#if>"/>
-		<meta name="description" content="<#if showBtStatic("websetting@websetting_description")??>${showBtStatic("websetting@websetting_description").sValue}</#if>"/>
-		<link rel="shortcut icon" href="/favicon.ico" />		
-		<#if showBtStatic("websetting@websetting_head")??>${showBtStatic("websetting@websetting_head").sValue}</#if>
-		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_01.css" rel="stylesheet"/>
+		<@head title="${websetting_title?html}">
+        	<meta name="keywords" content="${websetting_movie_keywords}"/>
+			<meta name="description" content="${websetting_movie_description}"/>
+        </@head>
 		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_static_8d4870a0.css" rel="stylesheet"/>
 		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/movie_27a6d47d.css" rel="stylesheet"/>
-		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery-1.7.2.min.js"></script>
 	</head>
 	<body>
-	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/top.ftl">
+	<#include "top.ftl">
 	<div id="main">
 		<!--new list begin-->
 		<div id="bd-content" class="bd-content bd-subchannel-movie">
@@ -73,14 +70,14 @@
 							</#if>
 							<li class="<@rowlast />">
 			                    <div class="bd-video-poster">
-			                        <a class="bd-video-link" target="_blank" href="content?id=${dytt8.id}" style="display: block;">
+			                        <a class="bd-video-link" target="_blank" href="<#if dytt8.htmlUrl??>${staticServePath}/${dytt8.htmlUrl}<#else>${staticServePath}/content?id=${dytt8.id}</#if>" style="display: block;">
 			                            <img alt="${dytt8.title}" src="<#if dytt8.indexThumb??>${dytt8.indexThumb}</#if>" class="bd-video-img" style="margin-top: -2px; margin-left: 0px; height: 189px; width: 134px; visibility: visible;">
 			                            <span class="bd-video-rating"><em>7.8</em> 分</span>
 			                            <span class="bd-video-bg"></span>
 			                        </a>
 			                    </div>
 			                    <div class="bd-video-primary">
-			                        <h4 class="bd-video-title"><a target="_blank" title="${dytt8.title}" href="content?id=${dytt8.id}" static="stp=ti">${dytt8.title}</a></h4>
+			                        <h4 class="bd-video-title"><a target="_blank" title="${dytt8.title}" href="<#if dytt8.htmlUrl??>${staticServePath}/${dytt8.htmlUrl}<#else>${staticServePath}/content?id=${dytt8.id}</#if>" static="stp=ti">${dytt8.title}</a></h4>
 				                    <div class="bd-video-actors">
 					                    <#if dytt8.protagonist ??>
 											<#list dytt8.protagonist?split(" ") as p>
@@ -121,6 +118,6 @@
 		</div>
 		<!--new list end-->	
 </div>
-<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/foot.ftl">
+<#include "foot.ftl">
 	</body>
 </html>

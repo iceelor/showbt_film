@@ -24,12 +24,12 @@ public class FilmController extends BaseController{
 	private @Autowired Dytt8Service dytt8Service;
 	private @Autowired CategoryService categoryService;
 	
-	
 	@RequestMapping(value="/content")
 	public ModelAndView content(HttpServletRequest request, HttpServletResponse response){
+		initation(request);
 		String sid = request.getParameter("id");
 		long id = 0;
-		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"content");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath(request)+"content");
 		int category = 0;
 		if(StringUtils.isNumeric(sid)){
 			id = Long.parseLong(sid);
@@ -55,7 +55,7 @@ public class FilmController extends BaseController{
 	
 	@RequestMapping(value="/filmList")
 	public ModelAndView list(HttpServletRequest request, HttpServletResponse response){
-		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"list");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath(request)+"list");
 		ResultSet<Dytt8> rs = new ResultSet<Dytt8>();
 		String p = request.getParameter("page");
 		String ord = request.getParameter("ord");

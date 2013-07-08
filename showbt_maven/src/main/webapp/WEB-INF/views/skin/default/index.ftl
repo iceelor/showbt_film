@@ -1,20 +1,17 @@
+<#include "macro-head.ftl">
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title><#if showBtStatic("websetting@websetting_title")??>${showBtStatic("websetting@websetting_title").sValue}<#else>秀种资源网</#if></title>
-		<!--<link href="css/menu.css" rel="stylesheet"/>-->
-		<link rel="shortcut icon" href="/favicon.ico" />		
-		<#if showBtStatic("websetting@websetting_head")??>${showBtStatic("websetting@websetting_head").sValue}</#if>
-		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/showbt_index_.css" rel="stylesheet"/>
-		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_02.css" rel="stylesheet"/>
-		<link href="${showBtStatic("websetting@websetting_template_default_path").sValue}css/module_01.css" rel="stylesheet"/>
-		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="${showBtStatic("websetting@websetting_template_default_path").sValue}js/jquery.slider.js"></script>		
+		<@head title="${websetting_title?html}">
+	        <meta name="keywords" content="${websetting_movie_keywords?html}"/>              
+	        <meta name="description" content="${websetting_movie_description?html}"/>
+        </@head>	
+		<link href="${staticServePath}/${websetting_template_default_path}css/showbt_index_.css" rel="stylesheet"/>
+		<link href="${staticServePath}/${websetting_template_default_path}css/module_02.css" rel="stylesheet"/>		
 	</head>
 	<body>
-	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/top.ftl">
-	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/slide.ftl">
+	<#include "top.ftl">
+	<#include "slide.ftl">
 	<!--电影begin-->
 	<div id="main">
 		<div class="chan-sec" id="secTV">
@@ -36,15 +33,15 @@
 										<#else>
 											<#macro rowlast></#macro>									
 										</#if>
-										<li class="video-item vi-125v <@rowlast />">
-											<a target="_blank" class="v-thumb vt-125v " href="content?id=${dytt8.id}">
+										<li class="video-item vi-125v <@rowlast />">										
+											<a target="_blank" class="v-thumb vt-125v " href="<#if dytt8.htmlUrl??>${staticServePath}/${dytt8.htmlUrl}<#else>${staticServePath}/content?id=${dytt8.id}</#if>">
 												<img src="<#if dytt8.indexThumb ??>${dytt8.indexThumb}</#if>">
 												<span class="v-update">${dytt8.title}</span> <span class="v-update-bg">&nbsp;</span>
 											</a>
 											<div class="v-desc">
 												<dl>
 													<dt class="v-title">
-														<a title="${dytt8.title}" target="_blank" href="${dytt8.sourceUrl}">${dytt8.title}</a>
+														<a title="${dytt8.title}" target="_blank" href="${dytt8.htmlUrl}">${dytt8.title}</a>
 													</dt>
 													<dd class="v-s-intro"><#if dytt8.subtitle ??>${dytt8.subtitle}<#else>${dytt8.title}</#if></dd>
 												</dl>
@@ -74,7 +71,7 @@
 											<li class="poster">
 									            <dl>
 									                <dt>
-									                    <a static="stp=po" target="_blank" href="content?id=${dytt8.id}">
+									                    <a static="stp=po" target="_blank" href="<#if dytt8.htmlUrl??>${staticServePath}/${dytt8.htmlUrl}<#else>${staticServePath}/content?id=${dytt8.id}</#if>">
 									                        <img src="<#if dytt8.indexThumb??>${dytt8.indexThumb}</#if>">
 									                        <span class="poster-no"></span>
 									                        <span class="s-title">${dytt8.title}</span>
@@ -84,7 +81,7 @@
 									        </li>
 										<#else>
 											 <li class="list">
-									            <a title="${dytt8.title}" target="_blank" href="content?id=${dytt8.id}">
+									            <a title="${dytt8.title}" target="_blank" href="<#if dytt8.htmlUrl??>${staticServePath}/${dytt8.htmlUrl}<#else>${staticServePath}/content?id=${dytt8.id}</#if>">
 									                <span class="list-no no${dytt8_index+1}">${dytt8_index+1}</span>
 									                <span class="list-title">${dytt8.title}</span>
 									                <span class="list-info"></span>
@@ -122,9 +119,9 @@
 			<!--右侧end-->
 			<!--<div class="chan-sec-ft">&nbsp;</div>-->
 		</div>
-		<#if showBtStatic("adverting@index_movie_bottom_img")??>
+		<#if ad_index_movie_bottom_img??>
 			<div id="ad_01">
-				${showBtStatic("adverting@index_movie_bottom_img").adCode}
+				${ad_index_movie_bottom_img}
 			</div>
 		</#if>
 	<!--电影begin-->
@@ -151,7 +148,7 @@
 										<#macro rowlast></#macro>									
 									</#if>
 									<li class="video-item vi-165h <@rowlast />"  style="margin-right: 10px;">
-										<a target="_blank" class="v-thumb vt-165h " href="videoContent?id=${video.id}"> 
+										<a target="_blank" class="v-thumb vt-165h " href="${staticServePath}/videoContent?id=${video.id}"> 
 											<img src="${video.pic}">
 											<span class="v-play-mask"></span><span class="v-play-icon"></span>
 											<span class="v-duration">${video.timeLen}</span>
@@ -160,7 +157,7 @@
 											<dl>
 												<dt class="v-title">
 													<img src="http://list.video.baidu.com/logo/ku6.gif">
-													<a title="${video.title}" target="_blank" href="videoContent?id=${video.id}">${video.title}</a>
+													<a title="${video.title}" target="_blank" href="${staticServePath}/videoContent?id=${video.id}">${video.title}</a>
 												</dt>
 											</dl>
 										</div>
@@ -191,7 +188,7 @@
 											<li class="poster">
 									            <dl>
 									                <dt>
-									                    <a static="stp=po" target="_blank" href="videoContent?id=${video.id}">
+									                    <a static="stp=po" target="_blank" href="${staticServePath}/videoContent?id=${video.id}">
 									                        <img src="<#if video.pic??>${video.pic}</#if>">
 									                        <span class="poster-no"></span>
 									                        <span class="s-title">${video.title}</span>
@@ -201,7 +198,7 @@
 									        </li>
 										<#else>
 											 <li class="list">
-									            <a title="${video.title}" target="_blank" href="videoContent?id=${video.id}">
+									            <a title="${video.title}" target="_blank" href="${staticServePath}/videoContent?id=${video.id}">
 									                <span class="list-no no${video_index+1}">${video_index+1}</span>
 									                <span class="list-title">${video.title}</span>
 									                <span class="list-info"></span>
@@ -238,9 +235,9 @@
 			</div>
 			<!--右侧end-->
 		</div>
-		<#if showBtStatic("adverting@index_video_bottom_img")??>
+		<#if ad_index_video_bottom_img??>
 			<div id="ad_01">
-				${showBtStatic("adverting@index_video_bottom_img").adCode}
+				${ad_index_video_bottom_img}
 			</div>
 		</#if>
 		<div id="friendlink">
@@ -260,7 +257,7 @@
 		</div>
 	</div>
 	<!--在线视频end-->
-	<#include "/"+showBtStatic("websetting@websetting_template_default_path").sValue+"/foot.ftl">
+	<#include "foot.ftl">
 	<iframe width="460" style="display:none;" src="index.do" scrolling="no" height="300" frameborder="0" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" id="adIframe"></iframe>
 	</body>
 	

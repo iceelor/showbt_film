@@ -29,7 +29,7 @@ public class IndexController extends BaseController{
 	
 	@RequestMapping(value="/index")
 	public ModelAndView index(HttpServletRequest request, HttpServletResponse response){
-		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"index");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath(request)+"index");
 		List<Dytt8> dlst = dytt8Service.indexFilm();
 		List<Video> vlst = videoService.indexVideo();
 		List<Video> videoRecommenList = videoService.indexRecommendVideo();

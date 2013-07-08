@@ -30,7 +30,7 @@ public class BtSeedController extends BaseController{
 	
 	@RequestMapping(value="/search")
 	public ModelAndView seedSearch(HttpServletRequest request, HttpServletResponse response){
-		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"searchForm");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath(request)+"searchForm");
 		String t = request.getParameter("t");
         mv.addObject("t", StringUtils.isNotBlank(t)?t:"s");
 		return mv;
@@ -47,7 +47,7 @@ public class BtSeedController extends BaseController{
 			e1.printStackTrace();
 		}
 System.out.println(keywords);
-		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"searchResult");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath(request)+"searchResult");
 		if(StringUtils.isBlank(keywords)) return mv;
 		KeyWord kw = Cache.getInstance().getKeyWordCache(keyWordService).get(keywords.trim());
 		Map<String, Object> res = new HashMap<String, Object>();

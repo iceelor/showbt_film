@@ -8,8 +8,8 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 import javax.imageio.IIOException;
@@ -39,12 +39,12 @@ public class Dytt8Controller extends BaseController{
 	@RequestMapping(value="/createDytt8Template")
 	@ResponseBody
 	public String createDytt8Template(HttpServletRequest request, HttpServletResponse response){
-		List<Dytt8> dlist = dytt8Service.indexFilm();
+		Map<String, Object> model = initTemplateData(request);
+		List<Dytt8> dlist = dytt8Service.getDytt8All();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 		for(Dytt8 d: dlist){
-			String templatePath = getDefaultTemptalePath()+"content.ftl";
+			String templatePath = getDefaultTemptalePath(request)+"content.ftl";
 			String targetHtmlPath = "movie/"+sdf.format(d.getAddTime())+"/"+sdf.format(d.getAddTime())+d.getId()+".html";
-			HashMap<String, Object> model = new HashMap<String, Object>();
 			model.put("dytt8", d);
 			
 			int category = 0;
@@ -68,7 +68,7 @@ public class Dytt8Controller extends BaseController{
 			d.setHtmlUrl(result);
 			dytt8Service.editUpdate(d);
 		}
-		return "生成完成";
+		return "finshed";
 	}
 	
 	@RequestMapping(value="/collectDytt8")
@@ -124,7 +124,7 @@ System.out.println("进入第"+i+"页"+host);
 	public String createThumb(HttpServletRequest request, HttpServletResponse response){
 		List<Dytt8> dlist = dytt8Service.createThumb();
 		ResizeImage r = new ResizeImage();
-		String path = request.getRealPath("/thumb/");
+		String path = request.getSession().getServletContext().getRealPath("/thumb/");
 		File f = new File(path);
 		if(!f.exists()){
 			f.mkdirs();

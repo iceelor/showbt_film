@@ -28,7 +28,7 @@ public class VideoController extends BaseController{
 	public ModelAndView videoContent(HttpServletRequest request, HttpServletResponse response){
 		String sid = request.getParameter("id");
 		long id = 0;
-		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"videoContent");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath(request)+"videoContent");
 		if(StringUtils.isNumeric(sid)){
 			id = Long.parseLong(sid);
 			mv.addObject("video",videoService.getVideo(id));
@@ -40,7 +40,7 @@ public class VideoController extends BaseController{
 	
 	@RequestMapping(value="/videoList")
 	public ModelAndView videoList(HttpServletRequest request, HttpServletResponse response){
-		ModelAndView mv = new ModelAndView(getDefaultTemptalePath()+"videolist");
+		ModelAndView mv = new ModelAndView(getDefaultTemptalePath(request)+"videolist");
 		ResultSet<Video> rs = new ResultSet<Video>();
 		String p = request.getParameter("page");
 		Map<String, Category> clst = Cache.getInstance().getCategoryCache(categoryService);
