@@ -41,7 +41,7 @@
 											<div class="v-desc">
 												<dl>
 													<dt class="v-title">
-														<a title="${dytt8.title}" target="_blank" href="${dytt8.htmlUrl}">${dytt8.title}</a>
+														<a title="${dytt8.title}" target="_blank" href="<#if dytt8.htmlUrl??>${staticServePath}/${dytt8.htmlUrl}<#else>${staticServePath}/content?id=${dytt8.id}</#if>">${dytt8.title}</a>
 													</dt>
 													<dd class="v-s-intro"><#if dytt8.subtitle ??>${dytt8.subtitle}<#else>${dytt8.title}</#if></dd>
 												</dl>

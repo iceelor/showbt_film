@@ -10,7 +10,7 @@
 		</p>
 		<ul id="trl">
 			<div class="showad">
-				${ad_index_top_img}
+				<#if ad_index_top_img??>${ad_index_top_img}</#if>
 				<div style="display:none"></div>
 			</div>
 		</ul>

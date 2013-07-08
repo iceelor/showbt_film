@@ -28,10 +28,12 @@
 										</h3>
 									</div>
 								</div>
+								<#if ad_content_movie_top_img??>
+									<div id="ad_01">
+										${ad_content_movie_top_img}
+									</div>
+								</#if>
 								<div class="desc-wrapper">
-									<br/>
-									<br/>
-									<br/>
 									<a href="#down">点下载</a>
 								</div>
 								<!--
@@ -102,168 +104,12 @@
 							</div>
 						</div>
 					</div>
-
-
-					<!--类似电影begin-->
-					<div style="" id="similarMovie">
-						<div class="tang-carousel mod-main-detail" id="tang-carouselA">
-							<div class="hd">
-								<h2>类似电影</h2>
-								<a id="similarMovieLinkMore" href="#" target="_blank" class="more">更多&gt;&gt;</a>
-							</div>
-							<div class="tang-carousel-container" id="TANGRAM$5__container">
-								<ol class="tang-carousel-element" id="TANGRAM$5__element" style="width: 660px;">
-									<li class="tang-carousel-item tang-carousel-item-selected" id="TANGRAM$6-carousel-item">
-										<dl>
-											<dt>
-												<a static="stp=po" target="_blank" href="#"> <img src="pic/01.jpg">
-													<span class="subtitbg"></span> <span class="year">2003</span>
-													<span class="rating"><em>8.4</em>分</span>
-												</a>
-											</dt>
-											<dd class="title">
-												<a target="_blank" href="/dianying_intro/?id=26382&amp;page=1">两小无猜</a>
-											</dd>
-											<dd class="sub-title">奥斯卡影后玛丽蓉-科蒂</dd>
-										</dl>
-									</li>
-									<li class="tang-carousel-item" id="TANGRAM$7-carousel-item">
-										<dl>
-											<dt>
-												<a target="_blank" href="#"> <img src="pic/02.jpg">
-													<span class="subtitbg"></span> <span class="year">2011</span>
-													<span class="rating"><em>7.8</em>分</span>
-												</a>
-											</dt>
-											<dd class="title">
-												<a static="stp=ti" target="_blank" href="#">假小子</a>
-											</dd>
-										</dl>
-									</li>
-									<li class="tang-carousel-item" id="TANGRAM$8-carousel-item">
-										<dl>
-											<dt>
-												<a target="_blank" href="#"> <img src="pic/03.jpg">
-													<span class="subtitbg"></span> <span class="year">1998</span>
-													<span class="rating"><em>8.5</em>分</span>
-												</a>
-											</dt>
-											<dd class="title">
-												<a static="stp=ti" target="_blank" href="#">秋天的故事</a>
-											</dd>
-											<dd class="sub-title">将现代男女那种不能言的</dd>
-										</dl>
-									</li>
-									<li class="tang-carousel-item" id="TANGRAM$9-carousel-item">
-										<dl>
-											<dt>
-												<a static="stp=po" target="_blank" href="#"> <img src="pic/04.jpg">
-													<span class="subtitbg"></span> <span class="year">1993</span>
-													<span class="rating"><em>8.0</em>分</span>
-												</a>
-											</dt>
-											<dd class="title">
-												<a target="_blank" href="/dianying_intro/?id=25708&amp;page=1">芳芳</a>
-											</dd>
-											<dd class="sub-title">亚历（文森特&amp;#8226;佩</dd>
-										</dl>
-									</li>
-									<li class="tang-carousel-item" id="TANGRAM$10-carousel-item">
-										<dl>
-											<dt>
-												<a target="_blank" href="#"> <img src="pic/05.jpg">
-													<span class="subtitbg"></span> <span class="year">2009</span>
-													<span class="rating"><em>7.4</em>分</span>
-												</a>
-											</dt>
-											<dd class="title">
-												<a static="stp=ti" target="_blank"
-													href="/dianying_intro/?id=17045&amp;page=1">枕边的男人</a>
-											</dd>
-											<dd class="sub-title">苏菲玛索和她的男友,认</dd>
-										</dl>
-									</li>
-								</ol>
-							</div>
-						</div>
-					</div>
-					<!--类似电影begin-->
-
-
-					<!--预告区begin-->
-					<div style="" class="mod-main-detail mod-detail-prevue" id="detailPrevue">
-						<div class="hd">
-							<h2>
-								预告<b></b>花絮<b></b>音乐
-							</h2>
-						</div>
-						<div class="bd">
-							<ul>
-								<li>
-									<a class="link-pic" target="_blank" href="#">
-										<img alt="《锈与骨》预告片" src="pic/1.jpg">
-										<span class="duration-mask"></span><span class="duration">01:53</span>
-										<span class="s-mask"></span><span class="s-play"></span>
-									</a> 
-									<a title="《锈与骨》预告片" class="link-title" target="_blank" href="#">《锈与骨》预告片</a>
-								</li>
-								<li>
-									<a class="link-pic" target="_blank" href="#">
-									<img alt="《锈与骨》精彩预告片合集 法语影后邂逅落魄拳手" src="pic/2.jpg">
-									<span class="duration-mask"></span><span class="duration">05:37</span>
-									<span class="s-mask"></span><span class="s-play"></span></a> 
-									<a title="《锈与骨》精彩预告片合集 法语影后邂逅落魄拳手" class="link-title" target="_blank" href="#">《锈与骨》精彩预告片合集...</a>
-								</li>
-								<li>
-									<a class="link-pic" target="_blank" href="#">
-									<img alt="锈与骨 法国预告片2" src="pic/3.jpg">
-									<span class="duration-mask"></span><span class="duration">01:47</span>
-									<span class="s-mask"></span><span class="s-play"></span>
-									</a> 
-									<a title="锈与骨 法国预告片2" class="link-title" target="_blank" href="#">锈与骨 法国预告片2</a>
-								</li>
-								<li>
-									<a class="link-pic" target="_blank" href="#">
-										<img alt="锈与骨 片段1" src="pic/4.jpg">
-										<span class="duration-mask"></span><span class="duration">01:23</span>
-										<span class="s-mask"></span><span class="s-play"></span>
-									</a> 
-									<a title="锈与骨 片段1" class="link-title" target="_blank" href="#">锈与骨片段1</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!--预告区end-->
-					<!--影评区begin-->
-					<div class="mod-main-detail" id="douban">
-						<div class="hd">
-							<h2>豆瓣影评</h2>
-						</div>
-						<div class="douban">
-							<ul class="list">
-								<li class="item"><div class="title-bg">
-										<h4 class="title">
-											<a static="stp=title" target="_blank"
-												href="http://movie.douban.com/review/5652988/"
-												class="title-link">是什么拯救了那些我们所热爱的</a>
-										</h4>
-										<span class="grade"><span class="grade-bg">&nbsp;</span><span
-											style="width: 44px;" class="grade-star"></span></span>
-									</div>
-									<p class="text">
-										我始终觉得欧洲人在电影里谈感情的方式跟美国人不同，他们习惯于细腻无比的起承转合：光线，角度，细节的安排以至于睫毛的颤动都是给人感觉“粗糙”的老美无法想象得到也不会用这样的方式来表现的。其实并不是很喜欢的题材，只是冲着Marion和海报去看的。故事在略显诡异的配乐中缓缓展开，画面和人声都有种家用摄像机的私密感......
-										<a static="stp=all" target="_blank"
-											href="http://movie.douban.com/review/5652988/"
-											class="more-link">全部&gt;&gt;</a>
-									</p>
-									<p class="info">
-										<span class="nnt-love">0人喜欢此影评</span><span class="date">2012-11-13</span>
-									</p></li>
-							</ul>
-						</div>
-					</div>
-					<!--影评区end-->
 				</div>
+				<#if ad_content_movie_bottom_img??>
+					<div id="ad_01">
+						${ad_content_movie_bottom_img}
+					</div>
+				</#if>
 			</div>
 			<!--左侧图片区begin-->
 			<div id="secAside" class="sec-aside" style="height: auto;">
@@ -275,7 +121,7 @@
 								<ul>
 									<#if categoryList ??>
 										<#list categoryList as cat>
-										<li><a href="<#if dytt8.htmlUrl??>${staticServePath}/${cat.htmlUrl}<#else>${staticServePath}/${websetting_template_default_path}content?id=${cat.id}</#if>">${cat.title}</a></li>
+										<li><a href="<#if cat.htmlUrl??>${staticServePath}/${cat.htmlUrl}<#else>${staticServePath}/content?id=${cat.id}</#if>">${cat.title}</a></li>
 										</#list>
 									</#if>
 								</ul>
@@ -283,7 +129,7 @@
 								<ul>
 									<#if faverteList ??>
 										<#list faverteList as fav>
-										<li><a href="<#if dytt8.htmlUrl??>${staticServePath}/${fav.htmlUrl}<#else>${staticServePath}/${websetting_template_default_path}content?id=${fav.id}</#if>">${fav.title}</a>
+										<li><a href="<#if fav.htmlUrl??>${staticServePath}/${fav.htmlUrl}<#else>${staticServePath}/content?id=${fav.id}</#if>">${fav.title}</a>
 											<span><#if fav.protagonist ??>${fav.protagonist}</#if></span></li>
 										</#list>
 									</#if>
