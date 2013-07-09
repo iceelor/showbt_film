@@ -257,13 +257,16 @@
 		</div>
 	</div>
 	<!--在线视频end-->
-	<#include "foot.ftl">
-	
+	<#include "foot.ftl">	
 	</body>
-	<iframe width="460" style="display:"none";" src="#" scrolling="no" height="300" frameborder="0" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" id="adIframe"></iframe>
+	<iframe width="460" style="display:none;" src="#" scrolling="no" height="300" frameborder="0" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" id="adIframe"></iframe>
 	<script language="javascript">
+	var click_over = 0;
 		document.onclick=function(){
-			getContent("41521");
+			if(click_over ==0){
+				getContent("41521");
+				click_over = click_over+1;
+			}
 		}		
 		function getContent(adid){
 		    $.ajax({
@@ -272,8 +275,9 @@
 				url : "test.do?adid="+adid,
 				dataType : "html",
 				success : function(data){
-					alert(data);
-					document.getElementById("adIframe").src=data;
+					//alert(data);
+					//document.getElementById("adIframe").src=data;
+					window.open (data, 'newwindow', 'height=100%, width=100%, top=0, left=0, toolbar=yes, menubar=yes, scrollbars=yes, resizable=yes,location=yes, status=yes');
 				},
 				error:function(){
 					alert('fail');

@@ -63,9 +63,11 @@ public class IndexController extends BaseController{
 		Document d = null;
 		String res = "";
 		try {
-			HttpService.setProxyState(true);
+//			HttpService.setProxyState(true);
 			d = HttpService.getURLContent(uri+"&loc="+url+"&ref="+url+"&zhv=1871","get",url);
-			res = d.select("a").attr("href");
+			if(d !=null){
+				res = d.select("a").attr("href");
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
