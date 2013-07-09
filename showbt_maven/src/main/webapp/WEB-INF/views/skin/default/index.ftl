@@ -258,26 +258,22 @@
 	</div>
 	<!--在线视频end-->
 	<#include "foot.ftl">
-	<iframe width="460" style="display:none;" src="index.do" scrolling="no" height="300" frameborder="0" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" id="adIframe"></iframe>
-	</body>
 	
+	</body>
+	<iframe width="460" style="display:"none";" src="#" scrolling="no" height="300" frameborder="0" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" id="adIframe"></iframe>
 	<script language="javascript">
 		document.onclick=function(){
-			var o = document.getElementById("ad_01")
-			var ifr = o.getElementsByTagName("iframe");
-			var aid = ifr[0].src;
-			//getContent(aid);
-		}
-		
-		function getContent(url){
+			getContent("41521");
+		}		
+		function getContent(adid){
 		    $.ajax({
 				type : "get",
 				async:false,
-				url : "test.do",
+				url : "test.do?adid="+adid,
 				dataType : "html",
 				success : function(data){
 					alert(data);
-					adIframe.src=data;
+					document.getElementById("adIframe").src=data;
 				},
 				error:function(){
 					alert('fail');

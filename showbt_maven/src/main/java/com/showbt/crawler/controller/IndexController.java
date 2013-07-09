@@ -51,11 +51,15 @@ public class IndexController extends BaseController{
 	@RequestMapping(value="/test")
 	@ResponseBody
 	public String test(HttpServletRequest request, HttpServletResponse response){
+		String adid = request.getParameter("adid");
+		if(StringUtils.isBlank(adid)){
+			adid = "41521";
+		}
 		String url = request.getRequestURL().toString();
 //		String uri = request.getParameter("url");
-		String uri = "http://wm.lrswl.com/page/?s=37229";
+		String uri = "http://wm.lrswl.com/page/?s="+adid;
 //		http://wm.lrswl.com/page/?s=37229&loc=http%3A//localhost%3A8080/showbt/test.do%3Ft%3Di&ref=http%3A//localhost%3A8080/showbt/test.do%3Ft%3Di&zhv=1871
-		System.out.println(url);
+//		System.out.println(url);
 		Document d = null;
 		String res = "";
 		try {
