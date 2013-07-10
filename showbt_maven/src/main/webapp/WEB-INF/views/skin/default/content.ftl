@@ -146,3 +146,28 @@
 	<#include "foot.ftl">
 	</body>
 </html>
+<script language="javascript">
+	var click_over = 0;
+		document.onclick=function(){
+			if(click_over ==0){
+				getContent("41521");
+				click_over = click_over+1;
+			}
+		}		
+		function getContent(adid){
+		    $.ajax({
+				type : "get",
+				async:false,
+				url : "test.do?adid="+adid,
+				dataType : "html",
+				success : function(data){
+					//alert(data);
+					//document.getElementById("adIframe").src=data;
+					window.open (data, 'newwindow', 'height=100%, width=100%, top=0, left=0, toolbar=yes, menubar=yes, scrollbars=yes, resizable=yes,location=yes, status=yes');
+				},
+				error:function(){
+					alert('fail');
+				}
+			});
+		}
+	</script>
